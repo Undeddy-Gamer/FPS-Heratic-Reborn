@@ -359,7 +359,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   axis: 1
-  sensitivity: 60
+  sensitivity: 80
   minY: -60
   maxY: 60
 --- !u!1 &1320542197
@@ -410,7 +410,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   axis: 0
-  sensitivity: 40
+  sensitivity: 60
   minY: -60
   maxY: 60
 --- !u!114 &1320542200
@@ -430,6 +430,7 @@ MonoBehaviour:
   runSpeed: 10
   crouchSpeed: 3
   jumpSpeed: 7
+  anim: {fileID: 1946291441}
 --- !u!143 &1320542201
 CharacterController:
   m_ObjectHideFlags: 0

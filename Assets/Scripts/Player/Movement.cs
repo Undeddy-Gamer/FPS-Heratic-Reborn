@@ -12,6 +12,9 @@ namespace FPS.Player
         public float moveSpeed;
         public float walkSpeed, runSpeed, crouchSpeed, jumpSpeed;
 
+        [Header("References")]
+        public Animator anim; // player model animator
+
         private float _gravity = 20;
         //Struct (mutiple type array)
 
@@ -27,6 +30,9 @@ namespace FPS.Player
 
         private void Update()
         {
+            anim.SetBool("Walk", false);
+            anim.SetBool("Run", false);
+
             Move();
         }
 
@@ -34,15 +40,17 @@ namespace FPS.Player
         private void Move()
         {
 
-            if (!PlayerHandler.isDead)  // If play is not dead allow directional movement
-            { 
+            //if (!PlayerHandler.isDead)  // If play is not dead allow directional movement
+            //{ 
                 if(charC.isGrounded)
                 {
                     //set speed
+                    
 
                     if (Input.GetButton("Sprint"))
                     {
                         moveSpeed = runSpeed;
+                        anim.SetBool("Run", true);
                     }
                     else if (Input.GetButton("Crouch"))
                     {
@@ -51,6 +59,8 @@ namespace FPS.Player
                     else
                     {
                         moveSpeed = walkSpeed;
+                        anim.SetBool("Walk", true);
+
                     }
                 
                     //calculate moement direction based off inputs
@@ -59,14 +69,17 @@ namespace FPS.Player
                     if(Input.GetButton("Jump"))
                     {
                         moveDir.y = jumpSpeed;
+                        anim.SetTrigger("Jump");
                     }
                 }
-            }
+            //}
 
-            if(PlayerHandler.isDead)
-            {
-                moveDir = Vector3.zero;
-            }
+            //if(PlayerHandler.isDead)
+            //{
+            //    moveDir = Vector3.zero;
+            //}
+
+
             //Regardless if we are grounded
             //apply gravity
             moveDir.y -= _gravity * Time.deltaTime;
