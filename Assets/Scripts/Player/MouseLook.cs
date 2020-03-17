@@ -2,7 +2,7 @@
 
 namespace RPG.Player
 {
-    [AddComponentMenu("RPG/Player/Mouse Look")]
+    [AddComponentMenu("FPS/Player/Mouse Look")]
     public class MouseLook : MonoBehaviour
     {
         // List of 'types' in this case mouse axis direction X/Y

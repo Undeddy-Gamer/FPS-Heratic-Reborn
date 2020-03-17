@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.InputSystem;
 
 namespace FPS.Player
 { 
@@ -37,6 +38,12 @@ namespace FPS.Player
         }
 
 
+        public void Fire(InputAction.CallbackContext context)
+        {
+            Debug.Log("Pew Pew");
+        }
+
+
         private void Move()
         {
 
@@ -56,11 +63,10 @@ namespace FPS.Player
                     {
                         moveSpeed = crouchSpeed;
                     }
-                    else
+                    else if (Input.GetAxis("Horizontal") > 0f || Input.GetAxis("Vertical") > 0f)
                     {
                         moveSpeed = walkSpeed;
                         anim.SetBool("Walk", true);
-
                     }
                 
                     //calculate moement direction based off inputs
