@@ -11,7 +11,7 @@
                     "id": "aa7d93b9-27d3-4f43-9bba-2e34595d7bd2",
                     "expectedControlType": "",
                     "processors": "",
-                    "interactions": ""
+                    "interactions": "Hold"
                 },
                 {
                     "name": "Fire",
@@ -49,7 +49,7 @@
                     "name": "",
                     "id": "a7f03c8e-f9d7-4d43-9d82-a82c1f6452f1",
                     "path": "<Keyboard>/s",
-                    "interactions": "",
+                    "interactions": "Hold",
                     "processors": "",
                     "groups": "",
                     "action": "Move",
@@ -60,7 +60,7 @@
                     "name": "",
                     "id": "31b2485d-47a7-47df-b335-05f07818aa16",
                     "path": "<Keyboard>/d",
-                    "interactions": "",
+                    "interactions": "Hold",
                     "processors": "",
                     "groups": "",
                     "action": "Move",
@@ -71,7 +71,18 @@
                     "name": "",
                     "id": "9521a2b2-5b48-4762-8b89-808737529aaf",
                     "path": "<Mouse>/leftButton",
-                    "interactions": "Tap",
+                    "interactions": "Press",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Fire",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "ac199c2c-8a54-4f1c-a128-229302ba0c12",
+                    "path": "<Keyboard>/leftCtrl",
+                    "interactions": "Press",
                     "processors": "",
                     "groups": "",
                     "action": "Fire",
