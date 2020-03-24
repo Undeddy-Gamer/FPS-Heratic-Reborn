@@ -5402,10 +5402,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 0
-  walkSpeed: 5
-  runSpeed: 10
-  crouchSpeed: 3
-  jumpSpeed: 7
+  walkSpeed: 2.3
+  runSpeed: 7
+  crouchSpeed: 1
+  jumpSpeed: 6
   anim: {fileID: 1946291441}
 --- !u!143 &1320542201
 CharacterController:
@@ -5885,7 +5885,7 @@ PrefabInstance:
     - target: {fileID: -4216859302048453862, guid: cb458464c2f5a084cb990ef5c1186b96,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.9
+      value: -0.96
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: cb458464c2f5a084cb990ef5c1186b96,
         type: 3}
