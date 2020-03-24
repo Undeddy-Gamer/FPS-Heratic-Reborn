@@ -1,6 +1,5 @@
 ﻿
 using UnityEngine;
-using UnityEngine.InputSystem;
 
 public class Staff : MonoBehaviour
 {
@@ -20,11 +19,18 @@ public class Staff : MonoBehaviour
 
     private float canFire = 0f;
 
-    public void Shoot(InputAction.CallbackContext callback)
+
+    private void Update()
     {
-        if (Time.deltaTime >= canFire)
+        if (Input.GetButton("Fire1") && Time.time >= canFire)
         {
-            canFire = Time.deltaTime + 1f / rateOfFire;
+            canFire = Time.time + 1f / rateOfFire;
+            Shoot();
+        }
+    }
+    public void Shoot()
+    {
+       
 
             fizz.Play();
             Debug.Log("Zap: " + canFire);
@@ -43,6 +49,6 @@ public class Staff : MonoBehaviour
                 GameObject impactTemp = Instantiate(impactFX, hit.point, Quaternion.LookRotation(hit.normal));
                 Destroy(impactTemp, 2f);
             }
-        }
+        
     }
 }

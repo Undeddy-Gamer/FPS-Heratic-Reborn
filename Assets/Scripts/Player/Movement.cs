@@ -1,7 +1,6 @@
 ﻿using UnityEngine;
-using UnityEngine.InputSystem;
 
-namespace RPG.Player
+namespace FPS.Player
 { 
     
     [RequireComponent(typeof(CharacterController))]
@@ -79,7 +78,7 @@ namespace RPG.Player
                     //calculate moement direction based off inputs
                     moveDir = transform.TransformDirection(new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical")) * moveSpeed);
 
-                    if(Input.GetButton("Jump"))
+                    if(Input.GetButtonDown("Jump"))
                     {
                         moveDir.y = jumpSpeed;
                         anim.SetTrigger("Jump");
