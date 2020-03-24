@@ -1,5 +1,4 @@
 ﻿using UnityEngine;
-using UnityEngine.InputSystem;
 
 namespace FPS.Player
 { 
@@ -16,11 +15,13 @@ namespace FPS.Player
         [Header("References")]
         public Animator anim; // player model animator
 
-        private float _gravity = 20;
-        //Struct (mutiple type array)
-
+        // the gravity 'force' to apply to y axis when the player is in the air (eg after jumping)
+        private float gravity = 20;
+        
+        // vector 3 move direction
         private Vector3 moveDir;
-        //Ref
+        
+        //Ref to character controller
         private CharacterController charC;
 
         private void Start()
@@ -30,20 +31,12 @@ namespace FPS.Player
 
 
         private void Update()
-        {
-            anim.SetBool("Walk", false);
-            anim.SetBool("Run", false);
-
+        {           
             Move();
         }
 
 
-        public void Fire(InputAction.CallbackContext context)
-        {
-            Debug.Log("Pew Pew");
-        }
-
-
+        
         private void Move()
         {
 
@@ -51,10 +44,11 @@ namespace FPS.Player
             //{ 
                 if(charC.isGrounded)
                 {
-                    //set speed
-                    
 
-                    if (Input.GetButton("Sprint"))
+                    //set speed and animation
+
+
+                    if (Input.GetButton("Sprint") && (Input.GetAxis("Horizontal") > 0f || Input.GetAxis("Vertical") > 0f))
                     {
                         moveSpeed = runSpeed;
                         anim.SetBool("Run", true);
@@ -62,17 +56,29 @@ namespace FPS.Player
                     else if (Input.GetButton("Crouch"))
                     {
                         moveSpeed = crouchSpeed;
+                        anim.SetBool("Crouch", true);
                     }
                     else if (Input.GetAxis("Horizontal") > 0f || Input.GetAxis("Vertical") > 0f)
                     {
                         moveSpeed = walkSpeed;
                         anim.SetBool("Walk", true);
                     }
+                    else if (Input.GetAxis("Horizontal") < 0f || Input.GetAxis("Vertical") < 0f)
+                    {
+                        moveSpeed = walkSpeed;
+                        anim.SetBool("WalkBack", true);
+                    }
+                    else
+                    {
+                        anim.SetBool("Walk", false);
+                        anim.SetBool("Run", false);
+                        anim.SetBool("Crouch", false);
+                    }
                 
                     //calculate moement direction based off inputs
                     moveDir = transform.TransformDirection(new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical")) * moveSpeed);
 
-                    if(Input.GetButton("Jump"))
+                    if(Input.GetButtonDown("Jump"))
                     {
                         moveDir.y = jumpSpeed;
                         anim.SetTrigger("Jump");
@@ -88,7 +94,7 @@ namespace FPS.Player
 
             //Regardless if we are grounded
             //apply gravity
-            moveDir.y -= _gravity * Time.deltaTime;
+            moveDir.y -= gravity * Time.deltaTime;
             //apply movement
             charC.Move(moveDir * Time.deltaTime);
         }
