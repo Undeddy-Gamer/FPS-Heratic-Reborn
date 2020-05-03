@@ -23,31 +23,22 @@ public class PlayerHandler : MonoBehaviour
     public Slider healthBar;
     public Slider manaBar, staminaBar;
     public Text healthText;
+    public Text manaText;
     
 
-    [Header("Damage Effect Variables")]
-    public Image damageImage;
-    public Image deathImage;
-    public Text deathText;
-    public AudioClip deathClip;
-    public float flashSpeed = 5;
-    public Color flashColour = new Color(1, 0, 0, .2f);
-    AudioSource playerAudio;
+    [Header("Damage Effect Variables")] 
     static public bool isDead;
     bool damaged;
-    bool canHeal;
+    bool canHeal = false;
 
     [Header("Check Point")]
     public Transform curCheckPoint;
-
-    
-    //[Header("Save")]
-    //public PlayerPrefsSave saveAndLoad;
+        
 
     // Start is called before the first frame update
     void Start()
     {
-        playerAudio = GetComponent<AudioSource>();
+        //playerAudio = GetComponent<AudioSource>();
         //maxHealth = maxHealth * stats[2].statValue;
     }
 
@@ -66,11 +57,11 @@ public class PlayerHandler : MonoBehaviour
             manaBar.value = Mathf.Clamp01(curMana / maxMana);
         }
 
-        if (staminaBar.value != curStamina / maxStamina)
+        /* if (staminaBar.value != curStamina / maxStamina)
         {
             curStamina = Mathf.Clamp(curStamina, 0, maxStamina);
             staminaBar.value = Mathf.Clamp01(curStamina / maxStamina);
-        }
+        }*/
 
 
         //Player is Dead
@@ -79,39 +70,37 @@ public class PlayerHandler : MonoBehaviour
             Death();
         }
 
-        #if UNITY_EDITOR
 
-                //Test Damage
-                if (Input.GetKeyDown(KeyCode.X))
+
+#if UNITY_EDITOR
+        //function to test damage
+        //Test Damage
+        if (Input.GetKeyDown(KeyCode.X))
                 {
                     curHealth -= 5;
                     damaged = true;
                 }
         #endif
 
-        //Player is Damaged
-        if (damaged && !isDead)
-        {
-            damageImage.color = flashColour;
-            damaged = false;
-        }
-        else
-        {
-            damageImage.color = Color.Lerp(damageImage.color, Color.clear, flashSpeed * Time.deltaTime);
-        }
-
+       
         if (!canHeal && curHealth < maxHealth && curHealth > 0)
         {
             healTimer += Time.deltaTime;
-            if(healTimer >= 7)
+            if(healTimer >= 7)      
             {
                 canHeal = true;
             }
         }
 
+        
+        // Set the 
         healthText.text = System.Math.Round(curHealth) + " / " + maxHealth;
+        manaText.text = System.Math.Round(curMana) + " / " + maxMana;
     }
 
+    /// <summary>
+    /// 
+    /// </summary>
     private void LateUpdate()
     {
         if (curHealth < maxHealth && curHealth > 0 && canHeal)
@@ -121,30 +110,20 @@ public class PlayerHandler : MonoBehaviour
     }
 
 
-
+    /// <summary>
+    /// 
+    /// </summary>
     void Death()
     {
         // set the death flag to this funciton int's called again
-        isDead = true;
-
-        //Set the AudioSource to play the death clip
-        playerAudio.clip = deathClip;
-        playerAudio.Play();
-
-        deathImage.gameObject.GetComponent<Animator>().SetTrigger("Dead");
-
-        deathText.text = "You died, you suck!";
-        Invoke("ChangeText", 6f);
-        Invoke("Revive", 9f);
+        isDead = true;        
+        
     }
 
 
-    void ChangeText()
-    {
-        deathText.text = "Fine... you can have another go";
-    }
-
-
+   /// <summary>
+   /// 
+   /// </summary>
     void Revive()
     {
         isDead = false;
@@ -155,13 +134,15 @@ public class PlayerHandler : MonoBehaviour
         //move and rotate spawn location
         this.transform.position = curCheckPoint.position;
         this.transform.rotation = curCheckPoint.rotation;
-        deathImage.gameObject.GetComponent<Animator>().SetTrigger("Alive");
-        deathText.text = "";
+       
 
     }
 
     
-
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="damage"></param>
     public void DamagePlayer(float damage)
     {
         damaged = true;
@@ -171,7 +152,9 @@ public class PlayerHandler : MonoBehaviour
         //Invoke("Healable", 10f);
     }
 
-
+    /// <summary>
+    /// 
+    /// </summary>
     public void HealOverTime()
     {
         //curHealth += Time.deltaTime * (healRate + stats[2].statValue);
@@ -180,24 +163,4 @@ public class PlayerHandler : MonoBehaviour
    
 
 
-    private void OnTriggerEnter(Collider other)
-    {
-        if (other.gameObject.CompareTag("Checkpoint"))
-        {
-            curCheckPoint = other.transform;
-            //saveAndLoad.Save();
-
-            healRate = healRate * 5;            
-        }
-
-    }
-
-
-    private void OnTriggerExit(Collider other)
-    {
-        if (other.gameObject.CompareTag("Checkpoint"))
-        {
-            healRate = 0;
-        }
-    }
 }

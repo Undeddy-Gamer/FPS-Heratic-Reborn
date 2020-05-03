@@ -1,0 +1,142 @@
+\hypertarget{class_f_p_s_1_1_player_1_1_movement}{}\doxysection{F\+P\+S.\+Player.\+Movement Class Reference}
+\label{class_f_p_s_1_1_player_1_1_movement}\index{FPS.Player.Movement@{FPS.Player.Movement}}
+Inheritance diagram for F\+P\+S.\+Player.\+Movement\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_f_p_s_1_1_player_1_1_movement}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_f_p_s_1_1_player_1_1_movement_adec403330da7c7de328ab41c8198df8f}{Move\+V2}} (float horizontal\+Axis, float vertical\+Axis)
+\begin{DoxyCompactList}\small\item\em Apply movement to the character \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+float \mbox{\hyperlink{class_f_p_s_1_1_player_1_1_movement_a46f1f89889d7354ac34eadc8bce7c300}{move\+Speed}}
+\item 
+float \mbox{\hyperlink{class_f_p_s_1_1_player_1_1_movement_a6881a6c577b21a6f5a42c945a7cf5b1d}{walk\+Speed}}
+\item 
+Animator \mbox{\hyperlink{class_f_p_s_1_1_player_1_1_movement_a1bfb59d65b105427691b9d4f7dc9b7c3}{anim}}
+\item 
+Vector3 \mbox{\hyperlink{class_f_p_s_1_1_player_1_1_movement_a958a1a6cfde2cebc9560bfb4deaf119a}{move\+Dir}}
+\item 
+float \mbox{\hyperlink{class_f_p_s_1_1_player_1_1_movement_ae41948440b11d8dfb98eeff9f3dc0a8f}{horiz}}
+\item 
+float \mbox{\hyperlink{class_f_p_s_1_1_player_1_1_movement_a3b1bcd04e1ce519d3b9d4679fdcb3187}{vert}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line 8 of file Movement.\+cs.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_f_p_s_1_1_player_1_1_movement_adec403330da7c7de328ab41c8198df8f}\label{class_f_p_s_1_1_player_1_1_movement_adec403330da7c7de328ab41c8198df8f}} 
+\index{FPS.Player.Movement@{FPS.Player.Movement}!MoveV2@{MoveV2}}
+\index{MoveV2@{MoveV2}!FPS.Player.Movement@{FPS.Player.Movement}}
+\doxysubsubsection{\texorpdfstring{MoveV2()}{MoveV2()}}
+{\footnotesize\ttfamily void F\+P\+S.\+Player.\+Movement.\+Move\+V2 (\begin{DoxyParamCaption}\item[{float}]{horizontal\+Axis,  }\item[{float}]{vertical\+Axis }\end{DoxyParamCaption})}
+
+
+
+Apply movement to the character 
+
+
+\begin{DoxyParams}{Parameters}
+{\em horizontal\+Axis} & Amount to move forward\\
+\hline
+{\em vertical\+Axis} & Amount to move left/right (positive to move right, negative to move left)\\
+\hline
+\end{DoxyParams}
+
+
+Jump is also applied within the function
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\mbox{\hyperlink{namespace_f_p_s}{FPS}}.\mbox{\hyperlink{namespace_f_p_s_1_1_player}{Player}}.Move(1,-\/1);}
+\end{DoxyCode}
+ 
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em System.\+Overflow\+Exception} & Throws an overflow error\\
+\hline
+\end{DoxyExceptions}
+See Move() for same function which gets axis within function" 
+
+Definition at line 62 of file Movement.\+cs.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_f_p_s_1_1_player_1_1_movement_a1bfb59d65b105427691b9d4f7dc9b7c3}\label{class_f_p_s_1_1_player_1_1_movement_a1bfb59d65b105427691b9d4f7dc9b7c3}} 
+\index{FPS.Player.Movement@{FPS.Player.Movement}!anim@{anim}}
+\index{anim@{anim}!FPS.Player.Movement@{FPS.Player.Movement}}
+\doxysubsubsection{\texorpdfstring{anim}{anim}}
+{\footnotesize\ttfamily Animator F\+P\+S.\+Player.\+Movement.\+anim}
+
+
+
+Definition at line 16 of file Movement.\+cs.
+
+\mbox{\Hypertarget{class_f_p_s_1_1_player_1_1_movement_ae41948440b11d8dfb98eeff9f3dc0a8f}\label{class_f_p_s_1_1_player_1_1_movement_ae41948440b11d8dfb98eeff9f3dc0a8f}} 
+\index{FPS.Player.Movement@{FPS.Player.Movement}!horiz@{horiz}}
+\index{horiz@{horiz}!FPS.Player.Movement@{FPS.Player.Movement}}
+\doxysubsubsection{\texorpdfstring{horiz}{horiz}}
+{\footnotesize\ttfamily float F\+P\+S.\+Player.\+Movement.\+horiz}
+
+
+
+Definition at line 27 of file Movement.\+cs.
+
+\mbox{\Hypertarget{class_f_p_s_1_1_player_1_1_movement_a958a1a6cfde2cebc9560bfb4deaf119a}\label{class_f_p_s_1_1_player_1_1_movement_a958a1a6cfde2cebc9560bfb4deaf119a}} 
+\index{FPS.Player.Movement@{FPS.Player.Movement}!moveDir@{moveDir}}
+\index{moveDir@{moveDir}!FPS.Player.Movement@{FPS.Player.Movement}}
+\doxysubsubsection{\texorpdfstring{moveDir}{moveDir}}
+{\footnotesize\ttfamily Vector3 F\+P\+S.\+Player.\+Movement.\+move\+Dir}
+
+
+
+Definition at line 22 of file Movement.\+cs.
+
+\mbox{\Hypertarget{class_f_p_s_1_1_player_1_1_movement_a46f1f89889d7354ac34eadc8bce7c300}\label{class_f_p_s_1_1_player_1_1_movement_a46f1f89889d7354ac34eadc8bce7c300}} 
+\index{FPS.Player.Movement@{FPS.Player.Movement}!moveSpeed@{moveSpeed}}
+\index{moveSpeed@{moveSpeed}!FPS.Player.Movement@{FPS.Player.Movement}}
+\doxysubsubsection{\texorpdfstring{moveSpeed}{moveSpeed}}
+{\footnotesize\ttfamily float F\+P\+S.\+Player.\+Movement.\+move\+Speed}
+
+
+
+Definition at line 12 of file Movement.\+cs.
+
+\mbox{\Hypertarget{class_f_p_s_1_1_player_1_1_movement_a3b1bcd04e1ce519d3b9d4679fdcb3187}\label{class_f_p_s_1_1_player_1_1_movement_a3b1bcd04e1ce519d3b9d4679fdcb3187}} 
+\index{FPS.Player.Movement@{FPS.Player.Movement}!vert@{vert}}
+\index{vert@{vert}!FPS.Player.Movement@{FPS.Player.Movement}}
+\doxysubsubsection{\texorpdfstring{vert}{vert}}
+{\footnotesize\ttfamily float F\+P\+S.\+Player.\+Movement.\+vert}
+
+
+
+Definition at line 28 of file Movement.\+cs.
+
+\mbox{\Hypertarget{class_f_p_s_1_1_player_1_1_movement_a6881a6c577b21a6f5a42c945a7cf5b1d}\label{class_f_p_s_1_1_player_1_1_movement_a6881a6c577b21a6f5a42c945a7cf5b1d}} 
+\index{FPS.Player.Movement@{FPS.Player.Movement}!walkSpeed@{walkSpeed}}
+\index{walkSpeed@{walkSpeed}!FPS.Player.Movement@{FPS.Player.Movement}}
+\doxysubsubsection{\texorpdfstring{walkSpeed}{walkSpeed}}
+{\footnotesize\ttfamily float F\+P\+S.\+Player.\+Movement.\+walk\+Speed}
+
+
+
+Definition at line 13 of file Movement.\+cs.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Git\+Hub/\+F\+P\+S-\/\+Heratic-\/\+Reborn/\+Assets/\+Scripts/\+Player/\mbox{\hyperlink{_movement_8cs}{Movement.\+cs}}\end{DoxyCompactItemize}
