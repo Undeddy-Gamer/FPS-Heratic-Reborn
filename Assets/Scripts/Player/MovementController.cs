@@ -8,8 +8,8 @@ public class MovementController : MonoBehaviour
 {
 
     [Header("Speed Variables")]
-    public float moveSpeed;
-    public float walkSpeed, runSpeed, crouchSpeed, jumpStrength;
+    public float moveSpeed = 5;
+    public float walkSpeed = 5, runSpeed = 8, crouchSpeed = 3, jumpStrength = 200;
 
     [Header("References")]
     public Animator anim; // player model animator
@@ -46,8 +46,8 @@ public class MovementController : MonoBehaviour
 
     private void FixedUpdate()
     {
-        //Move();
-        MoveV2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));
+      
+        MoveV2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"), Input.GetButtonDown("Jump"));
     }
 
     private bool IsGrounded()
@@ -89,13 +89,14 @@ public class MovementController : MonoBehaviour
     /// </example>
     /// <exception cref="System.OverflowException">Throws an overflow error</exception>    
 
-    public void MoveV2(float horizontalAxis, float verticalAxis)
+    public void MoveV2(float xAxis, float zAxis, bool jump)
     {
-
-        try
-        {
-            float forward = verticalAxis;
-            float sideways = horizontalAxis;
+        playerRigid = GetComponent<Rigidbody>();
+        playerCollider = GetComponent<CapsuleCollider>();
+        //try
+        //{
+            float forward = zAxis;
+            float sideways = xAxis;
 
             if (forward > 1 || forward < -1)
                 throw new System.OverflowException("Forward axis is beoynd its bounds (-1,1)");
@@ -129,7 +130,7 @@ public class MovementController : MonoBehaviour
                 }
 
                 //calculate moement direction based off inputs
-                moveDir = transform.TransformDirection(new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical")) * moveSpeed);
+                moveDir = transform.TransformDirection(new Vector3(xAxis, 0, zAxis) * moveSpeed);
 
                 //apply movement
                 playerRigid.MovePosition(transform.position + (moveDir * Time.fixedDeltaTime));
@@ -146,28 +147,22 @@ public class MovementController : MonoBehaviour
 
 
                 // apply jump
-                if (Input.GetButtonDown("Jump") && IsGrounded())
+                if (jump && IsGrounded())
                 {
                     playerRigid.AddForce(new Vector3(0, jumpStrength, 0));
                     anim.SetTrigger("Jump");
                 }
-
-
-
             }
             else // player is dead
             {
                 moveDir = Vector3.zero;
             }
-
-            
-           
-        }
-        catch (UnityException e)
-        {
-            Debug.Log("UNITY ERROR\n" + e);
-            // Handle error
-        }
+        //}
+        //catch (UnityException e)
+        //{
+        //    Debug.Log("UNITY ERROR\n" + e);
+        //    // Handle error
+        //}
     }
 
 }

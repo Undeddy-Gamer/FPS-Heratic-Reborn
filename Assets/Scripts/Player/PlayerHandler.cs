@@ -8,9 +8,9 @@ using UnityEngine.UI;
 public class PlayerHandler : MonoBehaviour
 {
     [Header("Value Variables")]
-    public float curHealth;
-    public float curMana, curStamina;
-    public float maxHealth, maxMana, maxStamina, healRate;
+    public float curHealth = 100;
+    public float curMana = 30, curStamina = 100;
+    public float maxHealth = 100, maxMana =  30, maxStamina = 100, healRate = 0.1f;
 
 
     private float prevHealth, prevMana, prevStamina;
@@ -45,16 +45,22 @@ public class PlayerHandler : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(healthBar.value != curHealth/maxHealth)
-        {
-            curHealth = Mathf.Clamp(curHealth, 0, maxHealth);
-            healthBar.value = Mathf.Clamp01(curHealth / maxHealth);
+        if (healthBar != null)
+        { 
+            if(healthBar.value != curHealth / maxHealth)
+            {
+                curHealth = Mathf.Clamp(curHealth, 0, maxHealth);
+                healthBar.value = Mathf.Clamp01(curHealth / maxHealth);
+            }
         }
 
-        if (manaBar.value != curMana / maxMana)
-        {
-            curMana = Mathf.Clamp(curMana, 0, maxMana);
-            manaBar.value = Mathf.Clamp01(curMana / maxMana);
+        if(manaBar != null)
+        { 
+            if (manaBar.value != curMana / maxMana)
+            {
+                curMana = Mathf.Clamp(curMana, 0, maxMana);
+                manaBar.value = Mathf.Clamp01(curMana / maxMana);
+            }
         }
 
         /* if (staminaBar.value != curStamina / maxStamina)
@@ -92,10 +98,13 @@ public class PlayerHandler : MonoBehaviour
             }
         }
 
-        
+
         // Set the 
-        healthText.text = System.Math.Round(curHealth) + " / " + maxHealth;
-        manaText.text = System.Math.Round(curMana) + " / " + maxMana;
+        if (healthText != null && manaText != null)
+        {
+            healthText.text = System.Math.Round(curHealth) + " / " + maxHealth;
+            manaText.text = System.Math.Round(curMana) + " / " + maxMana;
+        }
     }
 
     /// <summary>

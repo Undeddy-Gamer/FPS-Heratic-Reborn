@@ -23,6 +23,9 @@ public class GameManager : MonoBehaviour
         
     }
     #endregion
+
+    
+
     //Restarts current Level
     public void Restart()
     {
