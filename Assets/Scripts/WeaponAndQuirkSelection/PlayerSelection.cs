@@ -7,7 +7,7 @@ public class PlayerSelection : MonoBehaviour
     
     public SoQuirk selectedQuirk;
     public SoWeapon selectedWeapon;
-
+    
     void Awake()
     {
         DontDestroyOnLoad(this.gameObject);

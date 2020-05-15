@@ -1858,11 +1858,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 4962485386234175034}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3b254b839c38c74498b2d7757c36ff8d, type: 3}
+  m_Script: {fileID: 11500000, guid: 66ee9bd3c10d31546ab95bae99f43c15, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   axis: 0
-  sensitivity: 60
+  sensitivity: 68.7
   minY: -60
   maxY: 60
 --- !u!136 &4962485387090511834
@@ -6923,11 +6923,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 4962485387656359102}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3b254b839c38c74498b2d7757c36ff8d, type: 3}
+  m_Script: {fileID: 11500000, guid: 66ee9bd3c10d31546ab95bae99f43c15, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   axis: 1
-  sensitivity: 80
+  sensitivity: 40
   minY: -60
   maxY: 60
 --- !u!1 &4962485387785627828

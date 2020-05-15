@@ -17586,6 +17586,51 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 742418147752312961, guid: 679241ba7822eea4cb20087f7e2a17cf,
+        type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 742418147752312961, guid: 679241ba7822eea4cb20087f7e2a17cf,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 742418147752312961, guid: 679241ba7822eea4cb20087f7e2a17cf,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 864973374286257948, guid: 679241ba7822eea4cb20087f7e2a17cf,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ToggleMenu
+      objectReference: {fileID: 0}
+    - target: {fileID: 3846027548108352590, guid: 679241ba7822eea4cb20087f7e2a17cf,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3846027548108352590, guid: 679241ba7822eea4cb20087f7e2a17cf,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5096053004727346445, guid: 679241ba7822eea4cb20087f7e2a17cf,
+        type: 3}
+      propertyPath: gm
+      value: 
+      objectReference: {fileID: 611808600}
+    - target: {fileID: 6180673747251826549, guid: 679241ba7822eea4cb20087f7e2a17cf,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6418009859842123857, guid: 679241ba7822eea4cb20087f7e2a17cf,
+        type: 3}
+      propertyPath: m_Name
+      value: ReturnToGame
+      objectReference: {fileID: 0}
     - target: {fileID: 7848190443748413643, guid: 679241ba7822eea4cb20087f7e2a17cf,
         type: 3}
       propertyPath: m_AnchorMax.x
