@@ -5,6 +5,10 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes: []
+<<<<<<< Updated upstream
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: 8909e75df78a4a44ea7eea6706add657,
       type: 2}
+=======
+  m_configObjects: {}
+>>>>>>> Stashed changes
