@@ -23,6 +23,8 @@ public class Staff : MonoBehaviour
     public PlayerHandler player;
 
     [SerializeField]
+    private ParticleSystem weaponFire;
+    [SerializeField]
     private GameObject projectilePrefab;
     [SerializeField]
     public GameObject shootPosition;
@@ -51,7 +53,7 @@ public class Staff : MonoBehaviour
 
         if (player.curMana >= manaShotCost)
         { 
-            //weaponFire.Play();
+            weaponFire.Play();
             Debug.Log("Zap: " + canFire);
             
 
