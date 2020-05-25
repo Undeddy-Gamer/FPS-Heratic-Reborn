@@ -65,7 +65,7 @@ public class Staff : MonoBehaviour
             {
                 GameObject projectile = Instantiate(projectilePrefab, shootPosition.transform.position, shootPosition.transform.rotation) as GameObject;
                 projectile.GetComponent<Rigidbody>().AddForce(shootPosition.transform.forward * (projectileSpeed * 50));
-                
+                projectile.GetComponent<BallProjectile>().damage = damage;
 
                 StartCoroutine(RemoveProjectile(projectile, range / 10f));
             }

@@ -29,7 +29,7 @@ public class CaptureZone : MonoBehaviour
 
             if (player.isHoldingFlag())
             {
-                gameModeCTF.AddScore(teamID, 1);
+                gameModeCTF.AddScore(player.teamID, 1);
                 player.ReturnWeapon(1);
             }
         }
