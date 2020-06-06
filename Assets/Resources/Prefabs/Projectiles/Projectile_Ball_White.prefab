@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 6285169807472417245}
   - component: {fileID: 5547843638543990738}
   m_Layer: 0
-  m_Name: Whiteball
+  m_Name: Projectile_Ball_White
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -77,7 +77,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 5
-  impactFX: {fileID: 3481567257605373589, guid: 5e340c7f2b3382749b2253a21ad3dda2,
+  impactFX: {fileID: 3481567257605373589, guid: e46ce9aaade15334cb60aaea0baf4429,
     type: 3}
 --- !u!1 &348656034060273295
 GameObject:

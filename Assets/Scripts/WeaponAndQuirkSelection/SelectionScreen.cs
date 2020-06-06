@@ -6,11 +6,8 @@ public class SelectionScreen : MonoBehaviour
 {
     // List of avalable quirks of type scriptable object
     [SerializeField] 
-    private SoQuirk[] availableQuirks;
-    // List of avalable weapons of type scriptable object
-    [SerializeField]
-    public SoWeapon[] availableWeapons;
-
+    private SoQuirk[] availableQuirks;    
+    
     public GameObject quirkPanelPrefab;
     public GameObject quirksHolder;
 
@@ -20,7 +17,10 @@ public class SelectionScreen : MonoBehaviour
     {
         SetupPanelSelection();
     }
-    
+
+    /// <summary>
+    /// Add the Quirk panels from the sttached prefab to the quirk panel selection holder
+    /// </summary>
     public void SetupPanelSelection()
     {
         GameObject tempQuirkPanel;

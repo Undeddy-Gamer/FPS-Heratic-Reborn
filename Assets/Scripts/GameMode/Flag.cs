@@ -25,19 +25,24 @@ public class Flag : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         //Debug.Log("Flag Perimiter Entered");
+        PickupFlag(other);
+    }
+
+    private void PickupFlag(Collider other)
+    {
         Player player = other.GetComponent<Player>();
 
         if (player != null)
-        { 
+        {
             if (player.teamID == teamID)
             {
                 return;
             }
-            
+
             player.PickupWeapon(gameObject, originalLocation, teamID, 1);
 
             gameObject.SetActive(false);
-            
+
         }
     }
 }

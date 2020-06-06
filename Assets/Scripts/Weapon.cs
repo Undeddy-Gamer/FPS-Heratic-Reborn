@@ -13,9 +13,19 @@ public class Weapon : MonoBehaviour
     public GameObject worldWeaponObject;
     public Vector3 originalLocation;
 
+    /// <summary>
+    /// Setup Weapon 'in game' object, also set it original position if it requires to be be respawned
+    /// </summary>
+    /// <param name="teamID">the id of the team the weapon belowngs to in case of flag or objective object</param>
+    /// <param name="worldGameObject">the game object that will be shown in the world</param>
+    /// <param name="originalLocation">set the original position of the weapon game object for it to return/respawn to once used or lost</param>
+    /// <example>
+    /// <code>
+    ///     SetWeaponGameObject(0, flagWorldObject, flagWorldObject.originalPosition);
+    /// </code>
+    /// </example>    
     public void SetWeaponGameObject(int teamID, GameObject worldGameObject, Vector3 originalLocation)
     {
-
         this.teamID = teamID;
 
         if(worldGameObject != null)
@@ -25,7 +35,16 @@ public class Weapon : MonoBehaviour
         this.originalLocation = originalLocation;
     }
 
-
+    /// <summary>
+    /// Drops the currently equipped weapon at the position specified in drop location (if able to do so), also adds player movement momentem to the item when dropped
+    /// </summary>
+    /// <param name="player">the rigid body of the player object, used to apply extra momentem on the wepon object to be dropped</param>
+    /// <param name="droplocation">the position as a vector3 to drop the weapon object</param>
+    /// <example>    
+    /// <code>
+    ///     DropWeapon(playerRigidBody, );
+    /// </code>
+    /// </example>
     public void DropWeapon(Rigidbody player, Vector3 droplocation)
     {
         float distanceToDrop = Vector3.Distance(Camera.main.transform.position, droplocation);

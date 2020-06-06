@@ -27,7 +27,7 @@ public class Staff : MonoBehaviour
     [SerializeField]
     private GameObject projectilePrefab;
     [SerializeField]
-    public GameObject shootPosition;
+    private GameObject shootPosition;
 
 
     private float canFire = 0f;

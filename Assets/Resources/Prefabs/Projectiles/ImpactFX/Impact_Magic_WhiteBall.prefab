@@ -4822,7 +4822,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3481567257605373588}
   m_Layer: 0
-  m_Name: Impact_Magic_FireBall
+  m_Name: Impact_Magic_WhiteBall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5819,7 +5819,7 @@ ParticleSystem:
         serializedVersion: 2
         minMaxState: 3
         scalar: 150
-        minScalar: 60
+        minScalar: 40
         maxCurve:
           serializedVersion: 2
           m_Curve:
@@ -6204,8 +6204,8 @@ ParticleSystem:
       maxColor: {r: 1, g: 1, b: 1, a: 1}
       maxGradient:
         serializedVersion: 2
-        key0: {r: 1, g: 0.69083834, b: 0.2783019, a: 1}
-        key1: {r: 1, g: 0.93838096, b: 0.75, a: 1}
+        key0: {r: 0.69882524, g: 0.82156736, b: 0.9811321, a: 1}
+        key1: {r: 1, g: 1, b: 1, a: 1}
         key2: {r: 0, g: 0, b: 0, a: 1}
         key3: {r: 0, g: 0, b: 0, a: 1}
         key4: {r: 0, g: 0, b: 0, a: 0}

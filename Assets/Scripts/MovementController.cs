@@ -74,7 +74,7 @@ public class MovementController : MonoBehaviour
 
 
     /// <summary>
-    /// Apply movement to the player character
+    /// Apply movement and speed to the player character dependent on movement type modifier (applied by input crouch, jump, run, default is walk)
     /// </summary>
     /// <param name="horizontalAxis">Amount to move forward</param>
     /// <param name="verticalAxis">Amount to move left/right (positive to move right, negative to move left)</param>
@@ -104,7 +104,7 @@ public class MovementController : MonoBehaviour
 
             if (!PlayerHandler.isDead)  // If play is not dead allow directional movement
             {
-                //set speed and animation
+                //set speed and animation dependent on movement type
                 if (Input.GetButton("Sprint") && (Input.GetAxis("Horizontal") > 0f || Input.GetAxis("Vertical") > 0f))
                 {
                     moveSpeed = runSpeed;
@@ -158,8 +158,8 @@ public class MovementController : MonoBehaviour
         }
         catch (UnityException e)
         {
-            Debug.Log("UNITY ERROR\n" + e);
             // Handle error
+            Debug.Log("UNITY ERROR\n" + e);            
         }
     }
 
