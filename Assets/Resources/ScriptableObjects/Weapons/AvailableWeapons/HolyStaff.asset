@@ -10,8 +10,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9ed2a05cc84c3e640bd773b7dca9be01, type: 3}
-  m_Name: Energy Staff
+  m_Name: HolyStaff
   m_EditorClassIdentifier: 
-  weaponName: Energy Staff
-  description: Slowshooting, high damage staff weapon
-  weaponPrefab: {fileID: 0}
+  weaponName: Holy Staff
+  weaponDescription: 
+  weaponIcon: {fileID: 0}
+  weaponPrefab: {fileID: 4633231185412111788, guid: 50e437c86a20b8a4383b02132c83f381,
+    type: 3}
+  weaponDamage: 0
+  weaponRange: 0
+  weaponFireRate: 0
+  weaponMaxUnchangedAmmo: 0
+  weaponReloadTime: 0

@@ -1,10 +1,14 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Mirror;
 
 [RequireComponent(typeof(Rigidbody))]
-public class Player : MonoBehaviour
-{ 
+public class Player : NetworkBehaviour
+{
+
+    
+
     // GameModeCTF gameModeCTF;
 
     // fix all of this up and add to     
@@ -22,7 +26,7 @@ public class Player : MonoBehaviour
     public float forwardDropOffset = 4;
     public float upDropOffset = 1;
 
-    
+
 
     private void Start()
     {
@@ -41,7 +45,7 @@ public class Player : MonoBehaviour
         {
             DropWeapon(currentWeapon);
         }
-
+        
     }
 
 

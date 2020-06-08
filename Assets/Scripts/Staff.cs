@@ -1,7 +1,8 @@
 ﻿using System.Collections;
 using UnityEngine;
+using Mirror;
 
-public class Staff : MonoBehaviour
+public class Staff : NetworkBehaviour
 {
     public float damage = 10f;
     public float range = 100f;
@@ -35,10 +36,15 @@ public class Staff : MonoBehaviour
 
     private void Update()
     {
+
+        if (!isLocalPlayer)
+            return;
+
+
         if (Input.GetButton("Fire1") && Time.time >= canFire)
         {
             canFire = Time.time + 1f / rateOfFire;
-            Shoot();
+            CmdShoot();
         }
 
         //Reload Weapon
@@ -48,9 +54,11 @@ public class Staff : MonoBehaviour
             weaponAnimator.Play("StaffReload",-1,0f);
         }
     }
-    public void Shoot()
-    {
 
+    
+    [Command]
+    public void CmdShoot()
+    {
         if (player.curMana >= manaShotCost)
         { 
             weaponFire.Play();
@@ -67,7 +75,8 @@ public class Staff : MonoBehaviour
                 projectile.GetComponent<Rigidbody>().AddForce(shootPosition.transform.forward * (projectileSpeed * 50));
                 projectile.GetComponent<BallProjectile>().damage = damage;
 
-                StartCoroutine(RemoveProjectile(projectile, range / 10f));
+                NetworkServer.Spawn(projectile);
+                //StartCoroutine(RemoveProjectile(projectile, range / 10f));
             }
             else
             {
@@ -101,13 +110,13 @@ public class Staff : MonoBehaviour
 
     }
 
-    IEnumerator RemoveProjectile(GameObject projectile, float delayTime)
+    /*IEnumerator RemoveProjectile(GameObject projectile, float delayTime)
     {
         //wait for a few seconds before we destroy the arrow prefab
         yield return new WaitForSeconds(delayTime);
         //destroy bullet so we don't build up too many instances of the bullet
         Destroy(projectile);
-    }
+    }*/
 
     public void Reload()
     {

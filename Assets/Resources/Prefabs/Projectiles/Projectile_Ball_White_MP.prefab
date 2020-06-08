@@ -11,11 +11,10 @@ GameObject:
   - component: {fileID: 348656033679236652}
   - component: {fileID: 8252856247076623299}
   - component: {fileID: 6285169807472417245}
-  - component: {fileID: 5547843638543990738}
+  - component: {fileID: 3240205219532858469}
   - component: {fileID: 3624840846259903671}
-  - component: {fileID: 8177808081817112902}
   m_Layer: 0
-  m_Name: Projectile_Ball_White
+  m_Name: Projectile_Ball_White 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -66,7 +65,7 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.1
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &5547843638543990738
+--- !u!114 &3240205219532858469
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -75,12 +74,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 348656033679236653}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1095a025f48576642bb684755c701f3e, type: 3}
+  m_Script: {fileID: 11500000, guid: b03eb3efa0b142842a41767da109e177, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  syncMode: 0
+  syncInterval: 0.1
   damage: 5
   impactFX: {fileID: 3481567257605373589, guid: e46ce9aaade15334cb60aaea0baf4429,
     type: 3}
+  destroyAfter: 10
 --- !u!114 &3624840846259903671
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -97,24 +99,6 @@ MonoBehaviour:
   serverOnly: 0
   m_AssetId: 
   hasSpawned: 0
---- !u!114 &8177808081817112902
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 348656033679236653}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2f74aedd71d9a4f55b3ce499326d45fb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  syncMode: 0
-  syncInterval: 0.1
-  clientAuthority: 1
-  localPositionSensitivity: 0.01
-  localRotationSensitivity: 0.01
-  localScaleSensitivity: 0.01
 --- !u!1 &348656034060273295
 GameObject:
   m_ObjectHideFlags: 0
@@ -4898,7 +4882,7 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.2, y: 0.2, z: 0.2}
   m_Children:
-  - {fileID: 769339311202257624}
+  - {fileID: 2489764588776634653}
   m_Father: {fileID: 348656033679236652}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -5033,7 +5017,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0066fcf791e77ce46b01c158ede95d72, type: 3}
---- !u!4 &769339311202257624 stripped
+--- !u!4 &2489764588776634653 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2891405195635648301, guid: 0066fcf791e77ce46b01c158ede95d72,
     type: 3}

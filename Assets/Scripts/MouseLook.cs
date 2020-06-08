@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
+using Mirror;
 
-
-public class MouseLook : MonoBehaviour
+public class MouseLook : NetworkBehaviour
 {
     // List of 'types' in this case mouse axis direction X/Y
     public enum RotationalAxis
@@ -45,8 +45,7 @@ public class MouseLook : MonoBehaviour
     }
 
     private void Update()
-    {
-        
+    {        
         RotateAxis();        
     }
 

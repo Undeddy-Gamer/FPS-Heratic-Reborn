@@ -1,11 +1,15 @@
 ﻿using UnityEngine;
-
+using Mirror;
 
 
 [RequireComponent(typeof(Rigidbody))]
 
-public class MovementController : MonoBehaviour
+public class MovementController : NetworkBehaviour
 {
+    [SerializeField] private GameObject playerCamera;
+    [SerializeField] private GameObject playerHUD;
+    [SerializeField] private GameObject PlayerModel;
+
 
     [Header("Speed Variables")]
     public float moveSpeed = 5;
@@ -34,45 +38,58 @@ public class MovementController : MonoBehaviour
 
     // weapon animator
     public Animator weaponAnimator;
-
-
-    private void Start()
+    [SerializeField]
+    public bool IsGrounded
     {
+        get
+        {
+            float DisstanceToTheGround = GetComponent<Collider>().bounds.extents.y;
+            RaycastHit hit;
+            if (Physics.Raycast(transform.position, Vector3.down, out hit, DisstanceToTheGround + 0.1f))
+            {
+                if (hit.transform.tag == "Ground")
+                {
+                    return true;
+                }
+            }
+
+            return false;
+        }
+    }
+
+    public override void OnStartAuthority()
+    {
+        //Activate controls for the player
+        enabled = true;
+        playerCamera.SetActive(true);
+        playerHUD.SetActive(true);
+        PlayerModel.SetActive(false);
+
+        if (GetComponent<MouseLook>() != null)
+        {
+            GetComponent<MouseLook>().enabled = true;
+        }
+        else Debug.LogError("Mouselook script not attached to player object");
+
+        
+        if (GetComponent<PlayerHandler>() != null)
+        {
+            GetComponent<PlayerHandler>().enabled = true;
+        }
+        else Debug.LogError("Player Handler script not attached to player object");
         playerRigid = GetComponent<Rigidbody>();
         playerCollider = GetComponent<CapsuleCollider>();
     }
 
 
-    private void FixedUpdate()
+    
+    private void Update()
     {
       
         MoveV2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"), Input.GetButtonDown("Jump"));
     }
 
-    private bool IsGrounded()
-    {
-
-        //CHANGE TO Capsule/RAYCAST CHECK        
-
-        //Bounds colliderBounds = new Bounds(playerCollider.bounds.center, new Vector3(playerCollider.bounds.size.x, playerCollider.bounds.size.y + extraHeightCheck, playerCollider.bounds.size.z));
-        //Debug.Log(colliderBounds.size);
-        //Collider[] check = Physics.OverlapCapsule(playerCollider.bounds.center, colliderBounds.size, playerCollider.radius, groundLayerMask);
-
-        //foreach (Collider col in check)
-        //{
-        //    Debug.Log(col.name);
-        //}
-
-        //if (check.Length > 0)            
-        //    return true;        
-        //else
-        //    return false;
-
-        return true;
-    }
-
-
-
+   
     /// <summary>
     /// Apply movement and speed to the player character dependent on movement type modifier (applied by input crouch, jump, run, default is walk)
     /// </summary>
@@ -145,7 +162,7 @@ public class MovementController : MonoBehaviour
 
 
                 // apply jump
-                if (jump && IsGrounded())
+                if (jump && IsGrounded)
                 {
                     playerRigid.AddForce(new Vector3(0, jumpStrength, 0));
                     anim.SetTrigger("Jump");

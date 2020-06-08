@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-[RequireComponent(typeof(AudioSource))]
+
 
 public class PlayerHandler : MonoBehaviour
 {
@@ -38,8 +38,7 @@ public class PlayerHandler : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        //playerAudio = GetComponent<AudioSource>();
-        //maxHealth = maxHealth * stats[2].statValue;
+        
     }
 
     // Update is called once per frame
