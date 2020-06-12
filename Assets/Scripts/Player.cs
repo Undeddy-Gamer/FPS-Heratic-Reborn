@@ -6,12 +6,9 @@ using Mirror;
 [RequireComponent(typeof(Rigidbody))]
 public class Player : NetworkBehaviour
 {
-
-    
-
     // GameModeCTF gameModeCTF;
 
-    // fix all of this up and add to     
+    // todo: fix all of this up and add to player handler script
 
     public List<Weapon> weapons;
 
@@ -46,6 +43,8 @@ public class Player : NetworkBehaviour
             DropWeapon(currentWeapon);
         }
         
+        //if(Input.GetMouseButton())
+
     }
 
 

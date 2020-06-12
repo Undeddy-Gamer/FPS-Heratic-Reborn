@@ -1,7 +1,8 @@
 ﻿using System.Collections;
 using UnityEngine;
+using Mirror;
 
-public class Staff : MonoBehaviour
+public class Staff_MP : NetworkBehaviour
 {
     public float damage = 10f;
     public float range = 100f;
@@ -32,9 +33,14 @@ public class Staff : MonoBehaviour
 
     private float canFire = 0f;
 
-
+    
     private void Update()
     {
+
+        if (!isLocalPlayer)
+            return;
+
+
         if (Input.GetButton("Fire1") && Time.time >= canFire)
         {
             canFire = Time.time + 1f / rateOfFire;
@@ -48,14 +54,15 @@ public class Staff : MonoBehaviour
             weaponAnimator.Play("StaffReload",-1,0f);
         }
     }
+
+    
+    
     public void Shoot()
     {
-
         if (player.curMana >= manaShotCost)
         { 
             weaponFire.Play();
-            Debug.Log("Zap: " + canFire);
-            
+            Debug.Log("Zap: " + canFire);            
 
             weaponAnimator.Play("Shoot", -1, 0f);
             player.curMana -= manaShotCost;
@@ -63,11 +70,8 @@ public class Staff : MonoBehaviour
 
             if (projectilePrefab != null)
             {
-                GameObject projectile = Instantiate(projectilePrefab, shootPosition.transform.position, shootPosition.transform.rotation) as GameObject;
-                projectile.GetComponent<Rigidbody>().AddForce(shootPosition.transform.forward * (projectileSpeed * 50));
-                projectile.GetComponent<BallProjectile>().damage = damage;
-
-                StartCoroutine(RemoveProjectile(projectile, range / 10f));
+                CmdFireProjectile();
+                //StartCoroutine(RemoveProjectile(projectile, range / 10f));
             }
             else
             {
@@ -101,13 +105,24 @@ public class Staff : MonoBehaviour
 
     }
 
-    IEnumerator RemoveProjectile(GameObject projectile, float delayTime)
+    [Command]
+    void CmdFireProjectile()
+    {
+        GameObject projectile = Instantiate(projectilePrefab, shootPosition.transform.position, shootPosition.transform.rotation) as GameObject;
+
+        projectile.GetComponent<Rigidbody>().AddForce(shootPosition.transform.forward * (projectileSpeed * 50));
+        projectile.GetComponent<BallProjectile>().damage = damage;
+
+        NetworkServer.Spawn(projectile);
+    }
+
+    /*IEnumerator RemoveProjectile(GameObject projectile, float delayTime)
     {
         //wait for a few seconds before we destroy the arrow prefab
         yield return new WaitForSeconds(delayTime);
         //destroy bullet so we don't build up too many instances of the bullet
         Destroy(projectile);
-    }
+    }*/
 
     public void Reload()
     {

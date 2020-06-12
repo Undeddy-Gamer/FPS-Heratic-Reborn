@@ -1662,7 +1662,7 @@ Transform:
   m_LocalPosition: {x: 0.217, y: 0, z: -0.047}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 7211743690954986307}
+  - {fileID: 648268817241175568}
   - {fileID: 4962485387656359099}
   - {fileID: 118499746005411387}
   m_Father: {fileID: 0}
@@ -1732,7 +1732,7 @@ MonoBehaviour:
   syncInterval: 0.1
   weapons:
   - {fileID: 326978168925955420}
-  - {fileID: 4962485387893755114}
+  - {fileID: 2995281036803795805}
   playersTeamID: 0
   forwardDropOffset: 2
   upDropOffset: 1
@@ -1755,11 +1755,11 @@ MonoBehaviour:
   maxMana: 30
   maxStamina: 100
   healRate: 0
-  healthBar: {fileID: 7211743690638917617}
-  manaBar: {fileID: 7211743690056571004}
+  healthBar: {fileID: 648268817241174303}
+  manaBar: {fileID: 648268817241174241}
   staminaBar: {fileID: 0}
-  healthText: {fileID: 7211743689529904370}
-  manaText: {fileID: 7211743689529904370}
+  healthText: {fileID: 648268817241174243}
+  manaText: {fileID: 648268817241174243}
   curCheckPoint: {fileID: 0}
 --- !u!114 &4962485387090511835
 MonoBehaviour:
@@ -1776,7 +1776,7 @@ MonoBehaviour:
   syncMode: 0
   syncInterval: 0.1
   playerCamera: {fileID: 4962485387656359102}
-  playerHUD: {fileID: 7211743690954986311}
+  playerHUD: {fileID: 648268817241170240}
   PlayerModel: {fileID: 4035127670730036264}
   moveSpeed: 3
   walkSpeed: 3
@@ -1851,7 +1851,7 @@ Transform:
   m_LocalPosition: {x: 0.475, y: -0.529, z: 0.463}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 4962485387893755118}
+  - {fileID: 2995281036803796524}
   - {fileID: 1163079153767136638}
   m_Father: {fileID: 4962485387656359099}
   m_RootOrder: 0
@@ -8385,13 +8385,13 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 679241ba7822eea4cb20087f7e2a17cf, type: 3}
---- !u!1 &7211743690954986311 stripped
+--- !u!1 &648268817241170240 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7848190443930402471, guid: 679241ba7822eea4cb20087f7e2a17cf,
     type: 3}
   m_PrefabInstance: {fileID: 648268817241173472}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &7211743690638917617 stripped
+--- !u!114 &648268817241174303 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 7848190444150002193, guid: 679241ba7822eea4cb20087f7e2a17cf,
     type: 3}
@@ -8403,7 +8403,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 67db9e8f0e2ae9c40bc1e2b64352a6b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &7211743689529904370 stripped
+--- !u!114 &648268817241174243 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 7848190445254811922, guid: 679241ba7822eea4cb20087f7e2a17cf,
     type: 3}
@@ -8415,7 +8415,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &7211743690056571004 stripped
+--- !u!114 &648268817241174241 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 7848190444707247516, guid: 679241ba7822eea4cb20087f7e2a17cf,
     type: 3}
@@ -8427,7 +8427,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 67db9e8f0e2ae9c40bc1e2b64352a6b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!224 &7211743690954986307 stripped
+--- !u!224 &648268817241175568 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 7848190443930402467, guid: 679241ba7822eea4cb20087f7e2a17cf,
     type: 3}
@@ -8512,7 +8512,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d6ec00b75d894f34592cd7fd354bd92d, type: 3}
---- !u!114 &4962485387893755114 stripped
+--- !u!114 &2995281036803795805 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 7876560526960900799, guid: d6ec00b75d894f34592cd7fd354bd92d,
     type: 3}
@@ -8524,7 +8524,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6abe6c31871d9714bb8b1e1f143cf360, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!4 &4962485387893755118 stripped
+--- !u!4 &2995281036803796524 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7876560526960900795, guid: d6ec00b75d894f34592cd7fd354bd92d,
     type: 3}
@@ -8537,6 +8537,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 4962485386836303281}
     m_Modifications:
+    - target: {fileID: 3997038041294529677, guid: 610cdaf67daad954d8118d7e3de670c8,
+        type: 3}
+      propertyPath: m_AssetId
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 4633231185412111788, guid: 610cdaf67daad954d8118d7e3de670c8,
         type: 3}
       propertyPath: m_Name
@@ -8597,6 +8602,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5488156927736316363, guid: 610cdaf67daad954d8118d7e3de670c8,
+        type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 4962485387090511838}
+    - target: {fileID: 5488156927736316363, guid: 610cdaf67daad954d8118d7e3de670c8,
+        type: 3}
+      propertyPath: cam
+      value: 
+      objectReference: {fileID: 4962485387656359100}
     - target: {fileID: 6381507410506550009, guid: 610cdaf67daad954d8118d7e3de670c8,
         type: 3}
       propertyPath: cam

@@ -104,7 +104,7 @@ GameObject:
   - component: {fileID: 4708717149928008931}
   - component: {fileID: 6193865618764051649}
   m_Layer: 8
-  m_Name: Staff_Holy
+  m_Name: Staff_Zap
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -218,9 +218,8 @@ GameObject:
   - component: {fileID: 7318826993297610850}
   - component: {fileID: 9056004733652266175}
   - component: {fileID: 7775193125901314090}
-  - component: {fileID: 9056004733652266172}
   m_Layer: 8
-  m_Name: Holy Staff
+  m_Name: Zap Staff
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -330,35 +329,7 @@ MonoBehaviour:
   player: {fileID: 0}
   weaponFire: {fileID: 6385803194855041721, guid: 2c715b6c7aa54b64394354a0e8d3241b,
     type: 3}
-  projectilePrefab: {fileID: 348656033679236653, guid: 3d060ac208c5385488206db4a7c02514,
-    type: 3}
-  shootPosition: {fileID: 6384782264929887371}
---- !u!114 &9056004733652266172
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9056004733652266174}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ccba5f91f8b616f4da85e1822436fad9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  syncMode: 0
-  syncInterval: 0.1
-  damage: 3
-  range: 100
-  manaShotCost: 1
-  projectileSpeed: 3
-  rateOfFire: 6
-  cam: {fileID: 0}
-  impactFX: {fileID: 1329845292236604, guid: 1138571c16a616143bd95ef7cca1b49c, type: 3}
-  weaponAnimator: {fileID: 9056004733652266175}
-  player: {fileID: 0}
-  weaponFire: {fileID: 6523981204447462619}
-  projectilePrefab: {fileID: 348656033679236653, guid: 3d060ac208c5385488206db4a7c02514,
-    type: 3}
+  projectilePrefab: {fileID: 0}
   shootPosition: {fileID: 6384782264929887371}
 --- !u!1001 &150651213984640610
 PrefabInstance:
@@ -432,12 +403,6 @@ PrefabInstance:
 --- !u!4 &5135768208844543714 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4995285295774922880, guid: 2c715b6c7aa54b64394354a0e8d3241b,
-    type: 3}
-  m_PrefabInstance: {fileID: 150651213984640610}
-  m_PrefabAsset: {fileID: 0}
---- !u!198 &6523981204447462619 stripped
-ParticleSystem:
-  m_CorrespondingSourceObject: {fileID: 6385803194855041721, guid: 2c715b6c7aa54b64394354a0e8d3241b,
     type: 3}
   m_PrefabInstance: {fileID: 150651213984640610}
   m_PrefabAsset: {fileID: 0}

@@ -4859,8 +4859,10 @@ GameObject:
   m_Component:
   - component: {fileID: 4708717149928008931}
   - component: {fileID: 6193865618764051649}
+  - component: {fileID: 3997038041294529677}
+  - component: {fileID: 5488156927736316363}
   m_Layer: 8
-  m_Name: Staff_Zap_01
+  m_Name: Staff_Zap_MP
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4900,6 +4902,49 @@ MonoBehaviour:
   isWeaponDropable: 0
   worldWeaponObject: {fileID: 0}
   originalLocation: {x: 0, y: 0, z: 0}
+--- !u!114 &3997038041294529677
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4633231185412111788}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b91ecbcc199f4492b9a91e820070131, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneId: 0
+  serverOnly: 0
+  m_AssetId: 
+  hasSpawned: 0
+--- !u!114 &5488156927736316363
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4633231185412111788}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ccba5f91f8b616f4da85e1822436fad9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  syncMode: 0
+  syncInterval: 0.1
+  damage: 3
+  range: 100
+  manaShotCost: 1
+  projectileSpeed: 3
+  rateOfFire: 6
+  cam: {fileID: 0}
+  impactFX: {fileID: 1329845292236604, guid: 1138571c16a616143bd95ef7cca1b49c, type: 3}
+  weaponAnimator: {fileID: 9056004733652266175}
+  player: {fileID: 0}
+  weaponFire: {fileID: 150651213984642083}
+  projectilePrefab: {fileID: 348656033679236653, guid: 2f746bac65924f447858e5a179e8b03b,
+    type: 3}
+  shootPosition: {fileID: 6384782264929887371}
 --- !u!1 &6384782264929887371
 GameObject:
   m_ObjectHideFlags: 0
@@ -9711,7 +9756,7 @@ Transform:
   m_LocalPosition: {x: -0.30399996, y: 0.3028, z: 0.5085}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 5135768208844543714}
+  - {fileID: 150651213984643406}
   m_Father: {fileID: 4708717149928008931}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -9727,7 +9772,6 @@ GameObject:
   - component: {fileID: 3939870347448329371}
   - component: {fileID: 7318826993297610850}
   - component: {fileID: 9056004733652266175}
-  - component: {fileID: 6381507410506550009}
   m_Layer: 8
   m_Name: Staff_Model
   m_TagString: Untagged
@@ -9816,31 +9860,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &6381507410506550009
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9056004733652266174}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ccba5f91f8b616f4da85e1822436fad9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  damage: 3
-  range: 100
-  manaShotCost: 1
-  projectileSpeed: 3
-  rateOfFire: 6
-  cam: {fileID: 0}
-  impactFX: {fileID: 1329845292236604, guid: 1138571c16a616143bd95ef7cca1b49c, type: 3}
-  weaponAnimator: {fileID: 9056004733652266175}
-  player: {fileID: 0}
-  weaponFire: {fileID: 6523981204447462619}
-  projectilePrefab: {fileID: 348656033679236653, guid: 3d060ac208c5385488206db4a7c02514,
-    type: 3}
-  shootPosition: {fileID: 6384782264929887371}
 --- !u!1001 &150651213984640610
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9910,13 +9929,13 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2c715b6c7aa54b64394354a0e8d3241b, type: 3}
---- !u!4 &5135768208844543714 stripped
+--- !u!4 &150651213984643406 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4995285295774922880, guid: 2c715b6c7aa54b64394354a0e8d3241b,
     type: 3}
   m_PrefabInstance: {fileID: 150651213984640610}
   m_PrefabAsset: {fileID: 0}
---- !u!198 &6523981204447462619 stripped
+--- !u!198 &150651213984642083 stripped
 ParticleSystem:
   m_CorrespondingSourceObject: {fileID: 6385803194855041721, guid: 2c715b6c7aa54b64394354a0e8d3241b,
     type: 3}
