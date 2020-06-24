@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['followcamerarotation_75',['FollowCameraRotation',['../class_follow_camera_rotation.html',1,'']]]
+  ['gamemanager_77',['GameManager',['../class_game_manager.html',1,'']]]
 ];

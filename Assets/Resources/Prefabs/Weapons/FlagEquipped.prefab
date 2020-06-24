@@ -110,5 +110,8 @@ MonoBehaviour:
   teamID: 0
   isWeaponLocked: 1
   isWeaponDropable: 1
+  asociatedStaff: {fileID: 0}
+  asociatedMPStaff: {fileID: 0}
   worldWeaponObject: {fileID: 0}
   originalLocation: {x: 0, y: 0, z: 0}
+  weaponIcon: {fileID: 21300000, guid: 5941864a9495922469ac640714c29353, type: 3}

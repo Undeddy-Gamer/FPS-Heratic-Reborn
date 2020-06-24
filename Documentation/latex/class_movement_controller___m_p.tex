@@ -1,0 +1,138 @@
+\hypertarget{class_movement_controller___m_p}{}\doxysection{Movement\+Controller\+\_\+\+MP Class Reference}
+\label{class_movement_controller___m_p}\index{MovementController\_MP@{MovementController\_MP}}
+Inheritance diagram for Movement\+Controller\+\_\+\+MP\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_movement_controller___m_p}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+override void \mbox{\hyperlink{class_movement_controller___m_p_a636e1416427ec9f42def29203afb5fb4}{On\+Start\+Authority}} ()
+\item 
+void \mbox{\hyperlink{class_movement_controller___m_p_a16af4fc86a10a1a4193fad57b1068564}{Move\+V2}} (float x\+Axis, float z\+Axis, bool jump)
+\begin{DoxyCompactList}\small\item\em Apply movement and speed to the player character dependent on movement type modifier (applied by input crouch, jump, run, default is walk) \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Game\+Object \mbox{\hyperlink{class_movement_controller___m_p_aa19f6a9f239ae57e7a8a18cda81f487d}{player\+Camera}}
+\item 
+float \mbox{\hyperlink{class_movement_controller___m_p_a65ab8818e0a6f2a23cb0bb6166c1cde3}{move\+Speed}} = 5
+\item 
+float \mbox{\hyperlink{class_movement_controller___m_p_adab63c9fba95901cccea0b34152d0c10}{walk\+Speed}} = 5
+\item 
+Animator \mbox{\hyperlink{class_movement_controller___m_p_aed78f9c5a76a7d1e429956c2a5fbbb1e}{anim}}
+\item 
+Vector3 \mbox{\hyperlink{class_movement_controller___m_p_a6fcf1c07b08e85ba09bcf0778eb33a1f}{move\+Dir}}
+\item 
+float \mbox{\hyperlink{class_movement_controller___m_p_a15a22999bba5599afb4ee6ebecc3f419}{extra\+Height\+Check}} = 0.\+1f
+\item 
+Animator \mbox{\hyperlink{class_movement_controller___m_p_af734e744831bc46d9e614ba01779c873}{weapon\+Animator}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{class_movement_controller___m_p_ab430c93e2b480ac1bcff70e30b0e521d}{Is\+Grounded}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_movement_controller___m_p_a16af4fc86a10a1a4193fad57b1068564}\label{class_movement_controller___m_p_a16af4fc86a10a1a4193fad57b1068564}} 
+\index{MovementController\_MP@{MovementController\_MP}!MoveV2@{MoveV2}}
+\index{MoveV2@{MoveV2}!MovementController\_MP@{MovementController\_MP}}
+\doxysubsubsection{\texorpdfstring{MoveV2()}{MoveV2()}}
+{\footnotesize\ttfamily void Movement\+Controller\+\_\+\+M\+P.\+Move\+V2 (\begin{DoxyParamCaption}\item[{float}]{x\+Axis,  }\item[{float}]{z\+Axis,  }\item[{bool}]{jump }\end{DoxyParamCaption})}
+
+
+
+Apply movement and speed to the player character dependent on movement type modifier (applied by input crouch, jump, run, default is walk) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em horizontal\+Axis} & Amount to move forward\\
+\hline
+{\em vertical\+Axis} & Amount to move left/right (positive to move right, negative to move left)\\
+\hline
+\end{DoxyParams}
+
+
+Jump is also applied within the function
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\mbox{\hyperlink{class_movement_controller___m_p_a16af4fc86a10a1a4193fad57b1068564}{MoveV2}}(1,-\/1);}
+\end{DoxyCode}
+ 
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em System.\+Overflow\+Exception} & Throws an overflow error\\
+\hline
+\end{DoxyExceptions}
+~\newline
+ \mbox{\Hypertarget{class_movement_controller___m_p_a636e1416427ec9f42def29203afb5fb4}\label{class_movement_controller___m_p_a636e1416427ec9f42def29203afb5fb4}} 
+\index{MovementController\_MP@{MovementController\_MP}!OnStartAuthority@{OnStartAuthority}}
+\index{OnStartAuthority@{OnStartAuthority}!MovementController\_MP@{MovementController\_MP}}
+\doxysubsubsection{\texorpdfstring{OnStartAuthority()}{OnStartAuthority()}}
+{\footnotesize\ttfamily override void Movement\+Controller\+\_\+\+M\+P.\+On\+Start\+Authority (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_movement_controller___m_p_aed78f9c5a76a7d1e429956c2a5fbbb1e}\label{class_movement_controller___m_p_aed78f9c5a76a7d1e429956c2a5fbbb1e}} 
+\index{MovementController\_MP@{MovementController\_MP}!anim@{anim}}
+\index{anim@{anim}!MovementController\_MP@{MovementController\_MP}}
+\doxysubsubsection{\texorpdfstring{anim}{anim}}
+{\footnotesize\ttfamily Animator Movement\+Controller\+\_\+\+M\+P.\+anim}
+
+\mbox{\Hypertarget{class_movement_controller___m_p_a15a22999bba5599afb4ee6ebecc3f419}\label{class_movement_controller___m_p_a15a22999bba5599afb4ee6ebecc3f419}} 
+\index{MovementController\_MP@{MovementController\_MP}!extraHeightCheck@{extraHeightCheck}}
+\index{extraHeightCheck@{extraHeightCheck}!MovementController\_MP@{MovementController\_MP}}
+\doxysubsubsection{\texorpdfstring{extraHeightCheck}{extraHeightCheck}}
+{\footnotesize\ttfamily float Movement\+Controller\+\_\+\+M\+P.\+extra\+Height\+Check = 0.\+1f}
+
+\mbox{\Hypertarget{class_movement_controller___m_p_a6fcf1c07b08e85ba09bcf0778eb33a1f}\label{class_movement_controller___m_p_a6fcf1c07b08e85ba09bcf0778eb33a1f}} 
+\index{MovementController\_MP@{MovementController\_MP}!moveDir@{moveDir}}
+\index{moveDir@{moveDir}!MovementController\_MP@{MovementController\_MP}}
+\doxysubsubsection{\texorpdfstring{moveDir}{moveDir}}
+{\footnotesize\ttfamily Vector3 Movement\+Controller\+\_\+\+M\+P.\+move\+Dir}
+
+\mbox{\Hypertarget{class_movement_controller___m_p_a65ab8818e0a6f2a23cb0bb6166c1cde3}\label{class_movement_controller___m_p_a65ab8818e0a6f2a23cb0bb6166c1cde3}} 
+\index{MovementController\_MP@{MovementController\_MP}!moveSpeed@{moveSpeed}}
+\index{moveSpeed@{moveSpeed}!MovementController\_MP@{MovementController\_MP}}
+\doxysubsubsection{\texorpdfstring{moveSpeed}{moveSpeed}}
+{\footnotesize\ttfamily float Movement\+Controller\+\_\+\+M\+P.\+move\+Speed = 5}
+
+\mbox{\Hypertarget{class_movement_controller___m_p_aa19f6a9f239ae57e7a8a18cda81f487d}\label{class_movement_controller___m_p_aa19f6a9f239ae57e7a8a18cda81f487d}} 
+\index{MovementController\_MP@{MovementController\_MP}!playerCamera@{playerCamera}}
+\index{playerCamera@{playerCamera}!MovementController\_MP@{MovementController\_MP}}
+\doxysubsubsection{\texorpdfstring{playerCamera}{playerCamera}}
+{\footnotesize\ttfamily Game\+Object Movement\+Controller\+\_\+\+M\+P.\+player\+Camera}
+
+\mbox{\Hypertarget{class_movement_controller___m_p_adab63c9fba95901cccea0b34152d0c10}\label{class_movement_controller___m_p_adab63c9fba95901cccea0b34152d0c10}} 
+\index{MovementController\_MP@{MovementController\_MP}!walkSpeed@{walkSpeed}}
+\index{walkSpeed@{walkSpeed}!MovementController\_MP@{MovementController\_MP}}
+\doxysubsubsection{\texorpdfstring{walkSpeed}{walkSpeed}}
+{\footnotesize\ttfamily float Movement\+Controller\+\_\+\+M\+P.\+walk\+Speed = 5}
+
+\mbox{\Hypertarget{class_movement_controller___m_p_af734e744831bc46d9e614ba01779c873}\label{class_movement_controller___m_p_af734e744831bc46d9e614ba01779c873}} 
+\index{MovementController\_MP@{MovementController\_MP}!weaponAnimator@{weaponAnimator}}
+\index{weaponAnimator@{weaponAnimator}!MovementController\_MP@{MovementController\_MP}}
+\doxysubsubsection{\texorpdfstring{weaponAnimator}{weaponAnimator}}
+{\footnotesize\ttfamily Animator Movement\+Controller\+\_\+\+M\+P.\+weapon\+Animator}
+
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{class_movement_controller___m_p_ab430c93e2b480ac1bcff70e30b0e521d}\label{class_movement_controller___m_p_ab430c93e2b480ac1bcff70e30b0e521d}} 
+\index{MovementController\_MP@{MovementController\_MP}!IsGrounded@{IsGrounded}}
+\index{IsGrounded@{IsGrounded}!MovementController\_MP@{MovementController\_MP}}
+\doxysubsubsection{\texorpdfstring{IsGrounded}{IsGrounded}}
+{\footnotesize\ttfamily bool Movement\+Controller\+\_\+\+M\+P.\+Is\+Grounded\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Git\+Hub/\+F\+P\+S-\/\+Heratic-\/\+Reborn/\+Assets/\+Scripts/\mbox{\hyperlink{_movement_controller___m_p_8cs}{Movement\+Controller\+\_\+\+M\+P.\+cs}}\end{DoxyCompactItemize}

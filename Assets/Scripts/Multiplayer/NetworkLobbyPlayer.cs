@@ -5,6 +5,10 @@ using Mirror;
 using TMPro;
 using UnityEngine.UI;
 
+
+/// <summary>
+/// The network lobby player used for each player who enters the game lobby
+/// </summary>
 public class NetworkLobbyPlayer : NetworkBehaviour
 {    
     [Header("UI")]
@@ -21,13 +25,12 @@ public class NetworkLobbyPlayer : NetworkBehaviour
     public string DisplayName = "Loading...";
     [SyncVar(hook = nameof(HandleReadyStatusChanged))]
     public bool IsReady = false;
-    
-    public string SelectedWeaponStr;   
-    public string SelectedQuirkStr;
 
-    public SoWeapon SelectedWeapon;
-    public SoQuirk SelectedQuirk;
     
+    // the weapon to be added to the player when the game starts (selected before entering the lobby)
+    [SyncVar]
+    public string selectedWeaponStr;   
+        
     [SyncVar]
     public float skillLevel;
     [SerializeField] private bool isLeader = false;
@@ -77,8 +80,10 @@ public class NetworkLobbyPlayer : NetworkBehaviour
         }
 
         //Set Selected Quirk & Weapon SOs
-        
-        CmdSetSOs(SelectionScreen.SelectedQuirk.quirkName, SelectionScreen.SelectedWeapon.weaponName);
+        CmdSetWeapon(SelectionScreen.SelectedWeapon.weaponName);
+
+
+        //CmdSetSOs(SelectionScreen.SelectedQuirk.quirkName, SelectionScreen.SelectedWeapon.weaponName);
         //selectedQuirk = SelectionScreen.SelectedQuirk;
         //selectedWeapon = SelectionScreen.SelectedWeapon;
     }
@@ -87,9 +92,7 @@ public class NetworkLobbyPlayer : NetworkBehaviour
     public override void OnStartClient()
     {
         Room.RoomPlayers.Add(this);
-        UpdateDisplay();
-
-        
+        UpdateDisplay();        
     }
 
     public override void OnNetworkDestroy()
@@ -141,7 +144,8 @@ public class NetworkLobbyPlayer : NetworkBehaviour
 
         for (int i = 0; i < Room.RoomPlayers.Count; i++)
         {
-            playerNameTexts[i].text = Room.RoomPlayers[i].DisplayName + " (" + skillLevel + ")";
+            //added skill level and sepected weapon for debuging
+            playerNameTexts[i].text = Room.RoomPlayers[i].DisplayName + " (" + skillLevel + " : " + selectedWeaponStr + ")";
             playerReadyTexts[i].text = Room.RoomPlayers[i].IsReady ? "<color=green>Ready</color>" : "<color=red>Not Ready</color>";
         }
     }
@@ -162,19 +166,19 @@ public class NetworkLobbyPlayer : NetworkBehaviour
         DisplayName = displayName;
     }
 
-    //[Command]
-    //private void CmdSetSOs(Quirk selectedQuirk, SoWeapon selectedWeapon)
-    //{
-    //    SelectedWeapon = selectedWeapon;
-    //    SelectedQuirk = selectedQuirk;
-    //}
-
+    
+    /// <summary>
+    /// set the selected weapon to the lobby player for when spawning happens
+    /// </summary>
+    /// <param name="selectedWeapon"></param>
     [Command]
-    private void CmdSetSOs(string selectedQuirk, string selectedWeapon)
+    private void CmdSetWeapon(string selectedWeapon)
     {
-        SelectedWeaponStr = selectedWeapon;
-        SelectedQuirkStr = selectedQuirk;
+        selectedWeaponStr = selectedWeapon;
     }
+
+
+    
 
     [Command]
     public void CmdReadyUp()

@@ -4900,8 +4900,11 @@ MonoBehaviour:
   teamID: 0
   isWeaponLocked: 0
   isWeaponDropable: 0
+  asociatedStaff: {fileID: 0}
+  asociatedMPStaff: {fileID: 0}
   worldWeaponObject: {fileID: 0}
   originalLocation: {x: 0, y: 0, z: 0}
+  weaponIcon: {fileID: 21300000, guid: abbe51ac66cbb6245beacd936bdfb847, type: 3}
 --- !u!114 &3997038041294529677
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4941,7 +4944,7 @@ MonoBehaviour:
   impactFX: {fileID: 1329845292236604, guid: 1138571c16a616143bd95ef7cca1b49c, type: 3}
   weaponAnimator: {fileID: 9056004733652266175}
   player: {fileID: 0}
-  weaponFire: {fileID: 150651213984642083}
+  weaponFire: {fileID: 6523981204447462619}
   projectilePrefab: {fileID: 348656033679236653, guid: 2f746bac65924f447858e5a179e8b03b,
     type: 3}
   shootPosition: {fileID: 6384782264929887371}
@@ -9756,7 +9759,7 @@ Transform:
   m_LocalPosition: {x: -0.30399996, y: 0.3028, z: 0.5085}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 150651213984643406}
+  - {fileID: 5135768208844543714}
   m_Father: {fileID: 4708717149928008931}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -9772,6 +9775,7 @@ GameObject:
   - component: {fileID: 3939870347448329371}
   - component: {fileID: 7318826993297610850}
   - component: {fileID: 9056004733652266175}
+  - component: {fileID: 9193553764753967264}
   m_Layer: 8
   m_Name: Staff_Model
   m_TagString: Untagged
@@ -9860,6 +9864,22 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &9193553764753967264
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9056004733652266174}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b91ecbcc199f4492b9a91e820070131, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneId: 0
+  serverOnly: 0
+  m_AssetId: 
+  hasSpawned: 0
 --- !u!1001 &150651213984640610
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9929,13 +9949,13 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2c715b6c7aa54b64394354a0e8d3241b, type: 3}
---- !u!4 &150651213984643406 stripped
+--- !u!4 &5135768208844543714 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4995285295774922880, guid: 2c715b6c7aa54b64394354a0e8d3241b,
     type: 3}
   m_PrefabInstance: {fileID: 150651213984640610}
   m_PrefabAsset: {fileID: 0}
---- !u!198 &150651213984642083 stripped
+--- !u!198 &6523981204447462619 stripped
 ParticleSystem:
   m_CorrespondingSourceObject: {fileID: 6385803194855041721, guid: 2c715b6c7aa54b64394354a0e8d3241b,
     type: 3}

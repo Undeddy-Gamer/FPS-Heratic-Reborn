@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['takedamage_110',['TakeDamage',['../class_target.html#a643d8db773527731b4f9ea525b1655ad',1,'Target.TakeDamage()'],['../class_enemy.html#acfbe2dc553ea56ed704af9e6dad747df',1,'Enemy.TakeDamage()']]],
-  ['teardown_111',['TearDown',['../class_tests_1_1_player_move_test.html#aa99db48840baca5f250962513d1c39ff',1,'Tests::PlayerMoveTest']]],
-  ['triggerlog_112',['TriggerLog',['../classtest_ani_event.html#ad48e8d9bf3b39b58fcb1c207303516c9',1,'testAniEvent']]]
+  ['loadmainmenu_104',['LoadMainMenu',['../class_game_manager.html#acc5bf2b58e880874333d37213a346d6a',1,'GameManager']]],
+  ['loadscene_105',['LoadScene',['../class_game_manager.html#a9e02865d8f82e5c1c3999164d55c517f',1,'GameManager.LoadScene(int sceneIndex)'],['../class_game_manager.html#a054e3128635fa0db23ddb14ccac8d6b1',1,'GameManager.LoadScene(string sceneName)']]]
 ];

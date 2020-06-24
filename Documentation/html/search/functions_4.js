@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['setup_108',['Setup',['../class_tests_1_1_player_move_test.html#a92199120f1c4d7dc3fd7cfc6377faf37',1,'Tests::PlayerMoveTest']]],
-  ['shoot_109',['Shoot',['../class_staff.html#a1e4e113e10119c62db748f71e2ece56c',1,'Staff']]]
+  ['isholdingflag_103',['isHoldingFlag',['../class_player.html#aa7c154866cebd2b2b88e31e5fc089104',1,'Player.isHoldingFlag()'],['../class_player_handler___v2.html#af55d1f7b55ef292b67d008326d28e52b',1,'PlayerHandler_V2.isHoldingFlag()']]]
 ];

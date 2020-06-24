@@ -19,7 +19,14 @@ public class GameManager : MonoBehaviour
         //Load and display HighScores        
     }
     #endregion
-        
+
+
+
+    void Awake()
+    {
+        DontDestroyOnLoad(this.gameObject);
+    }
+
     //Restarts current Level
     public void Restart()
     {
@@ -31,7 +38,12 @@ public class GameManager : MonoBehaviour
     {
         SceneManager.LoadScene(sceneIndex);
     }
-    
+
+    public void LoadScene(string sceneName)
+    {
+        SceneManager.LoadScene(sceneName);
+    }
+
     //Loads Previous Level
     public void LoadMainMenu()
     {

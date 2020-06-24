@@ -1,6 +1,9 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 
+/// <summary>
+/// this is for the lobby selection screen class where you select your weapon before you enter the lobby
+/// </summary>
 public class SelectionScreen : MonoBehaviour
 {
 
@@ -26,6 +29,9 @@ public class SelectionScreen : MonoBehaviour
     private string PlayerPrefsQuirkKey = "PlayerQuirk";
     private string PlayerPrefsWeaponKey = "PlayerWeapon";
 
+    /// <summary>
+    /// Is true when all player selections are made
+    /// </summary>
     private bool PlayerSelectionsMade
     {
         get
@@ -36,6 +42,8 @@ public class SelectionScreen : MonoBehaviour
                 return false;
         }
     }
+
+
     private void Start() // => SetUpInputField()
     {
         if (nameInputField == null)
@@ -47,10 +55,13 @@ public class SelectionScreen : MonoBehaviour
         {
             Debug.LogError("continueButton not attached to PlayerInput");
         }
-        
+        // setup the selection panels
         SetupPanelSelection();        
     }
 
+    /// <summary>
+    /// This creates the panels to select the weapons etc from the prefabs sets up the panels and adds them to the selection areas. 
+    /// </summary>
     public void SetupPanelSelection()
     {
         GameObject tempQuirkPanel;
@@ -98,8 +109,10 @@ public class SelectionScreen : MonoBehaviour
 
         continueButton.interactable = PlayerSelectionsMade;
     }
-        
 
+    /// <summary>
+    /// Set the display name for the player
+    /// </summary>
     public void SavePlayerName()
     {
         if (!string.IsNullOrEmpty(nameInputField.text))
@@ -109,14 +122,20 @@ public class SelectionScreen : MonoBehaviour
         }
         continueButton.interactable = PlayerSelectionsMade;
     }
-
+    /// <summary>
+    /// Set the selected quirk for the player
+    /// </summary>
+    /// <param name="selectedQuirk"></param>
     public void SetQuirk(SoQuirk selectedQuirk)
     {
         SelectedQuirk = selectedQuirk;
         PlayerPrefs.SetString(PlayerPrefsQuirkKey, selectedQuirk.quirkName);
         continueButton.interactable = PlayerSelectionsMade;
     }
-
+    /// <summary>
+    /// set the selected weapon for the player
+    /// </summary>
+    /// <param name="selectedWeapon"></param>
     public void SetWeapon(SoWeapon selectedWeapon)
     {
         SelectedWeapon = selectedWeapon;

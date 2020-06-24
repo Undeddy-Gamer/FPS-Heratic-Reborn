@@ -1,6 +1,7 @@
 var searchData=
 [
-  ['mouselook_76',['MouseLook',['../class_r_p_g_1_1_player_1_1_mouse_look.html',1,'RPG::Player']]],
-  ['movement_77',['Movement',['../class_f_p_s_1_1_player_1_1_movement.html',1,'FPS::Player']]],
-  ['movementv2_78',['MovementV2',['../class_f_p_s_1_1_player_1_1_movement_v2.html',1,'FPS::Player']]]
+  ['mouselook_78',['MouseLook',['../class_mouse_look.html',1,'']]],
+  ['movement_79',['Movement',['../class_f_p_s_1_1_player_1_1_movement.html',1,'FPS::Player']]],
+  ['movementcontroller_80',['MovementController',['../class_movement_controller.html',1,'']]],
+  ['movementcontroller_5fmp_81',['MovementController_MP',['../class_movement_controller___m_p.html',1,'']]]
 ];

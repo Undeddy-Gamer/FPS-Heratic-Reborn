@@ -1,0 +1,194 @@
+\hypertarget{class_player}{}\doxysection{Player Class Reference}
+\label{class_player}\index{Player@{Player}}
+Inheritance diagram for Player\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_player}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_player_a093de7bd51d980488821c65c37def009}{Pickup\+Weapon}} (Game\+Object weapon\+Object, Vector3 original\+Location, int \mbox{\hyperlink{class_player_a2ca0d5eedf3b254513a041d50c13873c}{team\+ID}}, int weapon\+ID, bool override\+Lock=false)
+\begin{DoxyCompactList}\small\item\em Pickup weapon and switch to it \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_player_a2f401ec967dd0b69552bdffe7c385f25}{Switch\+Weapon}} (int weapon\+ID, bool override\+Lock=false)
+\begin{DoxyCompactList}\small\item\em Switch to weapon if able to (some weapon items like the flag cannot be changed from) \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_player_a0bf3b6faabf83cb2946b4f9b31fd033a}{Drop\+Weapon}} (int weapon\+ID)
+\begin{DoxyCompactList}\small\item\em Drop weapon by weapon index (ID) \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_player_aa4572382376673761dff583ab1a92702}{Return\+Weapon}} (int weapon\+ID)
+\begin{DoxyCompactList}\small\item\em Return weapon world object to it\textquotesingle{}s original position (currently only works for flag weapon object) \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_player_aa7c154866cebd2b2b88e31e5fc089104}{is\+Holding\+Flag}} ()
+\begin{DoxyCompactList}\small\item\em check if player is holding the flag \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_player_a0611fe09c9c5e566b3e44e700088e1c2}{Get\+Weapon\+Team\+ID}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+List$<$ Weapon $>$ \mbox{\hyperlink{class_player_a55f612de4bf737e76d0737f6be28959c}{weapons}}
+\item 
+float \mbox{\hyperlink{class_player_a264f3a095963a5b165268f12c2127ef1}{forward\+Drop\+Offset}} = 4
+\item 
+float \mbox{\hyperlink{class_player_acd19c4f30931ba2b019d4c5c502d0609}{up\+Drop\+Offset}} = 1
+\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_player_a2ca0d5eedf3b254513a041d50c13873c}{team\+ID}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_player_a0bf3b6faabf83cb2946b4f9b31fd033a}\label{class_player_a0bf3b6faabf83cb2946b4f9b31fd033a}} 
+\index{Player@{Player}!DropWeapon@{DropWeapon}}
+\index{DropWeapon@{DropWeapon}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{DropWeapon()}{DropWeapon()}}
+{\footnotesize\ttfamily void Player.\+Drop\+Weapon (\begin{DoxyParamCaption}\item[{int}]{weapon\+ID }\end{DoxyParamCaption})}
+
+
+
+Drop weapon by weapon index (ID) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em weapon\+ID} & the index of the weapon in the player weapon list\\
+\hline
+\end{DoxyParams}
+
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\mbox{\hyperlink{class_player_a0bf3b6faabf83cb2946b4f9b31fd033a}{DropWeapon}}(0);}
+\end{DoxyCode}
+ 
+
+~\newline
+ \mbox{\Hypertarget{class_player_a0611fe09c9c5e566b3e44e700088e1c2}\label{class_player_a0611fe09c9c5e566b3e44e700088e1c2}} 
+\index{Player@{Player}!GetWeaponTeamID@{GetWeaponTeamID}}
+\index{GetWeaponTeamID@{GetWeaponTeamID}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{GetWeaponTeamID()}{GetWeaponTeamID()}}
+{\footnotesize\ttfamily int Player.\+Get\+Weapon\+Team\+ID (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_player_aa7c154866cebd2b2b88e31e5fc089104}\label{class_player_aa7c154866cebd2b2b88e31e5fc089104}} 
+\index{Player@{Player}!isHoldingFlag@{isHoldingFlag}}
+\index{isHoldingFlag@{isHoldingFlag}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{isHoldingFlag()}{isHoldingFlag()}}
+{\footnotesize\ttfamily bool Player.\+is\+Holding\+Flag (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+check if player is holding the flag 
+
+\mbox{\Hypertarget{class_player_a093de7bd51d980488821c65c37def009}\label{class_player_a093de7bd51d980488821c65c37def009}} 
+\index{Player@{Player}!PickupWeapon@{PickupWeapon}}
+\index{PickupWeapon@{PickupWeapon}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{PickupWeapon()}{PickupWeapon()}}
+{\footnotesize\ttfamily void Player.\+Pickup\+Weapon (\begin{DoxyParamCaption}\item[{Game\+Object}]{weapon\+Object,  }\item[{Vector3}]{original\+Location,  }\item[{int}]{team\+ID,  }\item[{int}]{weapon\+ID,  }\item[{bool}]{override\+Lock = {\ttfamily false} }\end{DoxyParamCaption})}
+
+
+
+Pickup weapon and switch to it 
+
+
+\begin{DoxyParams}{Parameters}
+{\em weapon\+Object} & the weapon gameobject to set as active\\
+\hline
+{\em original\+Location} & the origianl location of the weapon (oftern the place where it was picked up)\\
+\hline
+{\em team\+ID} & if the weapon has a team only association set it here\\
+\hline
+{\em weapon\+ID} & the ID in the weapon list of the player to change to and enable\\
+\hline
+{\em override\+Lock} & overide lock is used when a weapon object (eg flag) cannont be changed from\\
+\hline
+\end{DoxyParams}
+
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\mbox{\hyperlink{class_player_a093de7bd51d980488821c65c37def009}{PickupWeapon}}(weaponObject, OriginalLocation, \mbox{\hyperlink{class_player_a2ca0d5eedf3b254513a041d50c13873c}{teamID}}, weaponID, \textcolor{keyword}{true});}
+\end{DoxyCode}
+ 
+
+~\newline
+ \mbox{\Hypertarget{class_player_aa4572382376673761dff583ab1a92702}\label{class_player_aa4572382376673761dff583ab1a92702}} 
+\index{Player@{Player}!ReturnWeapon@{ReturnWeapon}}
+\index{ReturnWeapon@{ReturnWeapon}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{ReturnWeapon()}{ReturnWeapon()}}
+{\footnotesize\ttfamily void Player.\+Return\+Weapon (\begin{DoxyParamCaption}\item[{int}]{weapon\+ID }\end{DoxyParamCaption})}
+
+
+
+Return weapon world object to it\textquotesingle{}s original position (currently only works for flag weapon object) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em weapon\+ID} & the ID of the weapon to return\\
+\hline
+\end{DoxyParams}
+
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\mbox{\hyperlink{class_player_aa4572382376673761dff583ab1a92702}{ReturnWeapon}}(0);}
+\end{DoxyCode}
+ \mbox{\Hypertarget{class_player_a2f401ec967dd0b69552bdffe7c385f25}\label{class_player_a2f401ec967dd0b69552bdffe7c385f25}} 
+\index{Player@{Player}!SwitchWeapon@{SwitchWeapon}}
+\index{SwitchWeapon@{SwitchWeapon}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{SwitchWeapon()}{SwitchWeapon()}}
+{\footnotesize\ttfamily void Player.\+Switch\+Weapon (\begin{DoxyParamCaption}\item[{int}]{weapon\+ID,  }\item[{bool}]{override\+Lock = {\ttfamily false} }\end{DoxyParamCaption})}
+
+
+
+Switch to weapon if able to (some weapon items like the flag cannot be changed from) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em weapon\+ID} & \\
+\hline
+{\em override\+Lock} & overide lock is used when a weapon object (eg flag) cannont be changed from, use this to force an overide\\
+\hline
+\end{DoxyParams}
+
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\mbox{\hyperlink{class_player_a093de7bd51d980488821c65c37def009}{PickupWeapon}}(weaponObject, OriginalLocation, \mbox{\hyperlink{class_player_a2ca0d5eedf3b254513a041d50c13873c}{teamID}}, weaponID, \textcolor{keyword}{true});}
+\end{DoxyCode}
+ 
+
+~\newline
+ 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_player_a264f3a095963a5b165268f12c2127ef1}\label{class_player_a264f3a095963a5b165268f12c2127ef1}} 
+\index{Player@{Player}!forwardDropOffset@{forwardDropOffset}}
+\index{forwardDropOffset@{forwardDropOffset}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{forwardDropOffset}{forwardDropOffset}}
+{\footnotesize\ttfamily float Player.\+forward\+Drop\+Offset = 4}
+
+\mbox{\Hypertarget{class_player_acd19c4f30931ba2b019d4c5c502d0609}\label{class_player_acd19c4f30931ba2b019d4c5c502d0609}} 
+\index{Player@{Player}!upDropOffset@{upDropOffset}}
+\index{upDropOffset@{upDropOffset}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{upDropOffset}{upDropOffset}}
+{\footnotesize\ttfamily float Player.\+up\+Drop\+Offset = 1}
+
+\mbox{\Hypertarget{class_player_a55f612de4bf737e76d0737f6be28959c}\label{class_player_a55f612de4bf737e76d0737f6be28959c}} 
+\index{Player@{Player}!weapons@{weapons}}
+\index{weapons@{weapons}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{weapons}{weapons}}
+{\footnotesize\ttfamily List$<$Weapon$>$ Player.\+weapons}
+
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{class_player_a2ca0d5eedf3b254513a041d50c13873c}\label{class_player_a2ca0d5eedf3b254513a041d50c13873c}} 
+\index{Player@{Player}!teamID@{teamID}}
+\index{teamID@{teamID}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{teamID}{teamID}}
+{\footnotesize\ttfamily int Player.\+team\+ID\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Git\+Hub/\+F\+P\+S-\/\+Heratic-\/\+Reborn/\+Assets/\+Scripts/\mbox{\hyperlink{_player_8cs}{Player.\+cs}}\end{DoxyCompactItemize}

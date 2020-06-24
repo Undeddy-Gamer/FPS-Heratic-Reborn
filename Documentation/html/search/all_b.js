@@ -1,11 +1,11 @@
 var searchData=
 [
-  ['takedamage_64',['TakeDamage',['../class_target.html#a643d8db773527731b4f9ea525b1655ad',1,'Target.TakeDamage()'],['../class_enemy.html#acfbe2dc553ea56ed704af9e6dad747df',1,'Enemy.TakeDamage()']]],
-  ['target_65',['Target',['../class_target.html',1,'']]],
-  ['target_2ecs_66',['Target.cs',['../_target_8cs.html',1,'']]],
-  ['teardown_67',['TearDown',['../class_tests_1_1_player_move_test.html#aa99db48840baca5f250962513d1c39ff',1,'Tests::PlayerMoveTest']]],
-  ['testanievent_68',['testAniEvent',['../classtest_ani_event.html',1,'']]],
-  ['testanievent_2ecs_69',['testAniEvent.cs',['../test_ani_event_8cs.html',1,'']]],
-  ['tests_70',['Tests',['../namespace_tests.html',1,'']]],
-  ['triggerlog_71',['TriggerLog',['../classtest_ani_event.html#ad48e8d9bf3b39b58fcb1c207303516c9',1,'testAniEvent']]]
+  ['pickupweapon_51',['PickupWeapon',['../class_player.html#a093de7bd51d980488821c65c37def009',1,'Player.PickupWeapon()'],['../class_player_handler___v2.html#afef1b98737c4262e1ce0a9e555addd06',1,'PlayerHandler_V2.PickupWeapon()']]],
+  ['player_52',['Player',['../class_player.html',1,'']]],
+  ['player_2ecs_53',['Player.cs',['../_player_8cs.html',1,'']]],
+  ['playercamera_54',['playerCamera',['../class_movement_controller___m_p.html#aa19f6a9f239ae57e7a8a18cda81f487d',1,'MovementController_MP']]],
+  ['playerhandler_55',['PlayerHandler',['../class_player_handler.html',1,'']]],
+  ['playerhandler_2ecs_56',['PlayerHandler.cs',['../_player_handler_8cs.html',1,'']]],
+  ['playerhandler_5fv2_57',['PlayerHandler_V2',['../class_player_handler___v2.html',1,'']]],
+  ['playerhandler_5fv2_2ecs_58',['PlayerHandler_V2.cs',['../_player_handler___v2_8cs.html',1,'']]]
 ];

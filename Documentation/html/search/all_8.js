@@ -1,13 +1,6 @@
 var searchData=
 [
-  ['playerhandler_43',['PlayerHandler',['../class_player_handler.html',1,'']]],
-  ['playerhandler_2ecs_44',['PlayerHandler.cs',['../_player_handler_8cs.html',1,'']]],
-  ['playerhandlerold_45',['PlayerHandlerOld',['../class_player_handler_old.html',1,'']]],
-  ['playerhandlerold_2ecs_46',['PlayerHandlerOld.cs',['../_player_handler_old_8cs.html',1,'']]],
-  ['playermovetest_47',['PlayerMoveTest',['../class_tests_1_1_player_move_test.html',1,'Tests']]],
-  ['playermovetest_2ecs_48',['PlayerMoveTest.cs',['../_player_move_test_8cs.html',1,'']]],
-  ['playermovetestwithenumeratorpasses_49',['PlayerMoveTestWithEnumeratorPasses',['../class_tests_1_1_player_move_test.html#a21aa33b15bd84a26605c5c3a6f10ad60',1,'Tests::PlayerMoveTest']]],
-  ['playermoveverticaltestwithenumeratorpasses_50',['PlayerMoveVerticalTestWithEnumeratorPasses',['../class_tests_1_1_player_move_test.html#a827f1be05e59142143fff1783d4ae4ef',1,'Tests::PlayerMoveTest']]],
-  ['playermovextestwithenumeratorpasses_51',['PlayerMoveXTestWithEnumeratorPasses',['../class_tests_1_1_player_move_test.html#a3758628115164a152d186184409cdfc2',1,'Tests::PlayerMoveTest']]],
-  ['playermoveztestwithenumeratorpasses_52',['PlayerMoveZTestWithEnumeratorPasses',['../class_tests_1_1_player_move_test.html#aebdb496f532fb8867bf765695e61f21e',1,'Tests::PlayerMoveTest']]]
+  ['lastweapon_30',['lastWeapon',['../class_player_handler___v2.html#ab2328c258474295748be5d65ac29ed0f',1,'PlayerHandler_V2']]],
+  ['loadmainmenu_31',['LoadMainMenu',['../class_game_manager.html#acc5bf2b58e880874333d37213a346d6a',1,'GameManager']]],
+  ['loadscene_32',['LoadScene',['../class_game_manager.html#a9e02865d8f82e5c1c3999164d55c517f',1,'GameManager.LoadScene(int sceneIndex)'],['../class_game_manager.html#a054e3128635fa0db23ddb14ccac8d6b1',1,'GameManager.LoadScene(string sceneName)']]]
 ];

@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['playerhandler_79',['PlayerHandler',['../class_player_handler.html',1,'']]],
-  ['playerhandlerold_80',['PlayerHandlerOld',['../class_player_handler_old.html',1,'']]],
-  ['playermovetest_81',['PlayerMoveTest',['../class_tests_1_1_player_move_test.html',1,'Tests']]]
+  ['player_82',['Player',['../class_player.html',1,'']]],
+  ['playerhandler_83',['PlayerHandler',['../class_player_handler.html',1,'']]],
+  ['playerhandler_5fv2_84',['PlayerHandler_V2',['../class_player_handler___v2.html',1,'']]]
 ];

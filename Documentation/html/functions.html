@@ -9,10 +9,6 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="resize.js"></script>
-<script type="text/javascript" src="navtreedata.js"></script>
-<script type="text/javascript" src="navtree.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -26,9 +22,8 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Heretic Reborn
-   &#160;<span id="projectnumber">v0.2</span>
+   &#160;<span id="projectnumber">0.11</span>
    </div>
-   <div id="projectbrief">FPS Magic Shooter</div>
   </td>
  </tr>
  </tbody>
@@ -52,22 +47,6 @@ $(function() {
 /* @license-end */</script>
 <div id="main-nav"></div>
 </div><!-- top -->
-<div id="side-nav" class="ui-resizable side-nav-resizable">
-  <div id="nav-tree">
-    <div id="nav-tree-contents">
-      <div id="nav-sync" class="sync"></div>
-    </div>
-  </div>
-  <div id="splitbar" style="-moz-user-select:none;" 
-       class="ui-resizable-handle">
-  </div>
-</div>
-<script type="text/javascript">
-/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-$(document).ready(function(){initNavTree('functions.html',''); initResizable(); });
-/* @license-end */
-</script>
-<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -88,68 +67,72 @@ $(document).ready(function(){initNavTree('functions.html',''); initResizable(); 
 <h3><a id="index_a"></a>- a -</h3><ul>
 <li>anim
 : <a class="el" href="class_f_p_s_1_1_player_1_1_movement.html#a1bfb59d65b105427691b9d4f7dc9b7c3">FPS.Player.Movement</a>
+, <a class="el" href="class_movement_controller.html#a4cc434ae33cca1b8ad9387cb55af965b">MovementController</a>
+, <a class="el" href="class_movement_controller___m_p.html#aed78f9c5a76a7d1e429956c2a5fbbb1e">MovementController_MP</a>
 </li>
 <li>animator
 : <a class="el" href="class_enemy.html#af0e13cdfe202cae228268acaaca26357">Enemy</a>
-, <a class="el" href="class_f_p_s_1_1_player_1_1_movement_v2.html#ab91b10b06455e20edd817515fe9d7095">FPS.Player.MovementV2</a>
 </li>
 <li>axis
-: <a class="el" href="class_r_p_g_1_1_player_1_1_mouse_look.html#ad0cf7a9cb91aaf7bff9758e808f9aad9">RPG.Player.MouseLook</a>
+: <a class="el" href="class_mouse_look.html#a9a24b1fa2a46d347af514c54d9608741">MouseLook</a>
 </li>
 </ul>
 
 
 <h3><a id="index_c"></a>- c -</h3><ul>
-<li>cam
-: <a class="el" href="class_staff.html#a4d063cfa03eb9e9b5811b4fee74462ee">Staff</a>
+<li>changeCurrentWeapon()
+: <a class="el" href="class_player_handler___v2.html#ab926a24c579f2de8a7af91f9140908e7">PlayerHandler_V2</a>
 </li>
 <li>curCheckPoint
 : <a class="el" href="class_player_handler.html#a49824ac8945f69774ed64763c442de81">PlayerHandler</a>
-, <a class="el" href="class_player_handler_old.html#ad7fa5fea9355e4e97357ef82a67df802">PlayerHandlerOld</a>
+, <a class="el" href="class_player_handler___v2.html#a51021ad2745a57284c23dfeac0debfaf">PlayerHandler_V2</a>
 </li>
 <li>curHealth
 : <a class="el" href="class_player_handler.html#a3c80514706d4c02d68ac2b7ea36213c4">PlayerHandler</a>
-, <a class="el" href="class_player_handler_old.html#a3d4034f5c4e7ff4d63bcefd3a72ce48b">PlayerHandlerOld</a>
+, <a class="el" href="class_player_handler___v2.html#a704f46153dbd1c52e67167120f17294b">PlayerHandler_V2</a>
 </li>
 <li>curMana
 : <a class="el" href="class_player_handler.html#a8dc728a6fa0761266ee125a2e19d62a3">PlayerHandler</a>
-, <a class="el" href="class_player_handler_old.html#a6ef8e620afefa7995369ed2f05a848b1">PlayerHandlerOld</a>
+, <a class="el" href="class_player_handler___v2.html#acc1c4124e43d07caf3b3f36fe1e85d27">PlayerHandler_V2</a>
+</li>
+<li>currentWeapon
+: <a class="el" href="class_player_handler___v2.html#a10e8b46c171ec59aa9540a3d0b61c6d2">PlayerHandler_V2</a>
 </li>
 </ul>
 
 
 <h3><a id="index_d"></a>- d -</h3><ul>
-<li>damage
-: <a class="el" href="class_staff.html#af0110bff2eb932a832fd94bf42d9cc92">Staff</a>
-</li>
-<li>damageImage
-: <a class="el" href="class_player_handler_old.html#a876ebdcc1eb4b11d2763d00f88cb0d55">PlayerHandlerOld</a>
-</li>
 <li>DamagePlayer()
 : <a class="el" href="class_player_handler.html#a8def0caba4aa661f99eb6ff4e25bba0e">PlayerHandler</a>
-, <a class="el" href="class_player_handler_old.html#a3d972e47e441806cf060500306adf107">PlayerHandlerOld</a>
+, <a class="el" href="class_player_handler___v2.html#af043e5b6fde5fd87e11656eb0869038f">PlayerHandler_V2</a>
 </li>
-<li>deathClip
-: <a class="el" href="class_player_handler_old.html#a9e5d6224f4fc14f589142d99b20f6374">PlayerHandlerOld</a>
+<li>DropWeapon()
+: <a class="el" href="class_player.html#a0bf3b6faabf83cb2946b4f9b31fd033a">Player</a>
+, <a class="el" href="class_player_handler___v2.html#a0111972faa52a82943e379683ac0df66">PlayerHandler_V2</a>
 </li>
-<li>deathImage
-: <a class="el" href="class_player_handler_old.html#a5a5c4dbe14892d60ad05399502d8b3d1">PlayerHandlerOld</a>
-</li>
-<li>deathText
-: <a class="el" href="class_player_handler_old.html#a7ac0fffc84104cfc3d510e6389d35276">PlayerHandlerOld</a>
+</ul>
+
+
+<h3><a id="index_e"></a>- e -</h3><ul>
+<li>extraHeightCheck
+: <a class="el" href="class_movement_controller.html#a2affc7e4ca4606ac0609caf2b6b1cec1">MovementController</a>
+, <a class="el" href="class_movement_controller___m_p.html#a15a22999bba5599afb4ee6ebecc3f419">MovementController_MP</a>
 </li>
 </ul>
 
 
 <h3><a id="index_f"></a>- f -</h3><ul>
-<li>fizz
-: <a class="el" href="class_staff.html#a76c2b764460103a3b1c296f0ba634c17">Staff</a>
+<li>forwardDropOffset
+: <a class="el" href="class_player.html#a264f3a095963a5b165268f12c2127ef1">Player</a>
+, <a class="el" href="class_player_handler___v2.html#abe742445dbcf3ecc69f7cd22eaa4d70e">PlayerHandler_V2</a>
 </li>
-<li>flashColour
-: <a class="el" href="class_player_handler_old.html#a65f8f18718e8b650179680e8cbf2ce40">PlayerHandlerOld</a>
-</li>
-<li>flashSpeed
-: <a class="el" href="class_player_handler_old.html#a933383d31b6e5da092c534163b6696f6">PlayerHandlerOld</a>
+</ul>
+
+
+<h3><a id="index_g"></a>- g -</h3><ul>
+<li>GetWeaponTeamID()
+: <a class="el" href="class_player.html#a0611fe09c9c5e566b3e44e700088e1c2">Player</a>
+, <a class="el" href="class_player_handler___v2.html#a79de18d9e6d25553a9eb1a1542a8ceee">PlayerHandler_V2</a>
 </li>
 </ul>
 
@@ -157,7 +140,7 @@ $(document).ready(function(){initNavTree('functions.html',''); initResizable(); 
 <h3><a id="index_h"></a>- h -</h3><ul>
 <li>HealOverTime()
 : <a class="el" href="class_player_handler.html#ab4521ec59cec02c8b233656353252189">PlayerHandler</a>
-, <a class="el" href="class_player_handler_old.html#a93ebe2737ea32c154f351d2e8c04f858">PlayerHandlerOld</a>
+, <a class="el" href="class_player_handler___v2.html#a2f6e261484f765330fd0e074a9b5f84d">PlayerHandler_V2</a>
 </li>
 <li>health
 : <a class="el" href="class_enemy.html#ad884c92c058d7678876cb43fb852f213">Enemy</a>
@@ -165,11 +148,11 @@ $(document).ready(function(){initNavTree('functions.html',''); initResizable(); 
 </li>
 <li>healthBar
 : <a class="el" href="class_player_handler.html#ace4b44141d10727d1a362fa35e175d81">PlayerHandler</a>
-, <a class="el" href="class_player_handler_old.html#ae871878f01d044f493e71b798e935ee3">PlayerHandlerOld</a>
+, <a class="el" href="class_player_handler___v2.html#ae7edabe59d3d32603655d79a6e9dd211">PlayerHandler_V2</a>
 </li>
 <li>healthText
 : <a class="el" href="class_player_handler.html#a6c700a0779d15ac6be31e76821689c9b">PlayerHandler</a>
-, <a class="el" href="class_player_handler_old.html#a8e4c1a555772c3fab13d35549f35dd7a">PlayerHandlerOld</a>
+, <a class="el" href="class_player_handler___v2.html#a1eae185621dbbed6adac39438b7b0792">PlayerHandler_V2</a>
 </li>
 <li>hitbox
 : <a class="el" href="class_enemy.html#ad7cb32653099999e1a7f3b55f17deef5">Enemy</a>
@@ -181,12 +164,36 @@ $(document).ready(function(){initNavTree('functions.html',''); initResizable(); 
 
 
 <h3><a id="index_i"></a>- i -</h3><ul>
-<li>impactFX
-: <a class="el" href="class_staff.html#ae8ed6486a0d32f1874a08c152b67546f">Staff</a>
+<li>inGameMenuOpen
+: <a class="el" href="class_game_manager.html#a40d7e1d84ad8734a30836d1730306b2c">GameManager</a>
+</li>
+<li>Instance
+: <a class="el" href="class_game_manager.html#ad3e717f4fb0f378b969f4457de81f23e">GameManager</a>
 </li>
 <li>isDead
 : <a class="el" href="class_player_handler.html#aaa3fe4a9926c249c278971500f93bed6">PlayerHandler</a>
-, <a class="el" href="class_player_handler_old.html#a95bce3b51fbbb504e66a784eec73dd73">PlayerHandlerOld</a>
+, <a class="el" href="class_player_handler___v2.html#aafaa32550b8eeb0a5b0fe919d3ac6c12">PlayerHandler_V2</a>
+</li>
+<li>IsGrounded
+: <a class="el" href="class_movement_controller.html#adc4306cc93acd8e15831560d79a41ff8">MovementController</a>
+, <a class="el" href="class_movement_controller___m_p.html#ab430c93e2b480ac1bcff70e30b0e521d">MovementController_MP</a>
+</li>
+<li>isHoldingFlag()
+: <a class="el" href="class_player.html#aa7c154866cebd2b2b88e31e5fc089104">Player</a>
+, <a class="el" href="class_player_handler___v2.html#af55d1f7b55ef292b67d008326d28e52b">PlayerHandler_V2</a>
+</li>
+</ul>
+
+
+<h3><a id="index_l"></a>- l -</h3><ul>
+<li>lastWeapon
+: <a class="el" href="class_player_handler___v2.html#ab2328c258474295748be5d65ac29ed0f">PlayerHandler_V2</a>
+</li>
+<li>LoadMainMenu()
+: <a class="el" href="class_game_manager.html#acc5bf2b58e880874333d37213a346d6a">GameManager</a>
+</li>
+<li>LoadScene()
+: <a class="el" href="class_game_manager.html#a9e02865d8f82e5c1c3999164d55c517f">GameManager</a>
 </li>
 </ul>
 
@@ -194,66 +201,82 @@ $(document).ready(function(){initNavTree('functions.html',''); initResizable(); 
 <h3><a id="index_m"></a>- m -</h3><ul>
 <li>manaBar
 : <a class="el" href="class_player_handler.html#ab44008e834300e147d465525111ea51b">PlayerHandler</a>
-, <a class="el" href="class_player_handler_old.html#a327bf8c9e0caf92f6d8af578ca49dcde">PlayerHandlerOld</a>
+, <a class="el" href="class_player_handler___v2.html#a0600ffea4860071759c36ce9798d8789">PlayerHandler_V2</a>
+</li>
+<li>manaText
+: <a class="el" href="class_player_handler.html#a4acadd06ba556a25fa9984fa5af3137b">PlayerHandler</a>
+, <a class="el" href="class_player_handler___v2.html#a825cb504305276687e09a0c152c8e2f2">PlayerHandler_V2</a>
 </li>
 <li>maxHealth
 : <a class="el" href="class_player_handler.html#ad743cabe7d85811f0ea4040bcbd436ef">PlayerHandler</a>
-, <a class="el" href="class_player_handler_old.html#a697114c900e29b59b43f631eadc7f829">PlayerHandlerOld</a>
+, <a class="el" href="class_player_handler___v2.html#a9981ece4a312290bc489b27b22f8869e">PlayerHandler_V2</a>
 </li>
 <li>minY
-: <a class="el" href="class_r_p_g_1_1_player_1_1_mouse_look.html#a930bcdc9ed224f2427e28330321767b3">RPG.Player.MouseLook</a>
+: <a class="el" href="class_mouse_look.html#a20e89ace51cfc8156646e01015080e24">MouseLook</a>
 </li>
 <li>moveDir
 : <a class="el" href="class_f_p_s_1_1_player_1_1_movement.html#a958a1a6cfde2cebc9560bfb4deaf119a">FPS.Player.Movement</a>
+, <a class="el" href="class_movement_controller.html#a7f8f6dd58e85312fb77170a7ede2709f">MovementController</a>
+, <a class="el" href="class_movement_controller___m_p.html#a6fcf1c07b08e85ba09bcf0778eb33a1f">MovementController_MP</a>
 </li>
 <li>moveSpeed
 : <a class="el" href="class_f_p_s_1_1_player_1_1_movement.html#a46f1f89889d7354ac34eadc8bce7c300">FPS.Player.Movement</a>
-, <a class="el" href="class_f_p_s_1_1_player_1_1_movement_v2.html#a402cc91c8ab40b6bd31541cb59ebfbca">FPS.Player.MovementV2</a>
+, <a class="el" href="class_movement_controller.html#a5fecb6e2e7958a7365f1be686f6e16de">MovementController</a>
+, <a class="el" href="class_movement_controller___m_p.html#a65ab8818e0a6f2a23cb0bb6166c1cde3">MovementController_MP</a>
 </li>
 <li>MoveV2()
 : <a class="el" href="class_f_p_s_1_1_player_1_1_movement.html#adec403330da7c7de328ab41c8198df8f">FPS.Player.Movement</a>
+, <a class="el" href="class_movement_controller.html#a8d374259829ec448e851ce57aacbd9e6">MovementController</a>
+, <a class="el" href="class_movement_controller___m_p.html#a16af4fc86a10a1a4193fad57b1068564">MovementController_MP</a>
+</li>
+</ul>
+
+
+<h3><a id="index_o"></a>- o -</h3><ul>
+<li>OnStartAuthority()
+: <a class="el" href="class_movement_controller___m_p.html#a636e1416427ec9f42def29203afb5fb4">MovementController_MP</a>
 </li>
 </ul>
 
 
 <h3><a id="index_p"></a>- p -</h3><ul>
-<li>PlayerMoveTestWithEnumeratorPasses()
-: <a class="el" href="class_tests_1_1_player_move_test.html#a21aa33b15bd84a26605c5c3a6f10ad60">Tests.PlayerMoveTest</a>
+<li>PickupWeapon()
+: <a class="el" href="class_player.html#a093de7bd51d980488821c65c37def009">Player</a>
+, <a class="el" href="class_player_handler___v2.html#afef1b98737c4262e1ce0a9e555addd06">PlayerHandler_V2</a>
 </li>
-<li>PlayerMoveVerticalTestWithEnumeratorPasses()
-: <a class="el" href="class_tests_1_1_player_move_test.html#a827f1be05e59142143fff1783d4ae4ef">Tests.PlayerMoveTest</a>
-</li>
-<li>PlayerMoveXTestWithEnumeratorPasses()
-: <a class="el" href="class_tests_1_1_player_move_test.html#a3758628115164a152d186184409cdfc2">Tests.PlayerMoveTest</a>
-</li>
-<li>PlayerMoveZTestWithEnumeratorPasses()
-: <a class="el" href="class_tests_1_1_player_move_test.html#aebdb496f532fb8867bf765695e61f21e">Tests.PlayerMoveTest</a>
+<li>playerCamera
+: <a class="el" href="class_movement_controller___m_p.html#aa19f6a9f239ae57e7a8a18cda81f487d">MovementController_MP</a>
 </li>
 </ul>
 
 
 <h3><a id="index_r"></a>- r -</h3><ul>
-<li>range
-: <a class="el" href="class_staff.html#adedc8c7de8fad85f4791343c3c7d87de">Staff</a>
+<li>Restart()
+: <a class="el" href="class_game_manager.html#a1cbb012b22180860880a659142a0cd07">GameManager</a>
 </li>
-<li>rateOfFire
-: <a class="el" href="class_staff.html#a53526c1ef8e6c715b1baeebc47b96e24">Staff</a>
+<li>ReturnWeapon()
+: <a class="el" href="class_player.html#aa4572382376673761dff583ab1a92702">Player</a>
+, <a class="el" href="class_player_handler___v2.html#a177eae48ca8f4ef43dc5450afa610807">PlayerHandler_V2</a>
 </li>
 <li>RotationalAxis
-: <a class="el" href="class_r_p_g_1_1_player_1_1_mouse_look.html#a22b20ea11a7a7f3e79e8a47fe3ce6d7a">RPG.Player.MouseLook</a>
+: <a class="el" href="class_mouse_look.html#a1e340db92253a24aacd972763a9ec958">MouseLook</a>
 </li>
 </ul>
 
 
 <h3><a id="index_s"></a>- s -</h3><ul>
 <li>sensitivity
-: <a class="el" href="class_r_p_g_1_1_player_1_1_mouse_look.html#add7aef3f8df6330b6b318317f1d86d42">RPG.Player.MouseLook</a>
+: <a class="el" href="class_mouse_look.html#a46f39e8d284b9550af042e2d28cec449">MouseLook</a>
 </li>
-<li>Setup()
-: <a class="el" href="class_tests_1_1_player_move_test.html#a92199120f1c4d7dc3fd7cfc6377faf37">Tests.PlayerMoveTest</a>
+<li>storedMana
+: <a class="el" href="class_player_handler___v2.html#ad9616201ac597c4622d72952d67666d7">PlayerHandler_V2</a>
 </li>
-<li>Shoot()
-: <a class="el" href="class_staff.html#a1e4e113e10119c62db748f71e2ece56c">Staff</a>
+<li>storedManaText
+: <a class="el" href="class_player_handler___v2.html#a4944de980fbf0c833608de6882eed599">PlayerHandler_V2</a>
+</li>
+<li>SwitchWeapon()
+: <a class="el" href="class_player.html#a2f401ec967dd0b69552bdffe7c385f25">Player</a>
+, <a class="el" href="class_player_handler___v2.html#a494fbc252b5714dd9242584e8dc2a4f0">PlayerHandler_V2</a>
 </li>
 </ul>
 
@@ -263,11 +286,17 @@ $(document).ready(function(){initNavTree('functions.html',''); initResizable(); 
 : <a class="el" href="class_enemy.html#acfbe2dc553ea56ed704af9e6dad747df">Enemy</a>
 , <a class="el" href="class_target.html#a643d8db773527731b4f9ea525b1655ad">Target</a>
 </li>
-<li>TearDown()
-: <a class="el" href="class_tests_1_1_player_move_test.html#aa99db48840baca5f250962513d1c39ff">Tests.PlayerMoveTest</a>
+<li>teamID
+: <a class="el" href="class_player.html#a2ca0d5eedf3b254513a041d50c13873c">Player</a>
+, <a class="el" href="class_player_handler___v2.html#a32172f8a7f0db8e8305fbee153ef158d">PlayerHandler_V2</a>
 </li>
-<li>TriggerLog()
-: <a class="el" href="classtest_ani_event.html#ad48e8d9bf3b39b58fcb1c207303516c9">testAniEvent</a>
+</ul>
+
+
+<h3><a id="index_u"></a>- u -</h3><ul>
+<li>upDropOffset
+: <a class="el" href="class_player.html#acd19c4f30931ba2b019d4c5c502d0609">Player</a>
+, <a class="el" href="class_player_handler___v2.html#a4b8c504b5009747a57affb1b39064894">PlayerHandler_V2</a>
 </li>
 </ul>
 
@@ -282,18 +311,28 @@ $(document).ready(function(){initNavTree('functions.html',''); initResizable(); 
 <h3><a id="index_w"></a>- w -</h3><ul>
 <li>walkSpeed
 : <a class="el" href="class_f_p_s_1_1_player_1_1_movement.html#a6881a6c577b21a6f5a42c945a7cf5b1d">FPS.Player.Movement</a>
-, <a class="el" href="class_f_p_s_1_1_player_1_1_movement_v2.html#af59610d500d95621c5365ea88fba8c6e">FPS.Player.MovementV2</a>
+, <a class="el" href="class_movement_controller.html#a8e53d76cd34e426a058ae967cbee63b0">MovementController</a>
+, <a class="el" href="class_movement_controller___m_p.html#adab63c9fba95901cccea0b34152d0c10">MovementController_MP</a>
+</li>
+<li>weaponAnimator
+: <a class="el" href="class_f_p_s_1_1_player_1_1_movement.html#a2fd2600f2148465deb87b4a3bb756759">FPS.Player.Movement</a>
+, <a class="el" href="class_movement_controller.html#a953b106352aa7550b0afefdc0e1dc818">MovementController</a>
+, <a class="el" href="class_movement_controller___m_p.html#af734e744831bc46d9e614ba01779c873">MovementController_MP</a>
+</li>
+<li>weaponIcon
+: <a class="el" href="class_player_handler___v2.html#aad0c7a1819b9e6978eb8abaa9a88e7f3">PlayerHandler_V2</a>
+</li>
+<li>weapons
+: <a class="el" href="class_player.html#a55f612de4bf737e76d0737f6be28959c">Player</a>
+, <a class="el" href="class_player_handler___v2.html#a5ae31c0323e3acb4b72d83664dcbac0a">PlayerHandler_V2</a>
 </li>
 </ul>
 </div><!-- contents -->
-</div><!-- doc-content -->
 <!-- start footer part -->
-<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
-  <ul>
-    <li class="footer">Generated by
-    <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
-  </ul>
-</div>
+<hr class="footer"/><address class="footer"><small>
+Generated by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.18
+</small></address>
 </body>
 </html>

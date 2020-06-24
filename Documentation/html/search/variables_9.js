@@ -1,4 +1,6 @@
 var searchData=
 [
-  ['vert_143',['vert',['../class_f_p_s_1_1_player_1_1_movement.html#a3b1bcd04e1ce519d3b9d4679fdcb3187',1,'FPS::Player::Movement']]]
+  ['sensitivity_138',['sensitivity',['../class_mouse_look.html#a46f39e8d284b9550af042e2d28cec449',1,'MouseLook']]],
+  ['storedmana_139',['storedMana',['../class_player_handler___v2.html#ad9616201ac597c4622d72952d67666d7',1,'PlayerHandler_V2']]],
+  ['storedmanatext_140',['storedManaText',['../class_player_handler___v2.html#a4944de980fbf0c833608de6882eed599',1,'PlayerHandler_V2']]]
 ];

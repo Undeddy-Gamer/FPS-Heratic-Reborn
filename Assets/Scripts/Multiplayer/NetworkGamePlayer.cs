@@ -3,13 +3,16 @@ using System.Collections.Generic;
 using UnityEngine;
 using Mirror;
 
+
+/// <summary>
+/// The network game player used to spawn in the player objects into the level
+/// </summary>
 public class NetworkGamePlayer : NetworkBehaviour
 {
 
     [SyncVar]
     public string displayName = "Loading...";
-    public SoWeapon selectedWeapon;
-    public SoQuirk selectedQuirk;
+    public string selectedWeaponStr;
     public float skillLevel;
 
     private NetworkManagerLobby room;
@@ -46,6 +49,10 @@ public class NetworkGamePlayer : NetworkBehaviour
         this.displayName = displayName;
     }
 
-
+    [Server]
+    public void SetWeapnStr(string weaponName)
+    {
+        this.selectedWeaponStr = weaponName;
+    }
 
 }

@@ -1311,8 +1311,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: 48.30005, y: 200}
-  m_SizeDelta: {x: -371.5, y: 360.1}
+  m_AnchoredPosition: {x: -208.04993, y: 200}
+  m_SizeDelta: {x: -884.2, y: 360.1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &680103217
 MonoBehaviour:
@@ -1973,7 +1973,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1255386479
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2377,8 +2377,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: 48, y: -186}
-  m_SizeDelta: {x: -372, y: 360}
+  m_AnchoredPosition: {x: -208.1, y: -186}
+  m_SizeDelta: {x: -884.1, y: 360}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1421317068
 MonoBehaviour:
@@ -3596,8 +3596,8 @@ MonoBehaviour:
   - {fileID: 11400000, guid: bbaa640a4d19d104b8f68d49f68254be, type: 2}
   availableWeapons:
   - {fileID: 11400000, guid: 71f2f32bae494fb4cb0f8ac95bc4a6ee, type: 2}
-  - {fileID: 11400000, guid: fc5e5afd58d952747aa190050d7c9dfd, type: 2}
   - {fileID: 11400000, guid: 6112c237a12d430439c1fed96c40ab64, type: 2}
+  - {fileID: 11400000, guid: 265e6e027cd71ae40b991a790d1b200f, type: 2}
 --- !u!1 &2026812495
 GameObject:
   m_ObjectHideFlags: 0

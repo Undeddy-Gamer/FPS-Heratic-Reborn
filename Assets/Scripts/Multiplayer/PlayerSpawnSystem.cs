@@ -63,6 +63,7 @@ public class PlayerSpawnSystem : NetworkBehaviour
             
             if (player.hasAuthority)
             {
+                playerInstance.GetComponent<SOAllocation>().selectedWeapon = player.selectedWeaponStr;
                 //playerInstance.GetComponent<SOAllocation>().mySOWeapon = player.selectedWeapon;
                 //playerInstance.GetComponent<SOAllocation>().myQuirk = player.selectedQuirk;
             }

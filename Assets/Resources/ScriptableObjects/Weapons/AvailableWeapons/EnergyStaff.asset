@@ -13,9 +13,10 @@ MonoBehaviour:
   m_Name: EnergyStaff
   m_EditorClassIdentifier: 
   weaponName: Energy Staff
-  weaponDescription: Under Construction
-  weaponIcon: {fileID: 0}
-  weaponPrefab: {fileID: 0}
+  weaponDescription: instant hit staff
+  weaponIcon: {fileID: 21300000, guid: fefb9a433a23bad40817e82b0a934259, type: 3}
+  weaponPrefab: {fileID: 4633231185412111788, guid: e0045fab8cf2af442a92bd3a52951fa3,
+    type: 3}
   weaponDamage: 0
   weaponRange: 0
   weaponFireRate: 0

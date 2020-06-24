@@ -10,10 +10,8 @@ public class Flag : MonoBehaviour
 
 
     private void Start()
-    {
-        
-        originalLocation = transform.position;
-        
+    {        
+        originalLocation = transform.position;        
     }
 
     public void Update()
@@ -22,15 +20,19 @@ public class Flag : MonoBehaviour
         
     }
 
+    //trigger for picking up the flag
     private void OnTriggerEnter(Collider other)
     {
         //Debug.Log("Flag Perimiter Entered");
         PickupFlag(other);
     }
 
+
     private void PickupFlag(Collider other)
     {
-        Player player = other.GetComponent<Player>();
+        //Player player = other.GetComponent<Player>();
+        
+        PlayerHandler_V2 player = other.GetComponent<PlayerHandler_V2>();
 
         if (player != null)
         {

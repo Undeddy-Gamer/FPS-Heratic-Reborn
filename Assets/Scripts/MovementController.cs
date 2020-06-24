@@ -43,32 +43,28 @@ public class MovementController : MonoBehaviour
     }
 
 
-    private void FixedUpdate()
+    private void Update()
     {
       
         MoveV2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"), Input.GetButtonDown("Jump"));
     }
 
-    private bool IsGrounded()
+    public bool IsGrounded
     {
+        get
+        {
+            float DisstanceToTheGround = GetComponent<Collider>().bounds.extents.y;
+            RaycastHit hit;
+            if (Physics.Raycast(transform.position, Vector3.down, out hit, DisstanceToTheGround + 0.1f))
+            {
+                if (hit.transform.tag == "Ground")
+                {
+                    return true;
+                }
+            }
 
-        //CHANGE TO Capsule/RAYCAST CHECK        
-
-        //Bounds colliderBounds = new Bounds(playerCollider.bounds.center, new Vector3(playerCollider.bounds.size.x, playerCollider.bounds.size.y + extraHeightCheck, playerCollider.bounds.size.z));
-        //Debug.Log(colliderBounds.size);
-        //Collider[] check = Physics.OverlapCapsule(playerCollider.bounds.center, colliderBounds.size, playerCollider.radius, groundLayerMask);
-
-        //foreach (Collider col in check)
-        //{
-        //    Debug.Log(col.name);
-        //}
-
-        //if (check.Length > 0)            
-        //    return true;        
-        //else
-        //    return false;
-
-        return true;
+            return false;
+        }
     }
 
 
@@ -145,7 +141,7 @@ public class MovementController : MonoBehaviour
 
 
                 // apply jump
-                if (jump && IsGrounded())
+                if (jump && IsGrounded)
                 {
                     playerRigid.AddForce(new Vector3(0, jumpStrength, 0));
                     anim.SetTrigger("Jump");

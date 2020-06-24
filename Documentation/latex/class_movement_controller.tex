@@ -1,0 +1,122 @@
+\hypertarget{class_movement_controller}{}\doxysection{Movement\+Controller Class Reference}
+\label{class_movement_controller}\index{MovementController@{MovementController}}
+Inheritance diagram for Movement\+Controller\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_movement_controller}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_movement_controller_a8d374259829ec448e851ce57aacbd9e6}{Move\+V2}} (float x\+Axis, float z\+Axis, bool jump)
+\begin{DoxyCompactList}\small\item\em Apply movement and speed to the player character dependent on movement type modifier (applied by input crouch, jump, run, default is walk) \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+float \mbox{\hyperlink{class_movement_controller_a5fecb6e2e7958a7365f1be686f6e16de}{move\+Speed}} = 5
+\item 
+float \mbox{\hyperlink{class_movement_controller_a8e53d76cd34e426a058ae967cbee63b0}{walk\+Speed}} = 5
+\item 
+Animator \mbox{\hyperlink{class_movement_controller_a4cc434ae33cca1b8ad9387cb55af965b}{anim}}
+\item 
+Vector3 \mbox{\hyperlink{class_movement_controller_a7f8f6dd58e85312fb77170a7ede2709f}{move\+Dir}}
+\item 
+float \mbox{\hyperlink{class_movement_controller_a2affc7e4ca4606ac0609caf2b6b1cec1}{extra\+Height\+Check}} = 0.\+1f
+\item 
+Animator \mbox{\hyperlink{class_movement_controller_a953b106352aa7550b0afefdc0e1dc818}{weapon\+Animator}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{class_movement_controller_adc4306cc93acd8e15831560d79a41ff8}{Is\+Grounded}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_movement_controller_a8d374259829ec448e851ce57aacbd9e6}\label{class_movement_controller_a8d374259829ec448e851ce57aacbd9e6}} 
+\index{MovementController@{MovementController}!MoveV2@{MoveV2}}
+\index{MoveV2@{MoveV2}!MovementController@{MovementController}}
+\doxysubsubsection{\texorpdfstring{MoveV2()}{MoveV2()}}
+{\footnotesize\ttfamily void Movement\+Controller.\+Move\+V2 (\begin{DoxyParamCaption}\item[{float}]{x\+Axis,  }\item[{float}]{z\+Axis,  }\item[{bool}]{jump }\end{DoxyParamCaption})}
+
+
+
+Apply movement and speed to the player character dependent on movement type modifier (applied by input crouch, jump, run, default is walk) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em horizontal\+Axis} & Amount to move forward\\
+\hline
+{\em vertical\+Axis} & Amount to move left/right (positive to move right, negative to move left)\\
+\hline
+\end{DoxyParams}
+
+
+Jump is also applied within the function
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\mbox{\hyperlink{class_movement_controller_a8d374259829ec448e851ce57aacbd9e6}{MoveV2}}(1,-\/1);}
+\end{DoxyCode}
+ 
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em System.\+Overflow\+Exception} & Throws an overflow error\\
+\hline
+\end{DoxyExceptions}
+~\newline
+ 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_movement_controller_a4cc434ae33cca1b8ad9387cb55af965b}\label{class_movement_controller_a4cc434ae33cca1b8ad9387cb55af965b}} 
+\index{MovementController@{MovementController}!anim@{anim}}
+\index{anim@{anim}!MovementController@{MovementController}}
+\doxysubsubsection{\texorpdfstring{anim}{anim}}
+{\footnotesize\ttfamily Animator Movement\+Controller.\+anim}
+
+\mbox{\Hypertarget{class_movement_controller_a2affc7e4ca4606ac0609caf2b6b1cec1}\label{class_movement_controller_a2affc7e4ca4606ac0609caf2b6b1cec1}} 
+\index{MovementController@{MovementController}!extraHeightCheck@{extraHeightCheck}}
+\index{extraHeightCheck@{extraHeightCheck}!MovementController@{MovementController}}
+\doxysubsubsection{\texorpdfstring{extraHeightCheck}{extraHeightCheck}}
+{\footnotesize\ttfamily float Movement\+Controller.\+extra\+Height\+Check = 0.\+1f}
+
+\mbox{\Hypertarget{class_movement_controller_a7f8f6dd58e85312fb77170a7ede2709f}\label{class_movement_controller_a7f8f6dd58e85312fb77170a7ede2709f}} 
+\index{MovementController@{MovementController}!moveDir@{moveDir}}
+\index{moveDir@{moveDir}!MovementController@{MovementController}}
+\doxysubsubsection{\texorpdfstring{moveDir}{moveDir}}
+{\footnotesize\ttfamily Vector3 Movement\+Controller.\+move\+Dir}
+
+\mbox{\Hypertarget{class_movement_controller_a5fecb6e2e7958a7365f1be686f6e16de}\label{class_movement_controller_a5fecb6e2e7958a7365f1be686f6e16de}} 
+\index{MovementController@{MovementController}!moveSpeed@{moveSpeed}}
+\index{moveSpeed@{moveSpeed}!MovementController@{MovementController}}
+\doxysubsubsection{\texorpdfstring{moveSpeed}{moveSpeed}}
+{\footnotesize\ttfamily float Movement\+Controller.\+move\+Speed = 5}
+
+\mbox{\Hypertarget{class_movement_controller_a8e53d76cd34e426a058ae967cbee63b0}\label{class_movement_controller_a8e53d76cd34e426a058ae967cbee63b0}} 
+\index{MovementController@{MovementController}!walkSpeed@{walkSpeed}}
+\index{walkSpeed@{walkSpeed}!MovementController@{MovementController}}
+\doxysubsubsection{\texorpdfstring{walkSpeed}{walkSpeed}}
+{\footnotesize\ttfamily float Movement\+Controller.\+walk\+Speed = 5}
+
+\mbox{\Hypertarget{class_movement_controller_a953b106352aa7550b0afefdc0e1dc818}\label{class_movement_controller_a953b106352aa7550b0afefdc0e1dc818}} 
+\index{MovementController@{MovementController}!weaponAnimator@{weaponAnimator}}
+\index{weaponAnimator@{weaponAnimator}!MovementController@{MovementController}}
+\doxysubsubsection{\texorpdfstring{weaponAnimator}{weaponAnimator}}
+{\footnotesize\ttfamily Animator Movement\+Controller.\+weapon\+Animator}
+
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{class_movement_controller_adc4306cc93acd8e15831560d79a41ff8}\label{class_movement_controller_adc4306cc93acd8e15831560d79a41ff8}} 
+\index{MovementController@{MovementController}!IsGrounded@{IsGrounded}}
+\index{IsGrounded@{IsGrounded}!MovementController@{MovementController}}
+\doxysubsubsection{\texorpdfstring{IsGrounded}{IsGrounded}}
+{\footnotesize\ttfamily bool Movement\+Controller.\+Is\+Grounded\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Git\+Hub/\+F\+P\+S-\/\+Heratic-\/\+Reborn/\+Assets/\+Scripts/\mbox{\hyperlink{_movement_controller_8cs}{Movement\+Controller.\+cs}}\end{DoxyCompactItemize}

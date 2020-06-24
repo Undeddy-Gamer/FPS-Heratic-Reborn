@@ -1,0 +1,346 @@
+\hypertarget{class_player_handler___v2}{}\doxysection{Player\+Handler\+\_\+\+V2 Class Reference}
+\label{class_player_handler___v2}\index{PlayerHandler\_V2@{PlayerHandler\_V2}}
+Inheritance diagram for Player\+Handler\+\_\+\+V2\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_player_handler___v2}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_player_handler___v2_af043e5b6fde5fd87e11656eb0869038f}{Damage\+Player}} (float damage)
+\begin{DoxyCompactList}\small\item\em Damage player function \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_player_handler___v2_a2f6e261484f765330fd0e074a9b5f84d}{Heal\+Over\+Time}} ()
+\begin{DoxyCompactList}\small\item\em Function to heal over time if player has heal rate de \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_player_handler___v2_afef1b98737c4262e1ce0a9e555addd06}{Pickup\+Weapon}} (Game\+Object weapon\+Object, Vector3 original\+Location, int \mbox{\hyperlink{class_player_handler___v2_a32172f8a7f0db8e8305fbee153ef158d}{team\+ID}}, int weapon\+ID, bool override\+Lock=false)
+\begin{DoxyCompactList}\small\item\em Pickup weapon and switch to it \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_player_handler___v2_ab926a24c579f2de8a7af91f9140908e7}{change\+Current\+Weapon}} (int direction, bool override\+Lock=false)
+\item 
+void \mbox{\hyperlink{class_player_handler___v2_a494fbc252b5714dd9242584e8dc2a4f0}{Switch\+Weapon}} (int weapon\+ID, bool override\+Lock=false)
+\begin{DoxyCompactList}\small\item\em Switch to weapon if able to (some weapon items like the flag cannot be changed from) \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_player_handler___v2_a0111972faa52a82943e379683ac0df66}{Drop\+Weapon}} (int weapon\+ID)
+\begin{DoxyCompactList}\small\item\em Drop weapon by weapon index (ID) \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_player_handler___v2_a177eae48ca8f4ef43dc5450afa610807}{Return\+Weapon}} (int weapon\+ID)
+\begin{DoxyCompactList}\small\item\em Return weapon world object to it\textquotesingle{}s original position (currently only works for flag weapon object) \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_player_handler___v2_af55d1f7b55ef292b67d008326d28e52b}{is\+Holding\+Flag}} ()
+\begin{DoxyCompactList}\small\item\em check if player is holding the flag \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_player_handler___v2_a79de18d9e6d25553a9eb1a1542a8ceee}{Get\+Weapon\+Team\+ID}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+float \mbox{\hyperlink{class_player_handler___v2_a704f46153dbd1c52e67167120f17294b}{cur\+Health}} = 100
+\item 
+float \mbox{\hyperlink{class_player_handler___v2_acc1c4124e43d07caf3b3f36fe1e85d27}{cur\+Mana}} = 30
+\item 
+float \mbox{\hyperlink{class_player_handler___v2_a9981ece4a312290bc489b27b22f8869e}{max\+Health}} = 100
+\item 
+float \mbox{\hyperlink{class_player_handler___v2_ad9616201ac597c4622d72952d67666d7}{stored\+Mana}} = 500
+\item 
+Slider \mbox{\hyperlink{class_player_handler___v2_ae7edabe59d3d32603655d79a6e9dd211}{health\+Bar}}
+\item 
+Slider \mbox{\hyperlink{class_player_handler___v2_a0600ffea4860071759c36ce9798d8789}{mana\+Bar}}
+\item 
+Text \mbox{\hyperlink{class_player_handler___v2_a1eae185621dbbed6adac39438b7b0792}{health\+Text}}
+\item 
+Text \mbox{\hyperlink{class_player_handler___v2_a825cb504305276687e09a0c152c8e2f2}{mana\+Text}}
+\item 
+Text \mbox{\hyperlink{class_player_handler___v2_a4944de980fbf0c833608de6882eed599}{stored\+Mana\+Text}}
+\item 
+Image \mbox{\hyperlink{class_player_handler___v2_aad0c7a1819b9e6978eb8abaa9a88e7f3}{weapon\+Icon}}
+\item 
+Transform \mbox{\hyperlink{class_player_handler___v2_a51021ad2745a57284c23dfeac0debfaf}{cur\+Check\+Point}}
+\item 
+List$<$ Weapon $>$ \mbox{\hyperlink{class_player_handler___v2_a5ae31c0323e3acb4b72d83664dcbac0a}{weapons}}
+\item 
+int \mbox{\hyperlink{class_player_handler___v2_a10e8b46c171ec59aa9540a3d0b61c6d2}{current\+Weapon}} = 0
+\item 
+int \mbox{\hyperlink{class_player_handler___v2_ab2328c258474295748be5d65ac29ed0f}{last\+Weapon}} = 0
+\item 
+float \mbox{\hyperlink{class_player_handler___v2_abe742445dbcf3ecc69f7cd22eaa4d70e}{forward\+Drop\+Offset}} = 4
+\item 
+float \mbox{\hyperlink{class_player_handler___v2_a4b8c504b5009747a57affb1b39064894}{up\+Drop\+Offset}} = 1
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static bool \mbox{\hyperlink{class_player_handler___v2_aafaa32550b8eeb0a5b0fe919d3ac6c12}{is\+Dead}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_player_handler___v2_a32172f8a7f0db8e8305fbee153ef158d}{team\+ID}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_player_handler___v2_ab926a24c579f2de8a7af91f9140908e7}\label{class_player_handler___v2_ab926a24c579f2de8a7af91f9140908e7}} 
+\index{PlayerHandler\_V2@{PlayerHandler\_V2}!changeCurrentWeapon@{changeCurrentWeapon}}
+\index{changeCurrentWeapon@{changeCurrentWeapon}!PlayerHandler\_V2@{PlayerHandler\_V2}}
+\doxysubsubsection{\texorpdfstring{changeCurrentWeapon()}{changeCurrentWeapon()}}
+{\footnotesize\ttfamily void Player\+Handler\+\_\+\+V2.\+change\+Current\+Weapon (\begin{DoxyParamCaption}\item[{int}]{direction,  }\item[{bool}]{override\+Lock = {\ttfamily false} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_player_handler___v2_af043e5b6fde5fd87e11656eb0869038f}\label{class_player_handler___v2_af043e5b6fde5fd87e11656eb0869038f}} 
+\index{PlayerHandler\_V2@{PlayerHandler\_V2}!DamagePlayer@{DamagePlayer}}
+\index{DamagePlayer@{DamagePlayer}!PlayerHandler\_V2@{PlayerHandler\_V2}}
+\doxysubsubsection{\texorpdfstring{DamagePlayer()}{DamagePlayer()}}
+{\footnotesize\ttfamily void Player\+Handler\+\_\+\+V2.\+Damage\+Player (\begin{DoxyParamCaption}\item[{float}]{damage }\end{DoxyParamCaption})}
+
+
+
+Damage player function 
+
+
+\begin{DoxyParams}{Parameters}
+{\em damage} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_player_handler___v2_a0111972faa52a82943e379683ac0df66}\label{class_player_handler___v2_a0111972faa52a82943e379683ac0df66}} 
+\index{PlayerHandler\_V2@{PlayerHandler\_V2}!DropWeapon@{DropWeapon}}
+\index{DropWeapon@{DropWeapon}!PlayerHandler\_V2@{PlayerHandler\_V2}}
+\doxysubsubsection{\texorpdfstring{DropWeapon()}{DropWeapon()}}
+{\footnotesize\ttfamily void Player\+Handler\+\_\+\+V2.\+Drop\+Weapon (\begin{DoxyParamCaption}\item[{int}]{weapon\+ID }\end{DoxyParamCaption})}
+
+
+
+Drop weapon by weapon index (ID) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em weapon\+ID} & the index of the weapon in the player weapon list\\
+\hline
+\end{DoxyParams}
+
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\mbox{\hyperlink{class_player_handler___v2_a0111972faa52a82943e379683ac0df66}{DropWeapon}}(0);}
+\end{DoxyCode}
+ 
+
+~\newline
+ \mbox{\Hypertarget{class_player_handler___v2_a79de18d9e6d25553a9eb1a1542a8ceee}\label{class_player_handler___v2_a79de18d9e6d25553a9eb1a1542a8ceee}} 
+\index{PlayerHandler\_V2@{PlayerHandler\_V2}!GetWeaponTeamID@{GetWeaponTeamID}}
+\index{GetWeaponTeamID@{GetWeaponTeamID}!PlayerHandler\_V2@{PlayerHandler\_V2}}
+\doxysubsubsection{\texorpdfstring{GetWeaponTeamID()}{GetWeaponTeamID()}}
+{\footnotesize\ttfamily int Player\+Handler\+\_\+\+V2.\+Get\+Weapon\+Team\+ID (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_player_handler___v2_a2f6e261484f765330fd0e074a9b5f84d}\label{class_player_handler___v2_a2f6e261484f765330fd0e074a9b5f84d}} 
+\index{PlayerHandler\_V2@{PlayerHandler\_V2}!HealOverTime@{HealOverTime}}
+\index{HealOverTime@{HealOverTime}!PlayerHandler\_V2@{PlayerHandler\_V2}}
+\doxysubsubsection{\texorpdfstring{HealOverTime()}{HealOverTime()}}
+{\footnotesize\ttfamily void Player\+Handler\+\_\+\+V2.\+Heal\+Over\+Time (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Function to heal over time if player has heal rate de 
+
+\mbox{\Hypertarget{class_player_handler___v2_af55d1f7b55ef292b67d008326d28e52b}\label{class_player_handler___v2_af55d1f7b55ef292b67d008326d28e52b}} 
+\index{PlayerHandler\_V2@{PlayerHandler\_V2}!isHoldingFlag@{isHoldingFlag}}
+\index{isHoldingFlag@{isHoldingFlag}!PlayerHandler\_V2@{PlayerHandler\_V2}}
+\doxysubsubsection{\texorpdfstring{isHoldingFlag()}{isHoldingFlag()}}
+{\footnotesize\ttfamily bool Player\+Handler\+\_\+\+V2.\+is\+Holding\+Flag (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+check if player is holding the flag 
+
+\mbox{\Hypertarget{class_player_handler___v2_afef1b98737c4262e1ce0a9e555addd06}\label{class_player_handler___v2_afef1b98737c4262e1ce0a9e555addd06}} 
+\index{PlayerHandler\_V2@{PlayerHandler\_V2}!PickupWeapon@{PickupWeapon}}
+\index{PickupWeapon@{PickupWeapon}!PlayerHandler\_V2@{PlayerHandler\_V2}}
+\doxysubsubsection{\texorpdfstring{PickupWeapon()}{PickupWeapon()}}
+{\footnotesize\ttfamily void Player\+Handler\+\_\+\+V2.\+Pickup\+Weapon (\begin{DoxyParamCaption}\item[{Game\+Object}]{weapon\+Object,  }\item[{Vector3}]{original\+Location,  }\item[{int}]{team\+ID,  }\item[{int}]{weapon\+ID,  }\item[{bool}]{override\+Lock = {\ttfamily false} }\end{DoxyParamCaption})}
+
+
+
+Pickup weapon and switch to it 
+
+
+\begin{DoxyParams}{Parameters}
+{\em weapon\+Object} & the weapon gameobject to set as active\\
+\hline
+{\em original\+Location} & the origianl location of the weapon (oftern the place where it was picked up)\\
+\hline
+{\em team\+ID} & if the weapon has a team only association set it here\\
+\hline
+{\em weapon\+ID} & the ID in the weapon list of the player to change to and enable\\
+\hline
+{\em override\+Lock} & overide lock is used when a weapon object (eg flag) cannont be changed from\\
+\hline
+\end{DoxyParams}
+
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\mbox{\hyperlink{class_player_handler___v2_afef1b98737c4262e1ce0a9e555addd06}{PickupWeapon}}(weaponObject, OriginalLocation, \mbox{\hyperlink{class_player_handler___v2_a32172f8a7f0db8e8305fbee153ef158d}{teamID}}, weaponID, \textcolor{keyword}{true});}
+\end{DoxyCode}
+ 
+
+~\newline
+ \mbox{\Hypertarget{class_player_handler___v2_a177eae48ca8f4ef43dc5450afa610807}\label{class_player_handler___v2_a177eae48ca8f4ef43dc5450afa610807}} 
+\index{PlayerHandler\_V2@{PlayerHandler\_V2}!ReturnWeapon@{ReturnWeapon}}
+\index{ReturnWeapon@{ReturnWeapon}!PlayerHandler\_V2@{PlayerHandler\_V2}}
+\doxysubsubsection{\texorpdfstring{ReturnWeapon()}{ReturnWeapon()}}
+{\footnotesize\ttfamily void Player\+Handler\+\_\+\+V2.\+Return\+Weapon (\begin{DoxyParamCaption}\item[{int}]{weapon\+ID }\end{DoxyParamCaption})}
+
+
+
+Return weapon world object to it\textquotesingle{}s original position (currently only works for flag weapon object) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em weapon\+ID} & the ID of the weapon to return\\
+\hline
+\end{DoxyParams}
+
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\mbox{\hyperlink{class_player_handler___v2_a177eae48ca8f4ef43dc5450afa610807}{ReturnWeapon}}(0);}
+\end{DoxyCode}
+ \mbox{\Hypertarget{class_player_handler___v2_a494fbc252b5714dd9242584e8dc2a4f0}\label{class_player_handler___v2_a494fbc252b5714dd9242584e8dc2a4f0}} 
+\index{PlayerHandler\_V2@{PlayerHandler\_V2}!SwitchWeapon@{SwitchWeapon}}
+\index{SwitchWeapon@{SwitchWeapon}!PlayerHandler\_V2@{PlayerHandler\_V2}}
+\doxysubsubsection{\texorpdfstring{SwitchWeapon()}{SwitchWeapon()}}
+{\footnotesize\ttfamily void Player\+Handler\+\_\+\+V2.\+Switch\+Weapon (\begin{DoxyParamCaption}\item[{int}]{weapon\+ID,  }\item[{bool}]{override\+Lock = {\ttfamily false} }\end{DoxyParamCaption})}
+
+
+
+Switch to weapon if able to (some weapon items like the flag cannot be changed from) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em weapon\+ID} & \\
+\hline
+{\em override\+Lock} & overide lock is used when a weapon object (eg flag) cannont be changed from, use this to force an overide\\
+\hline
+\end{DoxyParams}
+
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\mbox{\hyperlink{class_player_handler___v2_afef1b98737c4262e1ce0a9e555addd06}{PickupWeapon}}(weaponObject, OriginalLocation, \mbox{\hyperlink{class_player_handler___v2_a32172f8a7f0db8e8305fbee153ef158d}{teamID}}, weaponID, \textcolor{keyword}{true});}
+\end{DoxyCode}
+ 
+
+~\newline
+ 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_player_handler___v2_a51021ad2745a57284c23dfeac0debfaf}\label{class_player_handler___v2_a51021ad2745a57284c23dfeac0debfaf}} 
+\index{PlayerHandler\_V2@{PlayerHandler\_V2}!curCheckPoint@{curCheckPoint}}
+\index{curCheckPoint@{curCheckPoint}!PlayerHandler\_V2@{PlayerHandler\_V2}}
+\doxysubsubsection{\texorpdfstring{curCheckPoint}{curCheckPoint}}
+{\footnotesize\ttfamily Transform Player\+Handler\+\_\+\+V2.\+cur\+Check\+Point}
+
+\mbox{\Hypertarget{class_player_handler___v2_a704f46153dbd1c52e67167120f17294b}\label{class_player_handler___v2_a704f46153dbd1c52e67167120f17294b}} 
+\index{PlayerHandler\_V2@{PlayerHandler\_V2}!curHealth@{curHealth}}
+\index{curHealth@{curHealth}!PlayerHandler\_V2@{PlayerHandler\_V2}}
+\doxysubsubsection{\texorpdfstring{curHealth}{curHealth}}
+{\footnotesize\ttfamily float Player\+Handler\+\_\+\+V2.\+cur\+Health = 100}
+
+\mbox{\Hypertarget{class_player_handler___v2_acc1c4124e43d07caf3b3f36fe1e85d27}\label{class_player_handler___v2_acc1c4124e43d07caf3b3f36fe1e85d27}} 
+\index{PlayerHandler\_V2@{PlayerHandler\_V2}!curMana@{curMana}}
+\index{curMana@{curMana}!PlayerHandler\_V2@{PlayerHandler\_V2}}
+\doxysubsubsection{\texorpdfstring{curMana}{curMana}}
+{\footnotesize\ttfamily float Player\+Handler\+\_\+\+V2.\+cur\+Mana = 30}
+
+\mbox{\Hypertarget{class_player_handler___v2_a10e8b46c171ec59aa9540a3d0b61c6d2}\label{class_player_handler___v2_a10e8b46c171ec59aa9540a3d0b61c6d2}} 
+\index{PlayerHandler\_V2@{PlayerHandler\_V2}!currentWeapon@{currentWeapon}}
+\index{currentWeapon@{currentWeapon}!PlayerHandler\_V2@{PlayerHandler\_V2}}
+\doxysubsubsection{\texorpdfstring{currentWeapon}{currentWeapon}}
+{\footnotesize\ttfamily int Player\+Handler\+\_\+\+V2.\+current\+Weapon = 0}
+
+\mbox{\Hypertarget{class_player_handler___v2_abe742445dbcf3ecc69f7cd22eaa4d70e}\label{class_player_handler___v2_abe742445dbcf3ecc69f7cd22eaa4d70e}} 
+\index{PlayerHandler\_V2@{PlayerHandler\_V2}!forwardDropOffset@{forwardDropOffset}}
+\index{forwardDropOffset@{forwardDropOffset}!PlayerHandler\_V2@{PlayerHandler\_V2}}
+\doxysubsubsection{\texorpdfstring{forwardDropOffset}{forwardDropOffset}}
+{\footnotesize\ttfamily float Player\+Handler\+\_\+\+V2.\+forward\+Drop\+Offset = 4}
+
+\mbox{\Hypertarget{class_player_handler___v2_ae7edabe59d3d32603655d79a6e9dd211}\label{class_player_handler___v2_ae7edabe59d3d32603655d79a6e9dd211}} 
+\index{PlayerHandler\_V2@{PlayerHandler\_V2}!healthBar@{healthBar}}
+\index{healthBar@{healthBar}!PlayerHandler\_V2@{PlayerHandler\_V2}}
+\doxysubsubsection{\texorpdfstring{healthBar}{healthBar}}
+{\footnotesize\ttfamily Slider Player\+Handler\+\_\+\+V2.\+health\+Bar}
+
+\mbox{\Hypertarget{class_player_handler___v2_a1eae185621dbbed6adac39438b7b0792}\label{class_player_handler___v2_a1eae185621dbbed6adac39438b7b0792}} 
+\index{PlayerHandler\_V2@{PlayerHandler\_V2}!healthText@{healthText}}
+\index{healthText@{healthText}!PlayerHandler\_V2@{PlayerHandler\_V2}}
+\doxysubsubsection{\texorpdfstring{healthText}{healthText}}
+{\footnotesize\ttfamily Text Player\+Handler\+\_\+\+V2.\+health\+Text}
+
+\mbox{\Hypertarget{class_player_handler___v2_aafaa32550b8eeb0a5b0fe919d3ac6c12}\label{class_player_handler___v2_aafaa32550b8eeb0a5b0fe919d3ac6c12}} 
+\index{PlayerHandler\_V2@{PlayerHandler\_V2}!isDead@{isDead}}
+\index{isDead@{isDead}!PlayerHandler\_V2@{PlayerHandler\_V2}}
+\doxysubsubsection{\texorpdfstring{isDead}{isDead}}
+{\footnotesize\ttfamily bool Player\+Handler\+\_\+\+V2.\+is\+Dead\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_player_handler___v2_ab2328c258474295748be5d65ac29ed0f}\label{class_player_handler___v2_ab2328c258474295748be5d65ac29ed0f}} 
+\index{PlayerHandler\_V2@{PlayerHandler\_V2}!lastWeapon@{lastWeapon}}
+\index{lastWeapon@{lastWeapon}!PlayerHandler\_V2@{PlayerHandler\_V2}}
+\doxysubsubsection{\texorpdfstring{lastWeapon}{lastWeapon}}
+{\footnotesize\ttfamily int Player\+Handler\+\_\+\+V2.\+last\+Weapon = 0}
+
+\mbox{\Hypertarget{class_player_handler___v2_a0600ffea4860071759c36ce9798d8789}\label{class_player_handler___v2_a0600ffea4860071759c36ce9798d8789}} 
+\index{PlayerHandler\_V2@{PlayerHandler\_V2}!manaBar@{manaBar}}
+\index{manaBar@{manaBar}!PlayerHandler\_V2@{PlayerHandler\_V2}}
+\doxysubsubsection{\texorpdfstring{manaBar}{manaBar}}
+{\footnotesize\ttfamily Slider Player\+Handler\+\_\+\+V2.\+mana\+Bar}
+
+\mbox{\Hypertarget{class_player_handler___v2_a825cb504305276687e09a0c152c8e2f2}\label{class_player_handler___v2_a825cb504305276687e09a0c152c8e2f2}} 
+\index{PlayerHandler\_V2@{PlayerHandler\_V2}!manaText@{manaText}}
+\index{manaText@{manaText}!PlayerHandler\_V2@{PlayerHandler\_V2}}
+\doxysubsubsection{\texorpdfstring{manaText}{manaText}}
+{\footnotesize\ttfamily Text Player\+Handler\+\_\+\+V2.\+mana\+Text}
+
+\mbox{\Hypertarget{class_player_handler___v2_a9981ece4a312290bc489b27b22f8869e}\label{class_player_handler___v2_a9981ece4a312290bc489b27b22f8869e}} 
+\index{PlayerHandler\_V2@{PlayerHandler\_V2}!maxHealth@{maxHealth}}
+\index{maxHealth@{maxHealth}!PlayerHandler\_V2@{PlayerHandler\_V2}}
+\doxysubsubsection{\texorpdfstring{maxHealth}{maxHealth}}
+{\footnotesize\ttfamily float Player\+Handler\+\_\+\+V2.\+max\+Health = 100}
+
+\mbox{\Hypertarget{class_player_handler___v2_ad9616201ac597c4622d72952d67666d7}\label{class_player_handler___v2_ad9616201ac597c4622d72952d67666d7}} 
+\index{PlayerHandler\_V2@{PlayerHandler\_V2}!storedMana@{storedMana}}
+\index{storedMana@{storedMana}!PlayerHandler\_V2@{PlayerHandler\_V2}}
+\doxysubsubsection{\texorpdfstring{storedMana}{storedMana}}
+{\footnotesize\ttfamily float Player\+Handler\+\_\+\+V2.\+stored\+Mana = 500}
+
+\mbox{\Hypertarget{class_player_handler___v2_a4944de980fbf0c833608de6882eed599}\label{class_player_handler___v2_a4944de980fbf0c833608de6882eed599}} 
+\index{PlayerHandler\_V2@{PlayerHandler\_V2}!storedManaText@{storedManaText}}
+\index{storedManaText@{storedManaText}!PlayerHandler\_V2@{PlayerHandler\_V2}}
+\doxysubsubsection{\texorpdfstring{storedManaText}{storedManaText}}
+{\footnotesize\ttfamily Text Player\+Handler\+\_\+\+V2.\+stored\+Mana\+Text}
+
+\mbox{\Hypertarget{class_player_handler___v2_a4b8c504b5009747a57affb1b39064894}\label{class_player_handler___v2_a4b8c504b5009747a57affb1b39064894}} 
+\index{PlayerHandler\_V2@{PlayerHandler\_V2}!upDropOffset@{upDropOffset}}
+\index{upDropOffset@{upDropOffset}!PlayerHandler\_V2@{PlayerHandler\_V2}}
+\doxysubsubsection{\texorpdfstring{upDropOffset}{upDropOffset}}
+{\footnotesize\ttfamily float Player\+Handler\+\_\+\+V2.\+up\+Drop\+Offset = 1}
+
+\mbox{\Hypertarget{class_player_handler___v2_aad0c7a1819b9e6978eb8abaa9a88e7f3}\label{class_player_handler___v2_aad0c7a1819b9e6978eb8abaa9a88e7f3}} 
+\index{PlayerHandler\_V2@{PlayerHandler\_V2}!weaponIcon@{weaponIcon}}
+\index{weaponIcon@{weaponIcon}!PlayerHandler\_V2@{PlayerHandler\_V2}}
+\doxysubsubsection{\texorpdfstring{weaponIcon}{weaponIcon}}
+{\footnotesize\ttfamily Image Player\+Handler\+\_\+\+V2.\+weapon\+Icon}
+
+\mbox{\Hypertarget{class_player_handler___v2_a5ae31c0323e3acb4b72d83664dcbac0a}\label{class_player_handler___v2_a5ae31c0323e3acb4b72d83664dcbac0a}} 
+\index{PlayerHandler\_V2@{PlayerHandler\_V2}!weapons@{weapons}}
+\index{weapons@{weapons}!PlayerHandler\_V2@{PlayerHandler\_V2}}
+\doxysubsubsection{\texorpdfstring{weapons}{weapons}}
+{\footnotesize\ttfamily List$<$Weapon$>$ Player\+Handler\+\_\+\+V2.\+weapons}
+
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{class_player_handler___v2_a32172f8a7f0db8e8305fbee153ef158d}\label{class_player_handler___v2_a32172f8a7f0db8e8305fbee153ef158d}} 
+\index{PlayerHandler\_V2@{PlayerHandler\_V2}!teamID@{teamID}}
+\index{teamID@{teamID}!PlayerHandler\_V2@{PlayerHandler\_V2}}
+\doxysubsubsection{\texorpdfstring{teamID}{teamID}}
+{\footnotesize\ttfamily int Player\+Handler\+\_\+\+V2.\+team\+ID\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Git\+Hub/\+F\+P\+S-\/\+Heratic-\/\+Reborn/\+Assets/\+Scripts/\mbox{\hyperlink{_player_handler___v2_8cs}{Player\+Handler\+\_\+\+V2.\+cs}}\end{DoxyCompactItemize}

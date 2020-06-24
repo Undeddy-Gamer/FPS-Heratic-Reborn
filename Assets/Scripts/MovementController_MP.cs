@@ -6,7 +6,7 @@ using Mirror;
 
 public class MovementController_MP : NetworkBehaviour
 {
-    [SerializeField] private GameObject playerCamera;
+    public GameObject playerCamera;
     [SerializeField] private GameObject playerHUD;
     [SerializeField] private GameObject PlayerModel;
 
@@ -72,9 +72,9 @@ public class MovementController_MP : NetworkBehaviour
         else Debug.LogError("Mouselook script not attached to player object");
 
         
-        if (GetComponent<PlayerHandler>() != null)
+        if (GetComponent<PlayerHandler_V2>() != null)
         {
-            GetComponent<PlayerHandler>().enabled = true;
+            GetComponent<PlayerHandler_V2>().enabled = true;
         }
         else Debug.LogError("Player Handler script not attached to player object");
         playerRigid = GetComponent<Rigidbody>();

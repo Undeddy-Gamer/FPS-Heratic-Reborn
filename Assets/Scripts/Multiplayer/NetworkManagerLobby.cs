@@ -6,7 +6,9 @@ using System;
 using System.Linq;
 using UnityEngine.SceneManagement;
 
-
+/// <summary>
+/// The Nework Manager Lobby is used to manage the Network lobby and game players and allows the host to initiate the game when everyone is readied up
+/// </summary>
 public class NetworkManagerLobby : NetworkManager
 {
     [SerializeField] private int minPlayers = 2;
@@ -164,6 +166,10 @@ public class NetworkManagerLobby : NetworkManager
         }
     }
 
+    /// <summary>
+    /// Changes the sene for eveyone in the lobby ie when the game is started
+    /// </summary>
+    /// <param name="newSceneName">the name of the scene to load</param>
     public override void ServerChangeScene(string newSceneName)
     {
         //from menu to game
@@ -176,12 +182,13 @@ public class NetworkManagerLobby : NetworkManager
                 NetworkGamePlayer gamePlayerInstance = Instantiate(gamePlayerPrefab);
                 gamePlayerInstance.SetDisplayName(RoomPlayers[i].DisplayName);
                 gamePlayerInstance.skillLevel = RoomPlayers[i].skillLevel;
-                gamePlayerInstance.selectedQuirk = RoomPlayers[i].SelectedQuirk;
-                gamePlayerInstance.selectedWeapon = RoomPlayers[i].SelectedWeapon;
+               
+                //gamePlayerInstance.selectedQuirkStr = RoomPlayers[i].selectedQuirkStr;
+                gamePlayerInstance.SetWeapnStr(RoomPlayers[i].selectedWeaponStr);
 
                 NetworkServer.Destroy(conn.identity.gameObject);
 
-                NetworkServer.ReplacePlayerForConnection(conn, gamePlayerInstance.gameObject);
+                NetworkServer.ReplacePlayerForConnection(conn, gamePlayerInstance.gameObject, true);
             }
         }
 
