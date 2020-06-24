@@ -72,6 +72,9 @@ $(function() {
 <div class="title">PlayerHandler_V2 Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>This class handles the various mechanics for the player eg health, mana (ammo), damge excluding movement (see <a class="el" href="class_movement_controller.html">MovementController</a>)  
+ <a href="class_player_handler___v2.html#details">More...</a></p>
 <div class="dynheader">
 Inheritance diagram for PlayerHandler_V2:</div>
 <div class="dyncontent">
@@ -131,7 +134,7 @@ Public Attributes</h2></td></tr>
 <tr class="separator:aad0c7a1819b9e6978eb8abaa9a88e7f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a51021ad2745a57284c23dfeac0debfaf"><td class="memItemLeft" align="right" valign="top">Transform&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player_handler___v2.html#a51021ad2745a57284c23dfeac0debfaf">curCheckPoint</a></td></tr>
 <tr class="separator:a51021ad2745a57284c23dfeac0debfaf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5ae31c0323e3acb4b72d83664dcbac0a"><td class="memItemLeft" align="right" valign="top">List&lt; Weapon &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player_handler___v2.html#a5ae31c0323e3acb4b72d83664dcbac0a">weapons</a></td></tr>
+<tr class="memitem:a5ae31c0323e3acb4b72d83664dcbac0a"><td class="memItemLeft" align="right" valign="top">List&lt; <a class="el" href="class_weapon.html">Weapon</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player_handler___v2.html#a5ae31c0323e3acb4b72d83664dcbac0a">weapons</a></td></tr>
 <tr class="separator:a5ae31c0323e3acb4b72d83664dcbac0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a10e8b46c171ec59aa9540a3d0b61c6d2"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player_handler___v2.html#a10e8b46c171ec59aa9540a3d0b61c6d2">currentWeapon</a> = 0</td></tr>
 <tr class="separator:a10e8b46c171ec59aa9540a3d0b61c6d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -152,7 +155,9 @@ Properties</h2></td></tr>
 <tr class="memitem:a32172f8a7f0db8e8305fbee153ef158d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player_handler___v2.html#a32172f8a7f0db8e8305fbee153ef158d">teamID</a><code> [get]</code></td></tr>
 <tr class="separator:a32172f8a7f0db8e8305fbee153ef158d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Function Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>This class handles the various mechanics for the player eg health, mana (ammo), damge excluding movement (see <a class="el" href="class_movement_controller.html">MovementController</a>) </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="ab926a24c579f2de8a7af91f9140908e7"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab926a24c579f2de8a7af91f9140908e7">&#9670;&nbsp;</a></span>changeCurrentWeapon()</h2>
 
@@ -659,7 +664,7 @@ Properties</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">List&lt;Weapon&gt; PlayerHandler_V2.weapons</td>
+          <td class="memname">List&lt;<a class="el" href="class_weapon.html">Weapon</a>&gt; PlayerHandler_V2.weapons</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -693,10 +698,10 @@ Properties</h2></td></tr>
 <li>D:/GitHub/FPS-Heratic-Reborn/Assets/Scripts/<a class="el" href="_player_handler___v2_8cs.html">PlayerHandler_V2.cs</a></li>
 </ul>
 </div><!-- contents -->
-<div class="ttc" id="aclass_player_handler___v2_html_afef1b98737c4262e1ce0a9e555addd06"><div class="ttname"><a href="class_player_handler___v2.html#afef1b98737c4262e1ce0a9e555addd06">PlayerHandler_V2.PickupWeapon</a></div><div class="ttdeci">void PickupWeapon(GameObject weaponObject, Vector3 originalLocation, int teamID, int weaponID, bool overrideLock=false)</div><div class="ttdoc">Pickup weapon and switch to it</div><div class="ttdef"><b>Definition:</b> PlayerHandler_V2.cs:218</div></div>
-<div class="ttc" id="aclass_player_handler___v2_html_a32172f8a7f0db8e8305fbee153ef158d"><div class="ttname"><a href="class_player_handler___v2.html#a32172f8a7f0db8e8305fbee153ef158d">PlayerHandler_V2.teamID</a></div><div class="ttdeci">int teamID</div><div class="ttdef"><b>Definition:</b> PlayerHandler_V2.cs:50</div></div>
-<div class="ttc" id="aclass_player_handler___v2_html_a0111972faa52a82943e379683ac0df66"><div class="ttname"><a href="class_player_handler___v2.html#a0111972faa52a82943e379683ac0df66">PlayerHandler_V2.DropWeapon</a></div><div class="ttdeci">void DropWeapon(int weaponID)</div><div class="ttdoc">Drop weapon by weapon index (ID)</div><div class="ttdef"><b>Definition:</b> PlayerHandler_V2.cs:291</div></div>
-<div class="ttc" id="aclass_player_handler___v2_html_a177eae48ca8f4ef43dc5450afa610807"><div class="ttname"><a href="class_player_handler___v2.html#a177eae48ca8f4ef43dc5450afa610807">PlayerHandler_V2.ReturnWeapon</a></div><div class="ttdeci">void ReturnWeapon(int weaponID)</div><div class="ttdoc">Return weapon world object to it's original position (currently only works for flag weapon object)</div><div class="ttdef"><b>Definition:</b> PlayerHandler_V2.cs:322</div></div>
+<div class="ttc" id="aclass_player_handler___v2_html_afef1b98737c4262e1ce0a9e555addd06"><div class="ttname"><a href="class_player_handler___v2.html#afef1b98737c4262e1ce0a9e555addd06">PlayerHandler_V2.PickupWeapon</a></div><div class="ttdeci">void PickupWeapon(GameObject weaponObject, Vector3 originalLocation, int teamID, int weaponID, bool overrideLock=false)</div><div class="ttdoc">Pickup weapon and switch to it</div><div class="ttdef"><b>Definition:</b> PlayerHandler_V2.cs:222</div></div>
+<div class="ttc" id="aclass_player_handler___v2_html_a32172f8a7f0db8e8305fbee153ef158d"><div class="ttname"><a href="class_player_handler___v2.html#a32172f8a7f0db8e8305fbee153ef158d">PlayerHandler_V2.teamID</a></div><div class="ttdeci">int teamID</div><div class="ttdef"><b>Definition:</b> PlayerHandler_V2.cs:54</div></div>
+<div class="ttc" id="aclass_player_handler___v2_html_a0111972faa52a82943e379683ac0df66"><div class="ttname"><a href="class_player_handler___v2.html#a0111972faa52a82943e379683ac0df66">PlayerHandler_V2.DropWeapon</a></div><div class="ttdeci">void DropWeapon(int weaponID)</div><div class="ttdoc">Drop weapon by weapon index (ID)</div><div class="ttdef"><b>Definition:</b> PlayerHandler_V2.cs:295</div></div>
+<div class="ttc" id="aclass_player_handler___v2_html_a177eae48ca8f4ef43dc5450afa610807"><div class="ttname"><a href="class_player_handler___v2.html#a177eae48ca8f4ef43dc5450afa610807">PlayerHandler_V2.ReturnWeapon</a></div><div class="ttdeci">void ReturnWeapon(int weaponID)</div><div class="ttdoc">Return weapon world object to it's original position (currently only works for flag weapon object)</div><div class="ttdef"><b>Definition:</b> PlayerHandler_V2.cs:326</div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by &#160;<a href="http://www.doxygen.org/index.html">

@@ -3,7 +3,7 @@ using UnityEngine;
 using Mirror;
 
 /// <summary>
-/// Script for a Projectile collision
+/// Script for a Projectile collision, multiplayer testing (prototype not working)
 /// </summary>
 public class BallProjectile_MP : NetworkBehaviour   
 {

@@ -4,7 +4,7 @@ using UnityEngine;
 
 
 /// <summary>
-/// Burn Impact Effect
+/// Burn Impact Shader Effect
 /// </summary>
 public class BurnIntoObject : MonoBehaviour
 {

@@ -1,0 +1,216 @@
+\hypertarget{class_network_manager_lobby}{}\doxysection{Network\+Manager\+Lobby Class Reference}
+\label{class_network_manager_lobby}\index{NetworkManagerLobby@{NetworkManagerLobby}}
+
+
+The Nework Manager Lobby is used to manage the Network lobby and game players and allows the host to initiate the game when everyone is readied up  
+
+
+Inheritance diagram for Network\+Manager\+Lobby\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_network_manager_lobby}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+override void \mbox{\hyperlink{class_network_manager_lobby_a9c4a42c75c2657638b390fc0719b0854}{On\+Start\+Server}} ()
+\item 
+override void \mbox{\hyperlink{class_network_manager_lobby_a51900a340a734bfd83d2b06029d64173}{On\+Start\+Client}} ()
+\item 
+override void \mbox{\hyperlink{class_network_manager_lobby_ac6c5dc10c0b53fa13dc5853a918a8db8}{On\+Client\+Connect}} (Network\+Connection conn)
+\item 
+override void \mbox{\hyperlink{class_network_manager_lobby_a750ee18b67abe7a736db0f349be4210f}{On\+Client\+Disconnect}} (Network\+Connection conn)
+\item 
+override void \mbox{\hyperlink{class_network_manager_lobby_a03dade20972d921dd031a168cad5bf73}{On\+Server\+Connect}} (Network\+Connection conn)
+\item 
+override void \mbox{\hyperlink{class_network_manager_lobby_ad80459f1b3c230ca993952e7e9ba6c48}{On\+Server\+Add\+Player}} (Network\+Connection conn)
+\item 
+override void \mbox{\hyperlink{class_network_manager_lobby_a7e5035b28119c8a7e5cc40d0ff6d3961}{On\+Server\+Disconnect}} (Network\+Connection conn)
+\item 
+override void \mbox{\hyperlink{class_network_manager_lobby_ab0abc178f440e2cd966e912095f11333}{On\+Stop\+Server}} ()
+\item 
+void \mbox{\hyperlink{class_network_manager_lobby_a9407abcd5cbdaccf6a4ca60e45fe43a7}{Notify\+Players\+Of\+Ready\+State}} ()
+\item 
+override void \mbox{\hyperlink{class_network_manager_lobby_a3fbb5e9b88afe6bb16577d3c84300a53}{On\+Server\+Ready}} (Network\+Connection conn)
+\item 
+void \mbox{\hyperlink{class_network_manager_lobby_a9ab2dde8a95ccef4d9bfccedb8ab4732}{Start\+Game}} ()
+\item 
+override void \mbox{\hyperlink{class_network_manager_lobby_a401b2414ea4e901cd4565c5b3c98ad45}{Server\+Change\+Scene}} (string new\+Scene\+Name)
+\begin{DoxyCompactList}\small\item\em Changes the sene for eveyone in the lobby ie when the game is started \end{DoxyCompactList}\item 
+override void \mbox{\hyperlink{class_network_manager_lobby_a038deab73157197c3bd1a687c4b9f95e}{On\+Server\+Scene\+Changed}} (string scene\+Name)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Game\+Object \mbox{\hyperlink{class_network_manager_lobby_a9a098da8f1918e2aedd89d8f20718ba3}{game\+Mode}}
+\item 
+string \mbox{\hyperlink{class_network_manager_lobby_a9a80700f8aa2b0a63a44c5b21c47d159}{game\+Mode\+Str}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+List$<$ \mbox{\hyperlink{class_network_lobby_player}{Network\+Lobby\+Player}} $>$ \mbox{\hyperlink{class_network_manager_lobby_a0b1cc6edd3600e03d632a9ceb5c3ed2c}{Room\+Players}} = new List$<$\mbox{\hyperlink{class_network_lobby_player}{Network\+Lobby\+Player}}$>$()\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+List$<$ \mbox{\hyperlink{class_network_game_player}{Network\+Game\+Player}} $>$ \mbox{\hyperlink{class_network_manager_lobby_adc9ec65a897f6c8de267da9cd5378ab6}{Game\+Players}} = new List$<$\mbox{\hyperlink{class_network_game_player}{Network\+Game\+Player}}$>$()\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Events}
+\begin{DoxyCompactItemize}
+\item 
+Action \mbox{\hyperlink{class_network_manager_lobby_a67f0c4a12b8c462d05be01b9910ac5fd}{on\+Client\+Connected}}
+\item 
+Action \mbox{\hyperlink{class_network_manager_lobby_a896bc4053718afb737cce2ac9b6a686b}{on\+Client\+Disconnected}}
+\item 
+static Action$<$ Network\+Connection $>$ \mbox{\hyperlink{class_network_manager_lobby_ad803ebbb27aa1906e2090c680b3b7d17}{on\+Server\+Readied}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The Nework Manager Lobby is used to manage the Network lobby and game players and allows the host to initiate the game when everyone is readied up 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_network_manager_lobby_a9407abcd5cbdaccf6a4ca60e45fe43a7}\label{class_network_manager_lobby_a9407abcd5cbdaccf6a4ca60e45fe43a7}} 
+\index{NetworkManagerLobby@{NetworkManagerLobby}!NotifyPlayersOfReadyState@{NotifyPlayersOfReadyState}}
+\index{NotifyPlayersOfReadyState@{NotifyPlayersOfReadyState}!NetworkManagerLobby@{NetworkManagerLobby}}
+\doxysubsubsection{\texorpdfstring{NotifyPlayersOfReadyState()}{NotifyPlayersOfReadyState()}}
+{\footnotesize\ttfamily void Network\+Manager\+Lobby.\+Notify\+Players\+Of\+Ready\+State (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_network_manager_lobby_ac6c5dc10c0b53fa13dc5853a918a8db8}\label{class_network_manager_lobby_ac6c5dc10c0b53fa13dc5853a918a8db8}} 
+\index{NetworkManagerLobby@{NetworkManagerLobby}!OnClientConnect@{OnClientConnect}}
+\index{OnClientConnect@{OnClientConnect}!NetworkManagerLobby@{NetworkManagerLobby}}
+\doxysubsubsection{\texorpdfstring{OnClientConnect()}{OnClientConnect()}}
+{\footnotesize\ttfamily override void Network\+Manager\+Lobby.\+On\+Client\+Connect (\begin{DoxyParamCaption}\item[{Network\+Connection}]{conn }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_network_manager_lobby_a750ee18b67abe7a736db0f349be4210f}\label{class_network_manager_lobby_a750ee18b67abe7a736db0f349be4210f}} 
+\index{NetworkManagerLobby@{NetworkManagerLobby}!OnClientDisconnect@{OnClientDisconnect}}
+\index{OnClientDisconnect@{OnClientDisconnect}!NetworkManagerLobby@{NetworkManagerLobby}}
+\doxysubsubsection{\texorpdfstring{OnClientDisconnect()}{OnClientDisconnect()}}
+{\footnotesize\ttfamily override void Network\+Manager\+Lobby.\+On\+Client\+Disconnect (\begin{DoxyParamCaption}\item[{Network\+Connection}]{conn }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_network_manager_lobby_ad80459f1b3c230ca993952e7e9ba6c48}\label{class_network_manager_lobby_ad80459f1b3c230ca993952e7e9ba6c48}} 
+\index{NetworkManagerLobby@{NetworkManagerLobby}!OnServerAddPlayer@{OnServerAddPlayer}}
+\index{OnServerAddPlayer@{OnServerAddPlayer}!NetworkManagerLobby@{NetworkManagerLobby}}
+\doxysubsubsection{\texorpdfstring{OnServerAddPlayer()}{OnServerAddPlayer()}}
+{\footnotesize\ttfamily override void Network\+Manager\+Lobby.\+On\+Server\+Add\+Player (\begin{DoxyParamCaption}\item[{Network\+Connection}]{conn }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_network_manager_lobby_a03dade20972d921dd031a168cad5bf73}\label{class_network_manager_lobby_a03dade20972d921dd031a168cad5bf73}} 
+\index{NetworkManagerLobby@{NetworkManagerLobby}!OnServerConnect@{OnServerConnect}}
+\index{OnServerConnect@{OnServerConnect}!NetworkManagerLobby@{NetworkManagerLobby}}
+\doxysubsubsection{\texorpdfstring{OnServerConnect()}{OnServerConnect()}}
+{\footnotesize\ttfamily override void Network\+Manager\+Lobby.\+On\+Server\+Connect (\begin{DoxyParamCaption}\item[{Network\+Connection}]{conn }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_network_manager_lobby_a7e5035b28119c8a7e5cc40d0ff6d3961}\label{class_network_manager_lobby_a7e5035b28119c8a7e5cc40d0ff6d3961}} 
+\index{NetworkManagerLobby@{NetworkManagerLobby}!OnServerDisconnect@{OnServerDisconnect}}
+\index{OnServerDisconnect@{OnServerDisconnect}!NetworkManagerLobby@{NetworkManagerLobby}}
+\doxysubsubsection{\texorpdfstring{OnServerDisconnect()}{OnServerDisconnect()}}
+{\footnotesize\ttfamily override void Network\+Manager\+Lobby.\+On\+Server\+Disconnect (\begin{DoxyParamCaption}\item[{Network\+Connection}]{conn }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_network_manager_lobby_a3fbb5e9b88afe6bb16577d3c84300a53}\label{class_network_manager_lobby_a3fbb5e9b88afe6bb16577d3c84300a53}} 
+\index{NetworkManagerLobby@{NetworkManagerLobby}!OnServerReady@{OnServerReady}}
+\index{OnServerReady@{OnServerReady}!NetworkManagerLobby@{NetworkManagerLobby}}
+\doxysubsubsection{\texorpdfstring{OnServerReady()}{OnServerReady()}}
+{\footnotesize\ttfamily override void Network\+Manager\+Lobby.\+On\+Server\+Ready (\begin{DoxyParamCaption}\item[{Network\+Connection}]{conn }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_network_manager_lobby_a038deab73157197c3bd1a687c4b9f95e}\label{class_network_manager_lobby_a038deab73157197c3bd1a687c4b9f95e}} 
+\index{NetworkManagerLobby@{NetworkManagerLobby}!OnServerSceneChanged@{OnServerSceneChanged}}
+\index{OnServerSceneChanged@{OnServerSceneChanged}!NetworkManagerLobby@{NetworkManagerLobby}}
+\doxysubsubsection{\texorpdfstring{OnServerSceneChanged()}{OnServerSceneChanged()}}
+{\footnotesize\ttfamily override void Network\+Manager\+Lobby.\+On\+Server\+Scene\+Changed (\begin{DoxyParamCaption}\item[{string}]{scene\+Name }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_network_manager_lobby_a51900a340a734bfd83d2b06029d64173}\label{class_network_manager_lobby_a51900a340a734bfd83d2b06029d64173}} 
+\index{NetworkManagerLobby@{NetworkManagerLobby}!OnStartClient@{OnStartClient}}
+\index{OnStartClient@{OnStartClient}!NetworkManagerLobby@{NetworkManagerLobby}}
+\doxysubsubsection{\texorpdfstring{OnStartClient()}{OnStartClient()}}
+{\footnotesize\ttfamily override void Network\+Manager\+Lobby.\+On\+Start\+Client (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_network_manager_lobby_a9c4a42c75c2657638b390fc0719b0854}\label{class_network_manager_lobby_a9c4a42c75c2657638b390fc0719b0854}} 
+\index{NetworkManagerLobby@{NetworkManagerLobby}!OnStartServer@{OnStartServer}}
+\index{OnStartServer@{OnStartServer}!NetworkManagerLobby@{NetworkManagerLobby}}
+\doxysubsubsection{\texorpdfstring{OnStartServer()}{OnStartServer()}}
+{\footnotesize\ttfamily override void Network\+Manager\+Lobby.\+On\+Start\+Server (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_network_manager_lobby_ab0abc178f440e2cd966e912095f11333}\label{class_network_manager_lobby_ab0abc178f440e2cd966e912095f11333}} 
+\index{NetworkManagerLobby@{NetworkManagerLobby}!OnStopServer@{OnStopServer}}
+\index{OnStopServer@{OnStopServer}!NetworkManagerLobby@{NetworkManagerLobby}}
+\doxysubsubsection{\texorpdfstring{OnStopServer()}{OnStopServer()}}
+{\footnotesize\ttfamily override void Network\+Manager\+Lobby.\+On\+Stop\+Server (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_network_manager_lobby_a401b2414ea4e901cd4565c5b3c98ad45}\label{class_network_manager_lobby_a401b2414ea4e901cd4565c5b3c98ad45}} 
+\index{NetworkManagerLobby@{NetworkManagerLobby}!ServerChangeScene@{ServerChangeScene}}
+\index{ServerChangeScene@{ServerChangeScene}!NetworkManagerLobby@{NetworkManagerLobby}}
+\doxysubsubsection{\texorpdfstring{ServerChangeScene()}{ServerChangeScene()}}
+{\footnotesize\ttfamily override void Network\+Manager\+Lobby.\+Server\+Change\+Scene (\begin{DoxyParamCaption}\item[{string}]{new\+Scene\+Name }\end{DoxyParamCaption})}
+
+
+
+Changes the sene for eveyone in the lobby ie when the game is started 
+
+
+\begin{DoxyParams}{Parameters}
+{\em new\+Scene\+Name} & the name of the scene to load\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_network_manager_lobby_a9ab2dde8a95ccef4d9bfccedb8ab4732}\label{class_network_manager_lobby_a9ab2dde8a95ccef4d9bfccedb8ab4732}} 
+\index{NetworkManagerLobby@{NetworkManagerLobby}!StartGame@{StartGame}}
+\index{StartGame@{StartGame}!NetworkManagerLobby@{NetworkManagerLobby}}
+\doxysubsubsection{\texorpdfstring{StartGame()}{StartGame()}}
+{\footnotesize\ttfamily void Network\+Manager\+Lobby.\+Start\+Game (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_network_manager_lobby_a9a098da8f1918e2aedd89d8f20718ba3}\label{class_network_manager_lobby_a9a098da8f1918e2aedd89d8f20718ba3}} 
+\index{NetworkManagerLobby@{NetworkManagerLobby}!gameMode@{gameMode}}
+\index{gameMode@{gameMode}!NetworkManagerLobby@{NetworkManagerLobby}}
+\doxysubsubsection{\texorpdfstring{gameMode}{gameMode}}
+{\footnotesize\ttfamily Game\+Object Network\+Manager\+Lobby.\+game\+Mode}
+
+\mbox{\Hypertarget{class_network_manager_lobby_a9a80700f8aa2b0a63a44c5b21c47d159}\label{class_network_manager_lobby_a9a80700f8aa2b0a63a44c5b21c47d159}} 
+\index{NetworkManagerLobby@{NetworkManagerLobby}!gameModeStr@{gameModeStr}}
+\index{gameModeStr@{gameModeStr}!NetworkManagerLobby@{NetworkManagerLobby}}
+\doxysubsubsection{\texorpdfstring{gameModeStr}{gameModeStr}}
+{\footnotesize\ttfamily string Network\+Manager\+Lobby.\+game\+Mode\+Str}
+
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{class_network_manager_lobby_adc9ec65a897f6c8de267da9cd5378ab6}\label{class_network_manager_lobby_adc9ec65a897f6c8de267da9cd5378ab6}} 
+\index{NetworkManagerLobby@{NetworkManagerLobby}!GamePlayers@{GamePlayers}}
+\index{GamePlayers@{GamePlayers}!NetworkManagerLobby@{NetworkManagerLobby}}
+\doxysubsubsection{\texorpdfstring{GamePlayers}{GamePlayers}}
+{\footnotesize\ttfamily List$<$\mbox{\hyperlink{class_network_game_player}{Network\+Game\+Player}}$>$ Network\+Manager\+Lobby.\+Game\+Players = new List$<$\mbox{\hyperlink{class_network_game_player}{Network\+Game\+Player}}$>$()\hspace{0.3cm}{\ttfamily [get]}}
+
+\mbox{\Hypertarget{class_network_manager_lobby_a0b1cc6edd3600e03d632a9ceb5c3ed2c}\label{class_network_manager_lobby_a0b1cc6edd3600e03d632a9ceb5c3ed2c}} 
+\index{NetworkManagerLobby@{NetworkManagerLobby}!RoomPlayers@{RoomPlayers}}
+\index{RoomPlayers@{RoomPlayers}!NetworkManagerLobby@{NetworkManagerLobby}}
+\doxysubsubsection{\texorpdfstring{RoomPlayers}{RoomPlayers}}
+{\footnotesize\ttfamily List$<$\mbox{\hyperlink{class_network_lobby_player}{Network\+Lobby\+Player}}$>$ Network\+Manager\+Lobby.\+Room\+Players = new List$<$\mbox{\hyperlink{class_network_lobby_player}{Network\+Lobby\+Player}}$>$()\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+\doxysubsection{Event Documentation}
+\mbox{\Hypertarget{class_network_manager_lobby_a67f0c4a12b8c462d05be01b9910ac5fd}\label{class_network_manager_lobby_a67f0c4a12b8c462d05be01b9910ac5fd}} 
+\index{NetworkManagerLobby@{NetworkManagerLobby}!onClientConnected@{onClientConnected}}
+\index{onClientConnected@{onClientConnected}!NetworkManagerLobby@{NetworkManagerLobby}}
+\doxysubsubsection{\texorpdfstring{onClientConnected}{onClientConnected}}
+{\footnotesize\ttfamily Action Network\+Manager\+Lobby.\+on\+Client\+Connected}
+
+\mbox{\Hypertarget{class_network_manager_lobby_a896bc4053718afb737cce2ac9b6a686b}\label{class_network_manager_lobby_a896bc4053718afb737cce2ac9b6a686b}} 
+\index{NetworkManagerLobby@{NetworkManagerLobby}!onClientDisconnected@{onClientDisconnected}}
+\index{onClientDisconnected@{onClientDisconnected}!NetworkManagerLobby@{NetworkManagerLobby}}
+\doxysubsubsection{\texorpdfstring{onClientDisconnected}{onClientDisconnected}}
+{\footnotesize\ttfamily Action Network\+Manager\+Lobby.\+on\+Client\+Disconnected}
+
+\mbox{\Hypertarget{class_network_manager_lobby_ad803ebbb27aa1906e2090c680b3b7d17}\label{class_network_manager_lobby_ad803ebbb27aa1906e2090c680b3b7d17}} 
+\index{NetworkManagerLobby@{NetworkManagerLobby}!onServerReadied@{onServerReadied}}
+\index{onServerReadied@{onServerReadied}!NetworkManagerLobby@{NetworkManagerLobby}}
+\doxysubsubsection{\texorpdfstring{onServerReadied}{onServerReadied}}
+{\footnotesize\ttfamily Action$<$Network\+Connection$>$ Network\+Manager\+Lobby.\+on\+Server\+Readied\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Git\+Hub/\+F\+P\+S-\/\+Heratic-\/\+Reborn/\+Assets/\+Scripts/\+Multiplayer/\mbox{\hyperlink{_network_manager_lobby_8cs}{Network\+Manager\+Lobby.\+cs}}\end{DoxyCompactItemize}

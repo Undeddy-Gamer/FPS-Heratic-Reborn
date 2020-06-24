@@ -1,0 +1,155 @@
+\hypertarget{class_selection_screen}{}\doxysection{Selection\+Screen Class Reference}
+\label{class_selection_screen}\index{SelectionScreen@{SelectionScreen}}
+
+
+Selection screen class where you select your weapon before you enter the lobby, adds \mbox{\hyperlink{class_quirk_select_panel}{Quirk\+Select\+Panel}} and \mbox{\hyperlink{class_weapon_select_panel}{Weapon\+Select\+Panel}} based on available \mbox{\hyperlink{class_so_quirk}{So\+Quirk}} and \mbox{\hyperlink{class_so_weapon}{So\+Weapon}} objects set.  
+
+
+Inheritance diagram for Selection\+Screen\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_selection_screen}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_selection_screen_a816233c501f8ea3a5c21cc234549584c}{Setup\+Panel\+Selection}} ()
+\begin{DoxyCompactList}\small\item\em This creates the panels to select the weapons etc from the prefabs sets up the panels and adds them to the selection areas. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_selection_screen_a04a5ee3481c97c98f30262455bbd47e3}{Save\+Player\+Name}} ()
+\begin{DoxyCompactList}\small\item\em Set the display name for the player \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_selection_screen_aee81819b43b0c0828c53a86bab84992f}{Set\+Quirk}} (\mbox{\hyperlink{class_so_quirk}{So\+Quirk}} selected\+Quirk)
+\begin{DoxyCompactList}\small\item\em Set the selected quirk for the player \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_selection_screen_a2382cd44043dc106e8ca60c21038af55}{Set\+Weapon}} (\mbox{\hyperlink{class_so_weapon}{So\+Weapon}} selected\+Weapon)
+\begin{DoxyCompactList}\small\item\em set the selected weapon for the player \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Game\+Object \mbox{\hyperlink{class_selection_screen_a94473b3ce9c442974f8b243ff53b2454}{quirk\+Panel\+Prefab}}
+\item 
+Game\+Object \mbox{\hyperlink{class_selection_screen_ab64c744ae1b2abe8f9afeee49f9a48a9}{quirks\+Holder}}
+\item 
+Game\+Object \mbox{\hyperlink{class_selection_screen_a14ef7ea55727e311da1305691662c5bb}{weapon\+Panel\+Prefab}}
+\item 
+Game\+Object \mbox{\hyperlink{class_selection_screen_a55c3f2cc38c66edf9ab374e3e91c074e}{weapons\+Holder}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_so_weapon}{So\+Weapon}} \mbox{\hyperlink{class_selection_screen_aa002650430351043e66aff6df24668d9}{Selected\+Weapon}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+static \mbox{\hyperlink{class_so_quirk}{So\+Quirk}} \mbox{\hyperlink{class_selection_screen_a7a42c44711ab10e71c3eddb4c42f85e9}{Selected\+Quirk}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+static string \mbox{\hyperlink{class_selection_screen_af5f944de7e18d804a1826f82a64e66b9}{Display\+Name}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Selection screen class where you select your weapon before you enter the lobby, adds \mbox{\hyperlink{class_quirk_select_panel}{Quirk\+Select\+Panel}} and \mbox{\hyperlink{class_weapon_select_panel}{Weapon\+Select\+Panel}} based on available \mbox{\hyperlink{class_so_quirk}{So\+Quirk}} and \mbox{\hyperlink{class_so_weapon}{So\+Weapon}} objects set. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_selection_screen_a04a5ee3481c97c98f30262455bbd47e3}\label{class_selection_screen_a04a5ee3481c97c98f30262455bbd47e3}} 
+\index{SelectionScreen@{SelectionScreen}!SavePlayerName@{SavePlayerName}}
+\index{SavePlayerName@{SavePlayerName}!SelectionScreen@{SelectionScreen}}
+\doxysubsubsection{\texorpdfstring{SavePlayerName()}{SavePlayerName()}}
+{\footnotesize\ttfamily void Selection\+Screen.\+Save\+Player\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Set the display name for the player 
+
+\mbox{\Hypertarget{class_selection_screen_aee81819b43b0c0828c53a86bab84992f}\label{class_selection_screen_aee81819b43b0c0828c53a86bab84992f}} 
+\index{SelectionScreen@{SelectionScreen}!SetQuirk@{SetQuirk}}
+\index{SetQuirk@{SetQuirk}!SelectionScreen@{SelectionScreen}}
+\doxysubsubsection{\texorpdfstring{SetQuirk()}{SetQuirk()}}
+{\footnotesize\ttfamily void Selection\+Screen.\+Set\+Quirk (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_so_quirk}{So\+Quirk}}}]{selected\+Quirk }\end{DoxyParamCaption})}
+
+
+
+Set the selected quirk for the player 
+
+
+\begin{DoxyParams}{Parameters}
+{\em selected\+Quirk} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_selection_screen_a816233c501f8ea3a5c21cc234549584c}\label{class_selection_screen_a816233c501f8ea3a5c21cc234549584c}} 
+\index{SelectionScreen@{SelectionScreen}!SetupPanelSelection@{SetupPanelSelection}}
+\index{SetupPanelSelection@{SetupPanelSelection}!SelectionScreen@{SelectionScreen}}
+\doxysubsubsection{\texorpdfstring{SetupPanelSelection()}{SetupPanelSelection()}}
+{\footnotesize\ttfamily void Selection\+Screen.\+Setup\+Panel\+Selection (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+This creates the panels to select the weapons etc from the prefabs sets up the panels and adds them to the selection areas. 
+
+\mbox{\Hypertarget{class_selection_screen_a2382cd44043dc106e8ca60c21038af55}\label{class_selection_screen_a2382cd44043dc106e8ca60c21038af55}} 
+\index{SelectionScreen@{SelectionScreen}!SetWeapon@{SetWeapon}}
+\index{SetWeapon@{SetWeapon}!SelectionScreen@{SelectionScreen}}
+\doxysubsubsection{\texorpdfstring{SetWeapon()}{SetWeapon()}}
+{\footnotesize\ttfamily void Selection\+Screen.\+Set\+Weapon (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_so_weapon}{So\+Weapon}}}]{selected\+Weapon }\end{DoxyParamCaption})}
+
+
+
+set the selected weapon for the player 
+
+
+\begin{DoxyParams}{Parameters}
+{\em selected\+Weapon} & \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_selection_screen_a94473b3ce9c442974f8b243ff53b2454}\label{class_selection_screen_a94473b3ce9c442974f8b243ff53b2454}} 
+\index{SelectionScreen@{SelectionScreen}!quirkPanelPrefab@{quirkPanelPrefab}}
+\index{quirkPanelPrefab@{quirkPanelPrefab}!SelectionScreen@{SelectionScreen}}
+\doxysubsubsection{\texorpdfstring{quirkPanelPrefab}{quirkPanelPrefab}}
+{\footnotesize\ttfamily Game\+Object Selection\+Screen.\+quirk\+Panel\+Prefab}
+
+\mbox{\Hypertarget{class_selection_screen_ab64c744ae1b2abe8f9afeee49f9a48a9}\label{class_selection_screen_ab64c744ae1b2abe8f9afeee49f9a48a9}} 
+\index{SelectionScreen@{SelectionScreen}!quirksHolder@{quirksHolder}}
+\index{quirksHolder@{quirksHolder}!SelectionScreen@{SelectionScreen}}
+\doxysubsubsection{\texorpdfstring{quirksHolder}{quirksHolder}}
+{\footnotesize\ttfamily Game\+Object Selection\+Screen.\+quirks\+Holder}
+
+\mbox{\Hypertarget{class_selection_screen_a14ef7ea55727e311da1305691662c5bb}\label{class_selection_screen_a14ef7ea55727e311da1305691662c5bb}} 
+\index{SelectionScreen@{SelectionScreen}!weaponPanelPrefab@{weaponPanelPrefab}}
+\index{weaponPanelPrefab@{weaponPanelPrefab}!SelectionScreen@{SelectionScreen}}
+\doxysubsubsection{\texorpdfstring{weaponPanelPrefab}{weaponPanelPrefab}}
+{\footnotesize\ttfamily Game\+Object Selection\+Screen.\+weapon\+Panel\+Prefab}
+
+\mbox{\Hypertarget{class_selection_screen_a55c3f2cc38c66edf9ab374e3e91c074e}\label{class_selection_screen_a55c3f2cc38c66edf9ab374e3e91c074e}} 
+\index{SelectionScreen@{SelectionScreen}!weaponsHolder@{weaponsHolder}}
+\index{weaponsHolder@{weaponsHolder}!SelectionScreen@{SelectionScreen}}
+\doxysubsubsection{\texorpdfstring{weaponsHolder}{weaponsHolder}}
+{\footnotesize\ttfamily Game\+Object Selection\+Screen.\+weapons\+Holder}
+
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{class_selection_screen_af5f944de7e18d804a1826f82a64e66b9}\label{class_selection_screen_af5f944de7e18d804a1826f82a64e66b9}} 
+\index{SelectionScreen@{SelectionScreen}!DisplayName@{DisplayName}}
+\index{DisplayName@{DisplayName}!SelectionScreen@{SelectionScreen}}
+\doxysubsubsection{\texorpdfstring{DisplayName}{DisplayName}}
+{\footnotesize\ttfamily string Selection\+Screen.\+Display\+Name\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [get]}}
+
+\mbox{\Hypertarget{class_selection_screen_a7a42c44711ab10e71c3eddb4c42f85e9}\label{class_selection_screen_a7a42c44711ab10e71c3eddb4c42f85e9}} 
+\index{SelectionScreen@{SelectionScreen}!SelectedQuirk@{SelectedQuirk}}
+\index{SelectedQuirk@{SelectedQuirk}!SelectionScreen@{SelectionScreen}}
+\doxysubsubsection{\texorpdfstring{SelectedQuirk}{SelectedQuirk}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_so_quirk}{So\+Quirk}} Selection\+Screen.\+Selected\+Quirk\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [get]}}
+
+\mbox{\Hypertarget{class_selection_screen_aa002650430351043e66aff6df24668d9}\label{class_selection_screen_aa002650430351043e66aff6df24668d9}} 
+\index{SelectionScreen@{SelectionScreen}!SelectedWeapon@{SelectedWeapon}}
+\index{SelectedWeapon@{SelectedWeapon}!SelectionScreen@{SelectionScreen}}
+\doxysubsubsection{\texorpdfstring{SelectedWeapon}{SelectedWeapon}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_so_weapon}{So\+Weapon}} Selection\+Screen.\+Selected\+Weapon\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [get]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Git\+Hub/\+F\+P\+S-\/\+Heratic-\/\+Reborn/\+Assets/\+Scripts/\+Weapon\+And\+Quirk\+Selection/\mbox{\hyperlink{_selection_screen_8cs}{Selection\+Screen.\+cs}}\end{DoxyCompactItemize}

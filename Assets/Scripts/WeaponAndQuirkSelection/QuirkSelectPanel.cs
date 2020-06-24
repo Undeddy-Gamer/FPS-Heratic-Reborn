@@ -3,6 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+
+/// <summary>
+/// Selection panel for selecting a quirk. Multiple instances areis added to the selection screen based on SoQuirk scriptable objects
+/// </summary>
 public class QuirkSelectPanel : MonoBehaviour
 {
     public SoQuirk quirkSelect;

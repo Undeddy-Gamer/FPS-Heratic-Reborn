@@ -1,6 +1,9 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 
+/// <summary>
+///  Selection panel for selecting a weapon. Multiple instances are added to the selection screen based on SoWeapon scriptable objects
+/// </summary>
 public class WeaponSelectPanel : MonoBehaviour
 {
     public SoWeapon weaponSelect;

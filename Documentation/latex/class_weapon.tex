@@ -1,0 +1,155 @@
+\hypertarget{class_weapon}{}\doxysection{Weapon Class Reference}
+\label{class_weapon}\index{Weapon@{Weapon}}
+
+
+Base weapon class. Some code from staff should be moved here later, its a little bit jank.  
+
+
+Inheritance diagram for Weapon\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_weapon}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_weapon_a9546a24d9829ced41502f8d12c3a5a21}{Set\+Weapon\+Game\+Object}} (int \mbox{\hyperlink{class_weapon_a8119d71c4cb49f1f24867e8dd1df04db}{team\+ID}}, Game\+Object world\+Game\+Object, Vector3 \mbox{\hyperlink{class_weapon_a897bd838a85be2c381c3e3b2032fe87f}{original\+Location}})
+\begin{DoxyCompactList}\small\item\em Setup \mbox{\hyperlink{class_weapon}{Weapon}} \textquotesingle{}in game\textquotesingle{} object, also set it original position if it requires to be be respawned \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_weapon_af635df9c0a33d640a12536bd508e721d}{Drop\+Weapon}} (Rigidbody player, Vector3 droplocation)
+\begin{DoxyCompactList}\small\item\em Drops the currently equipped weapon at the position specified in drop location (if able to do so), also adds player movement momentem to the item when dropped \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_weapon_a8119d71c4cb49f1f24867e8dd1df04db}{team\+ID}} = 0
+\item 
+bool \mbox{\hyperlink{class_weapon_ad1a206306cdc406ea89d1eb924cb4a66}{is\+Weapon\+Locked}} = false
+\item 
+bool \mbox{\hyperlink{class_weapon_a71bdff2135f794e5412646cb82d55615}{is\+Weapon\+Dropable}} = false
+\item 
+\mbox{\hyperlink{class_staff}{Staff}} \mbox{\hyperlink{class_weapon_ad01a716f274a7abf3b8b077784801353}{asociated\+Staff}}
+\item 
+\mbox{\hyperlink{class_staff___m_p}{Staff\+\_\+\+MP}} \mbox{\hyperlink{class_weapon_abdbe37bf7f172f6811f370a7ece67403}{asociated\+M\+P\+Staff}}
+\item 
+Game\+Object \mbox{\hyperlink{class_weapon_a7deaae9f6600ad9513a7aaca87dd7ecf}{world\+Weapon\+Object}}
+\item 
+Vector3 \mbox{\hyperlink{class_weapon_a897bd838a85be2c381c3e3b2032fe87f}{original\+Location}}
+\item 
+Sprite \mbox{\hyperlink{class_weapon_a5b7e302b21be00a69035ba0dcdf33726}{weapon\+Icon}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Base weapon class. Some code from staff should be moved here later, its a little bit jank. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_weapon_af635df9c0a33d640a12536bd508e721d}\label{class_weapon_af635df9c0a33d640a12536bd508e721d}} 
+\index{Weapon@{Weapon}!DropWeapon@{DropWeapon}}
+\index{DropWeapon@{DropWeapon}!Weapon@{Weapon}}
+\doxysubsubsection{\texorpdfstring{DropWeapon()}{DropWeapon()}}
+{\footnotesize\ttfamily void Weapon.\+Drop\+Weapon (\begin{DoxyParamCaption}\item[{Rigidbody}]{player,  }\item[{Vector3}]{droplocation }\end{DoxyParamCaption})}
+
+
+
+Drops the currently equipped weapon at the position specified in drop location (if able to do so), also adds player movement momentem to the item when dropped 
+
+
+\begin{DoxyParams}{Parameters}
+{\em player} & the rigid body of the player object, used to apply extra momentem on the wepon object to be dropped\\
+\hline
+{\em droplocation} & the position as a vector3 to drop the weapon object\\
+\hline
+\end{DoxyParams}
+
+
+~\newline
+ 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\mbox{\hyperlink{class_weapon_af635df9c0a33d640a12536bd508e721d}{DropWeapon}}(playerRigidBody, );}
+\end{DoxyCode}
+ \mbox{\Hypertarget{class_weapon_a9546a24d9829ced41502f8d12c3a5a21}\label{class_weapon_a9546a24d9829ced41502f8d12c3a5a21}} 
+\index{Weapon@{Weapon}!SetWeaponGameObject@{SetWeaponGameObject}}
+\index{SetWeaponGameObject@{SetWeaponGameObject}!Weapon@{Weapon}}
+\doxysubsubsection{\texorpdfstring{SetWeaponGameObject()}{SetWeaponGameObject()}}
+{\footnotesize\ttfamily void Weapon.\+Set\+Weapon\+Game\+Object (\begin{DoxyParamCaption}\item[{int}]{team\+ID,  }\item[{Game\+Object}]{world\+Game\+Object,  }\item[{Vector3}]{original\+Location }\end{DoxyParamCaption})}
+
+
+
+Setup \mbox{\hyperlink{class_weapon}{Weapon}} \textquotesingle{}in game\textquotesingle{} object, also set it original position if it requires to be be respawned 
+
+
+\begin{DoxyParams}{Parameters}
+{\em team\+ID} & the id of the team the weapon belowngs to in case of flag or objective object\\
+\hline
+{\em world\+Game\+Object} & the game object that will be shown in the world\\
+\hline
+{\em original\+Location} & set the original position of the weapon game object for it to return/respawn to once used or lost\\
+\hline
+\end{DoxyParams}
+
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\mbox{\hyperlink{class_weapon_a9546a24d9829ced41502f8d12c3a5a21}{SetWeaponGameObject}}(0, flagWorldObject, flagWorldObject.originalPosition);}
+\end{DoxyCode}
+ 
+
+~\newline
+ 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_weapon_abdbe37bf7f172f6811f370a7ece67403}\label{class_weapon_abdbe37bf7f172f6811f370a7ece67403}} 
+\index{Weapon@{Weapon}!asociatedMPStaff@{asociatedMPStaff}}
+\index{asociatedMPStaff@{asociatedMPStaff}!Weapon@{Weapon}}
+\doxysubsubsection{\texorpdfstring{asociatedMPStaff}{asociatedMPStaff}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_staff___m_p}{Staff\+\_\+\+MP}} Weapon.\+asociated\+M\+P\+Staff}
+
+\mbox{\Hypertarget{class_weapon_ad01a716f274a7abf3b8b077784801353}\label{class_weapon_ad01a716f274a7abf3b8b077784801353}} 
+\index{Weapon@{Weapon}!asociatedStaff@{asociatedStaff}}
+\index{asociatedStaff@{asociatedStaff}!Weapon@{Weapon}}
+\doxysubsubsection{\texorpdfstring{asociatedStaff}{asociatedStaff}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_staff}{Staff}} Weapon.\+asociated\+Staff}
+
+\mbox{\Hypertarget{class_weapon_a71bdff2135f794e5412646cb82d55615}\label{class_weapon_a71bdff2135f794e5412646cb82d55615}} 
+\index{Weapon@{Weapon}!isWeaponDropable@{isWeaponDropable}}
+\index{isWeaponDropable@{isWeaponDropable}!Weapon@{Weapon}}
+\doxysubsubsection{\texorpdfstring{isWeaponDropable}{isWeaponDropable}}
+{\footnotesize\ttfamily bool Weapon.\+is\+Weapon\+Dropable = false}
+
+\mbox{\Hypertarget{class_weapon_ad1a206306cdc406ea89d1eb924cb4a66}\label{class_weapon_ad1a206306cdc406ea89d1eb924cb4a66}} 
+\index{Weapon@{Weapon}!isWeaponLocked@{isWeaponLocked}}
+\index{isWeaponLocked@{isWeaponLocked}!Weapon@{Weapon}}
+\doxysubsubsection{\texorpdfstring{isWeaponLocked}{isWeaponLocked}}
+{\footnotesize\ttfamily bool Weapon.\+is\+Weapon\+Locked = false}
+
+\mbox{\Hypertarget{class_weapon_a897bd838a85be2c381c3e3b2032fe87f}\label{class_weapon_a897bd838a85be2c381c3e3b2032fe87f}} 
+\index{Weapon@{Weapon}!originalLocation@{originalLocation}}
+\index{originalLocation@{originalLocation}!Weapon@{Weapon}}
+\doxysubsubsection{\texorpdfstring{originalLocation}{originalLocation}}
+{\footnotesize\ttfamily Vector3 Weapon.\+original\+Location}
+
+\mbox{\Hypertarget{class_weapon_a8119d71c4cb49f1f24867e8dd1df04db}\label{class_weapon_a8119d71c4cb49f1f24867e8dd1df04db}} 
+\index{Weapon@{Weapon}!teamID@{teamID}}
+\index{teamID@{teamID}!Weapon@{Weapon}}
+\doxysubsubsection{\texorpdfstring{teamID}{teamID}}
+{\footnotesize\ttfamily int Weapon.\+team\+ID = 0}
+
+\mbox{\Hypertarget{class_weapon_a5b7e302b21be00a69035ba0dcdf33726}\label{class_weapon_a5b7e302b21be00a69035ba0dcdf33726}} 
+\index{Weapon@{Weapon}!weaponIcon@{weaponIcon}}
+\index{weaponIcon@{weaponIcon}!Weapon@{Weapon}}
+\doxysubsubsection{\texorpdfstring{weaponIcon}{weaponIcon}}
+{\footnotesize\ttfamily Sprite Weapon.\+weapon\+Icon}
+
+\mbox{\Hypertarget{class_weapon_a7deaae9f6600ad9513a7aaca87dd7ecf}\label{class_weapon_a7deaae9f6600ad9513a7aaca87dd7ecf}} 
+\index{Weapon@{Weapon}!worldWeaponObject@{worldWeaponObject}}
+\index{worldWeaponObject@{worldWeaponObject}!Weapon@{Weapon}}
+\doxysubsubsection{\texorpdfstring{worldWeaponObject}{worldWeaponObject}}
+{\footnotesize\ttfamily Game\+Object Weapon.\+world\+Weapon\+Object}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Git\+Hub/\+F\+P\+S-\/\+Heratic-\/\+Reborn/\+Assets/\+Scripts/\+Weapons/\mbox{\hyperlink{_weapon_8cs}{Weapon.\+cs}}\end{DoxyCompactItemize}

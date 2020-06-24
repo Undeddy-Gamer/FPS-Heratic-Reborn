@@ -2,6 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// The base class for all game modes
+/// </summary>
 public class GameMode : MonoBehaviour
 {
     public int teamAmount = 2;

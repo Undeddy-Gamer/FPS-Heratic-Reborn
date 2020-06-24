@@ -2,6 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+
+/// <summary>
+/// Class for the lobby menu actions
+/// </summary>
 public class LobbyMenu : MonoBehaviour
 {
 

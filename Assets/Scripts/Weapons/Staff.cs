@@ -114,13 +114,7 @@ public class Staff : MonoBehaviour
                         enemy.TakeDamage(damage);
                         //enemy.
                     }
-
-                    //apply hit decal
-                    ImpactDetect2 recieve = hit.collider.gameObject.GetComponent<ImpactDetect2>();
-                    if (recieve)
-                    {
-                        recieve.SetHitPosition(hit.point);
-                    }
+                                        
 
                     GameObject impactTemp = Instantiate(impactFX, hit.point, Quaternion.LookRotation(hit.normal));
                     Destroy(impactTemp, 2f);

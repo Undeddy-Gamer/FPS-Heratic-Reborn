@@ -4,6 +4,10 @@ using UnityEngine;
 using UnityEngine.UI;
 
 
+/// <summary>
+/// This class handles the various mechanics for the player eg health, mana (ammo), damge excluding movement (see MovementController)
+/// </summary>
+/// 
 [RequireComponent(typeof(Rigidbody))]
 public class PlayerHandler_V2 : MonoBehaviour
 {

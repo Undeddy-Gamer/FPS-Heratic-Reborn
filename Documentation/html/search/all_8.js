@@ -1,6 +1,22 @@
 var searchData=
 [
-  ['lastweapon_30',['lastWeapon',['../class_player_handler___v2.html#ab2328c258474295748be5d65ac29ed0f',1,'PlayerHandler_V2']]],
-  ['loadmainmenu_31',['LoadMainMenu',['../class_game_manager.html#acc5bf2b58e880874333d37213a346d6a',1,'GameManager']]],
-  ['loadscene_32',['LoadScene',['../class_game_manager.html#a9e02865d8f82e5c1c3999164d55c517f',1,'GameManager.LoadScene(int sceneIndex)'],['../class_game_manager.html#a054e3128635fa0db23ddb14ccac8d6b1',1,'GameManager.LoadScene(string sceneName)']]]
+  ['icon_61',['Icon',['../class_so_quirk.html#a5ecfc04718840354f97ce330d46ce33a',1,'SoQuirk']]],
+  ['iconimage_62',['iconImage',['../class_quirk_select_panel.html#abeb39476bbeded9e0dfb50eee73b0e51',1,'QuirkSelectPanel.iconImage()'],['../class_weapon_select_panel.html#ad18dc003f850c8fa524ff4320cfb5d7a',1,'WeaponSelectPanel.iconImage()']]],
+  ['impactdecal_63',['impactDecal',['../class_ball_projectile.html#a4040ff0ff522f2bfcc61bc537be81546',1,'BallProjectile.impactDecal()'],['../class_ball_projectile___m_p.html#a89210e59fa01efc1096a2ba28316c4a3',1,'BallProjectile_MP.impactDecal()']]],
+  ['impactdetection_64',['ImpactDetection',['../class_impact_detection.html',1,'']]],
+  ['impactdetection_2ecs_65',['ImpactDetection.cs',['../_impact_detection_8cs.html',1,'']]],
+  ['impactfx_66',['impactFX',['../class_ball_projectile.html#aaf2a3ae8fb186daf9579c7915190a618',1,'BallProjectile.impactFX()'],['../class_ball_projectile___m_p.html#a5ec2819e98fd7dded440b28e8a20c93b',1,'BallProjectile_MP.impactFX()'],['../class_staff.html#ae8ed6486a0d32f1874a08c152b67546f',1,'Staff.impactFX()'],['../class_staff___m_p.html#a4eb3e233b8d4b83cebe565a696d76e68',1,'Staff_MP.impactFX()']]],
+  ['ingamemenuopen_67',['inGameMenuOpen',['../class_game_manager.html#a40d7e1d84ad8734a30836d1730306b2c',1,'GameManager']]],
+  ['instance_68',['Instance',['../class_game_manager.html#ad3e717f4fb0f378b969f4457de81f23e',1,'GameManager']]],
+  ['isdead_69',['isDead',['../class_player_handler.html#aaa3fe4a9926c249c278971500f93bed6',1,'PlayerHandler.isDead()'],['../class_player_handler___v2.html#aafaa32550b8eeb0a5b0fe919d3ac6c12',1,'PlayerHandler_V2.isDead()']]],
+  ['isgrounded_70',['IsGrounded',['../class_movement_controller.html#adc4306cc93acd8e15831560d79a41ff8',1,'MovementController.IsGrounded()'],['../class_movement_controller___m_p.html#ab430c93e2b480ac1bcff70e30b0e521d',1,'MovementController_MP.IsGrounded()']]],
+  ['isholdingflag_71',['isHoldingFlag',['../class_player.html#aa7c154866cebd2b2b88e31e5fc089104',1,'Player.isHoldingFlag()'],['../class_player_handler___v2.html#af55d1f7b55ef292b67d008326d28e52b',1,'PlayerHandler_V2.isHoldingFlag()']]],
+  ['isleader_72',['IsLeader',['../class_network_lobby_player.html#ad7cfac35fc3a74cac0a3b7daed6b2b55',1,'NetworkLobbyPlayer']]],
+  ['isready_73',['IsReady',['../class_network_lobby_player.html#ae85c70663499fab02d8bee600f9e74ac',1,'NetworkLobbyPlayer']]],
+  ['isweapondropable_74',['isWeaponDropable',['../class_weapon.html#a71bdff2135f794e5412646cb82d55615',1,'Weapon']]],
+  ['isweaponlocked_75',['isWeaponLocked',['../class_weapon.html#ad1a206306cdc406ea89d1eb924cb4a66',1,'Weapon']]],
+  ['itemdraghandler_76',['ItemDragHandler',['../class_item_drag_handler.html',1,'']]],
+  ['itemdraghandler_2ecs_77',['ItemDragHandler.cs',['../_item_drag_handler_8cs.html',1,'']]],
+  ['itemdrophandler_78',['ItemDropHandler',['../class_item_drop_handler.html',1,'']]],
+  ['itemdrophandler_2ecs_79',['ItemDropHandler.cs',['../_item_drop_handler_8cs.html',1,'']]]
 ];

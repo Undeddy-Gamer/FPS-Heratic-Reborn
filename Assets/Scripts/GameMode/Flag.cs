@@ -2,6 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// Flag class attach to in game flag object for capture the flag mode
+/// </summary>
 public class Flag : MonoBehaviour
 {
     [SerializeField]

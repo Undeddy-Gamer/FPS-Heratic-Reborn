@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['teamid_151',['teamID',['../class_player.html#a2ca0d5eedf3b254513a041d50c13873c',1,'Player.teamID()'],['../class_player_handler___v2.html#a32172f8a7f0db8e8305fbee153ef158d',1,'PlayerHandler_V2.teamID()']]]
+  ['gameplayers_545',['GamePlayers',['../class_network_manager_lobby.html#adc9ec65a897f6c8de267da9cd5378ab6',1,'NetworkManagerLobby']]]
 ];

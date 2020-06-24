@@ -4,7 +4,9 @@ using UnityEngine;
 using UnityEngine.UI;
 
 
-
+/// <summary>
+/// This class handles the various mechanics for the player eg health, mana (ammo), damge excluding movement (see MovementController)
+/// </summary>
 public class PlayerHandler : MonoBehaviour
 {
     [Header("Value Variables")]

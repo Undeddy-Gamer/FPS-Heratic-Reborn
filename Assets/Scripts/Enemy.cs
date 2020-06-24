@@ -1,6 +1,10 @@
 ﻿
 using UnityEngine;
 
+/// <summary>
+/// Used to set a bot as an enemy player so it can be damaged
+/// </summary>
+
 [RequireComponent(typeof(CapsuleCollider))]
 [RequireComponent(typeof(Animator))]
 

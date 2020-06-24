@@ -2,7 +2,7 @@
 using UnityEngine.UI;
 
 /// <summary>
-/// this is for the lobby selection screen class where you select your weapon before you enter the lobby
+/// Selection screen class where you select your weapon before you enter the lobby, adds QuirkSelectPanel and WeaponSelectPanel based on available SoQuirk and SoWeapon objects set.
 /// </summary>
 public class SelectionScreen : MonoBehaviour
 {

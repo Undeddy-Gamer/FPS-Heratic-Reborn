@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['healovertime_102',['HealOverTime',['../class_player_handler.html#ab4521ec59cec02c8b233656353252189',1,'PlayerHandler.HealOverTime()'],['../class_player_handler___v2.html#a2f6e261484f765330fd0e074a9b5f84d',1,'PlayerHandler_V2.HealOverTime()']]]
+  ['getweaponteamid_371',['GetWeaponTeamID',['../class_player.html#a0611fe09c9c5e566b3e44e700088e1c2',1,'Player.GetWeaponTeamID()'],['../class_player_handler___v2.html#a79de18d9e6d25553a9eb1a1542a8ceee',1,'PlayerHandler_V2.GetWeaponTeamID()']]]
 ];

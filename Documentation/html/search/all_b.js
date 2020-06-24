@@ -1,11 +1,25 @@
 var searchData=
 [
-  ['pickupweapon_51',['PickupWeapon',['../class_player.html#a093de7bd51d980488821c65c37def009',1,'Player.PickupWeapon()'],['../class_player_handler___v2.html#afef1b98737c4262e1ce0a9e555addd06',1,'PlayerHandler_V2.PickupWeapon()']]],
-  ['player_52',['Player',['../class_player.html',1,'']]],
-  ['player_2ecs_53',['Player.cs',['../_player_8cs.html',1,'']]],
-  ['playercamera_54',['playerCamera',['../class_movement_controller___m_p.html#aa19f6a9f239ae57e7a8a18cda81f487d',1,'MovementController_MP']]],
-  ['playerhandler_55',['PlayerHandler',['../class_player_handler.html',1,'']]],
-  ['playerhandler_2ecs_56',['PlayerHandler.cs',['../_player_handler_8cs.html',1,'']]],
-  ['playerhandler_5fv2_57',['PlayerHandler_V2',['../class_player_handler___v2.html',1,'']]],
-  ['playerhandler_5fv2_2ecs_58',['PlayerHandler_V2.cs',['../_player_handler___v2_8cs.html',1,'']]]
+  ['mainmenu_90',['MainMenu',['../class_main_menu.html',1,'']]],
+  ['mainmenu_2ecs_91',['MainMenu.cs',['../_main_menu_8cs.html',1,'']]],
+  ['manabar_92',['manaBar',['../class_player_handler.html#ab44008e834300e147d465525111ea51b',1,'PlayerHandler.manaBar()'],['../class_player_handler___v2.html#a0600ffea4860071759c36ce9798d8789',1,'PlayerHandler_V2.manaBar()']]],
+  ['manashotcost_93',['manaShotCost',['../class_staff.html#a1b674049f32e48641b90ec2109b34c36',1,'Staff.manaShotCost()'],['../class_staff___m_p.html#a0e342844a0bab4d2df80c8efc41fe3fa',1,'Staff_MP.manaShotCost()']]],
+  ['manatext_94',['manaText',['../class_player_handler.html#a4acadd06ba556a25fa9984fa5af3137b',1,'PlayerHandler.manaText()'],['../class_player_handler___v2.html#a825cb504305276687e09a0c152c8e2f2',1,'PlayerHandler_V2.manaText()']]],
+  ['masteraudiomixer_95',['masterAudioMixer',['../class_settings_menu.html#a47a5890825d8762243ad8558c1c8fa5e',1,'SettingsMenu']]],
+  ['maxhealth_96',['maxHealth',['../class_player_handler.html#ad743cabe7d85811f0ea4040bcbd436ef',1,'PlayerHandler.maxHealth()'],['../class_player_handler___v2.html#a9981ece4a312290bc489b27b22f8869e',1,'PlayerHandler_V2.maxHealth()']]],
+  ['maxhealthpercentage_97',['maxHealthPercentage',['../class_so_quirk.html#a758c9003113c7c466e91d87e5f525378',1,'SoQuirk']]],
+  ['miny_98',['minY',['../class_mouse_look.html#a20e89ace51cfc8156646e01015080e24',1,'MouseLook']]],
+  ['mouselook_99',['MouseLook',['../class_mouse_look.html',1,'']]],
+  ['mouselook_2ecs_100',['MouseLook.cs',['../_mouse_look_8cs.html',1,'']]],
+  ['mousex_101',['MouseX',['../class_mouse_look.html#a1e340db92253a24aacd972763a9ec958abf27c48f8a38ed19eeeba089dd8d3ba1',1,'MouseLook']]],
+  ['mousey_102',['MouseY',['../class_mouse_look.html#a1e340db92253a24aacd972763a9ec958a73843207a289db41b16a5bb8254ca425',1,'MouseLook']]],
+  ['movedir_103',['moveDir',['../class_movement_controller.html#a7f8f6dd58e85312fb77170a7ede2709f',1,'MovementController.moveDir()'],['../class_movement_controller___m_p.html#a6fcf1c07b08e85ba09bcf0778eb33a1f',1,'MovementController_MP.moveDir()']]],
+  ['movementcontroller_104',['MovementController',['../class_movement_controller.html',1,'']]],
+  ['movementcontroller_2ecs_105',['MovementController.cs',['../_movement_controller_8cs.html',1,'']]],
+  ['movementcontroller_5fmp_106',['MovementController_MP',['../class_movement_controller___m_p.html',1,'']]],
+  ['movementcontroller_5fmp_2ecs_107',['MovementController_MP.cs',['../_movement_controller___m_p_8cs.html',1,'']]],
+  ['movespeed_108',['moveSpeed',['../class_movement_controller.html#a5fecb6e2e7958a7365f1be686f6e16de',1,'MovementController.moveSpeed()'],['../class_movement_controller___m_p.html#a65ab8818e0a6f2a23cb0bb6166c1cde3',1,'MovementController_MP.moveSpeed()']]],
+  ['movev2_109',['MoveV2',['../class_movement_controller.html#a8d374259829ec448e851ce57aacbd9e6',1,'MovementController.MoveV2()'],['../class_movement_controller___m_p.html#a16af4fc86a10a1a4193fad57b1068564',1,'MovementController_MP.MoveV2()']]],
+  ['myquirk_110',['myQuirk',['../class_s_o_allocation.html#a851d3dd90ca283415c339d2a8c647041',1,'SOAllocation']]],
+  ['mysoweapon_111',['mySOWeapon',['../class_s_o_allocation.html#a62b2b9f755c17dcf48677cf48b9f3e77',1,'SOAllocation']]]
 ];

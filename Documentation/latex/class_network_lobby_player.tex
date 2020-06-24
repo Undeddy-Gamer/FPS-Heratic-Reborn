@@ -1,0 +1,153 @@
+\hypertarget{class_network_lobby_player}{}\doxysection{Network\+Lobby\+Player Class Reference}
+\label{class_network_lobby_player}\index{NetworkLobbyPlayer@{NetworkLobbyPlayer}}
+
+
+The network lobby player used for each player who enters the game lobby  
+
+
+Inheritance diagram for Network\+Lobby\+Player\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_network_lobby_player}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+override void \mbox{\hyperlink{class_network_lobby_player_a598ca33d06a424135c962374d74d3eb0}{On\+Start\+Authority}} ()
+\item 
+override void \mbox{\hyperlink{class_network_lobby_player_ae9c1c3ee7f0ed45b02939c79a89ee747}{On\+Start\+Client}} ()
+\item 
+override void \mbox{\hyperlink{class_network_lobby_player_a8aab315142083d634c1e6ceb77cededf}{On\+Network\+Destroy}} ()
+\item 
+void \mbox{\hyperlink{class_network_lobby_player_aca342fb559b9e258f5db52d8469af82d}{Handle\+Display\+Name\+Changed}} (string old\+Value, string new\+Value)
+\item 
+void \mbox{\hyperlink{class_network_lobby_player_a152c34a7e37d8220cddcd42079c59837}{Handle\+Ready\+Status\+Changed}} (bool old\+Value, bool new\+Value)
+\item 
+void \mbox{\hyperlink{class_network_lobby_player_acd650b6226094b46692e30a9910ac093}{Handle\+Game\+Type\+Changed}} (bool old\+Value, bool new\+Value)
+\item 
+void \mbox{\hyperlink{class_network_lobby_player_ac06be983bb876b42fdb55be9ac5e7948}{Handle\+Ready\+To\+Start}} (bool ready\+To\+Start)
+\item 
+void \mbox{\hyperlink{class_network_lobby_player_aa95a6d9ab195eb43409d05733db26246}{Cmd\+Ready\+Up}} ()
+\item 
+void \mbox{\hyperlink{class_network_lobby_player_a471df0804541d55d4b3cfd97f370c4d7}{Cmd\+Start\+Game}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+string \mbox{\hyperlink{class_network_lobby_player_a7867202ee976505d2e6b017c08ac5f93}{Display\+Name}} = \char`\"{}Loading...\char`\"{}
+\item 
+bool \mbox{\hyperlink{class_network_lobby_player_ae85c70663499fab02d8bee600f9e74ac}{Is\+Ready}} = false
+\item 
+string \mbox{\hyperlink{class_network_lobby_player_a1cae7221b59514d24c247928447cf934}{selected\+Weapon\+Str}}
+\item 
+float \mbox{\hyperlink{class_network_lobby_player_abae6e7176bc70a85fe51a4f9bb513b80}{skill\+Level}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{class_network_lobby_player_ad7cfac35fc3a74cac0a3b7daed6b2b55}{Is\+Leader}}\hspace{0.3cm}{\ttfamily  \mbox{[}set\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The network lobby player used for each player who enters the game lobby 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_network_lobby_player_aa95a6d9ab195eb43409d05733db26246}\label{class_network_lobby_player_aa95a6d9ab195eb43409d05733db26246}} 
+\index{NetworkLobbyPlayer@{NetworkLobbyPlayer}!CmdReadyUp@{CmdReadyUp}}
+\index{CmdReadyUp@{CmdReadyUp}!NetworkLobbyPlayer@{NetworkLobbyPlayer}}
+\doxysubsubsection{\texorpdfstring{CmdReadyUp()}{CmdReadyUp()}}
+{\footnotesize\ttfamily void Network\+Lobby\+Player.\+Cmd\+Ready\+Up (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_network_lobby_player_a471df0804541d55d4b3cfd97f370c4d7}\label{class_network_lobby_player_a471df0804541d55d4b3cfd97f370c4d7}} 
+\index{NetworkLobbyPlayer@{NetworkLobbyPlayer}!CmdStartGame@{CmdStartGame}}
+\index{CmdStartGame@{CmdStartGame}!NetworkLobbyPlayer@{NetworkLobbyPlayer}}
+\doxysubsubsection{\texorpdfstring{CmdStartGame()}{CmdStartGame()}}
+{\footnotesize\ttfamily void Network\+Lobby\+Player.\+Cmd\+Start\+Game (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_network_lobby_player_aca342fb559b9e258f5db52d8469af82d}\label{class_network_lobby_player_aca342fb559b9e258f5db52d8469af82d}} 
+\index{NetworkLobbyPlayer@{NetworkLobbyPlayer}!HandleDisplayNameChanged@{HandleDisplayNameChanged}}
+\index{HandleDisplayNameChanged@{HandleDisplayNameChanged}!NetworkLobbyPlayer@{NetworkLobbyPlayer}}
+\doxysubsubsection{\texorpdfstring{HandleDisplayNameChanged()}{HandleDisplayNameChanged()}}
+{\footnotesize\ttfamily void Network\+Lobby\+Player.\+Handle\+Display\+Name\+Changed (\begin{DoxyParamCaption}\item[{string}]{old\+Value,  }\item[{string}]{new\+Value }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_network_lobby_player_acd650b6226094b46692e30a9910ac093}\label{class_network_lobby_player_acd650b6226094b46692e30a9910ac093}} 
+\index{NetworkLobbyPlayer@{NetworkLobbyPlayer}!HandleGameTypeChanged@{HandleGameTypeChanged}}
+\index{HandleGameTypeChanged@{HandleGameTypeChanged}!NetworkLobbyPlayer@{NetworkLobbyPlayer}}
+\doxysubsubsection{\texorpdfstring{HandleGameTypeChanged()}{HandleGameTypeChanged()}}
+{\footnotesize\ttfamily void Network\+Lobby\+Player.\+Handle\+Game\+Type\+Changed (\begin{DoxyParamCaption}\item[{bool}]{old\+Value,  }\item[{bool}]{new\+Value }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_network_lobby_player_a152c34a7e37d8220cddcd42079c59837}\label{class_network_lobby_player_a152c34a7e37d8220cddcd42079c59837}} 
+\index{NetworkLobbyPlayer@{NetworkLobbyPlayer}!HandleReadyStatusChanged@{HandleReadyStatusChanged}}
+\index{HandleReadyStatusChanged@{HandleReadyStatusChanged}!NetworkLobbyPlayer@{NetworkLobbyPlayer}}
+\doxysubsubsection{\texorpdfstring{HandleReadyStatusChanged()}{HandleReadyStatusChanged()}}
+{\footnotesize\ttfamily void Network\+Lobby\+Player.\+Handle\+Ready\+Status\+Changed (\begin{DoxyParamCaption}\item[{bool}]{old\+Value,  }\item[{bool}]{new\+Value }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_network_lobby_player_ac06be983bb876b42fdb55be9ac5e7948}\label{class_network_lobby_player_ac06be983bb876b42fdb55be9ac5e7948}} 
+\index{NetworkLobbyPlayer@{NetworkLobbyPlayer}!HandleReadyToStart@{HandleReadyToStart}}
+\index{HandleReadyToStart@{HandleReadyToStart}!NetworkLobbyPlayer@{NetworkLobbyPlayer}}
+\doxysubsubsection{\texorpdfstring{HandleReadyToStart()}{HandleReadyToStart()}}
+{\footnotesize\ttfamily void Network\+Lobby\+Player.\+Handle\+Ready\+To\+Start (\begin{DoxyParamCaption}\item[{bool}]{ready\+To\+Start }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_network_lobby_player_a8aab315142083d634c1e6ceb77cededf}\label{class_network_lobby_player_a8aab315142083d634c1e6ceb77cededf}} 
+\index{NetworkLobbyPlayer@{NetworkLobbyPlayer}!OnNetworkDestroy@{OnNetworkDestroy}}
+\index{OnNetworkDestroy@{OnNetworkDestroy}!NetworkLobbyPlayer@{NetworkLobbyPlayer}}
+\doxysubsubsection{\texorpdfstring{OnNetworkDestroy()}{OnNetworkDestroy()}}
+{\footnotesize\ttfamily override void Network\+Lobby\+Player.\+On\+Network\+Destroy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_network_lobby_player_a598ca33d06a424135c962374d74d3eb0}\label{class_network_lobby_player_a598ca33d06a424135c962374d74d3eb0}} 
+\index{NetworkLobbyPlayer@{NetworkLobbyPlayer}!OnStartAuthority@{OnStartAuthority}}
+\index{OnStartAuthority@{OnStartAuthority}!NetworkLobbyPlayer@{NetworkLobbyPlayer}}
+\doxysubsubsection{\texorpdfstring{OnStartAuthority()}{OnStartAuthority()}}
+{\footnotesize\ttfamily override void Network\+Lobby\+Player.\+On\+Start\+Authority (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_network_lobby_player_ae9c1c3ee7f0ed45b02939c79a89ee747}\label{class_network_lobby_player_ae9c1c3ee7f0ed45b02939c79a89ee747}} 
+\index{NetworkLobbyPlayer@{NetworkLobbyPlayer}!OnStartClient@{OnStartClient}}
+\index{OnStartClient@{OnStartClient}!NetworkLobbyPlayer@{NetworkLobbyPlayer}}
+\doxysubsubsection{\texorpdfstring{OnStartClient()}{OnStartClient()}}
+{\footnotesize\ttfamily override void Network\+Lobby\+Player.\+On\+Start\+Client (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_network_lobby_player_a7867202ee976505d2e6b017c08ac5f93}\label{class_network_lobby_player_a7867202ee976505d2e6b017c08ac5f93}} 
+\index{NetworkLobbyPlayer@{NetworkLobbyPlayer}!DisplayName@{DisplayName}}
+\index{DisplayName@{DisplayName}!NetworkLobbyPlayer@{NetworkLobbyPlayer}}
+\doxysubsubsection{\texorpdfstring{DisplayName}{DisplayName}}
+{\footnotesize\ttfamily string Network\+Lobby\+Player.\+Display\+Name = \char`\"{}Loading...\char`\"{}}
+
+\mbox{\Hypertarget{class_network_lobby_player_ae85c70663499fab02d8bee600f9e74ac}\label{class_network_lobby_player_ae85c70663499fab02d8bee600f9e74ac}} 
+\index{NetworkLobbyPlayer@{NetworkLobbyPlayer}!IsReady@{IsReady}}
+\index{IsReady@{IsReady}!NetworkLobbyPlayer@{NetworkLobbyPlayer}}
+\doxysubsubsection{\texorpdfstring{IsReady}{IsReady}}
+{\footnotesize\ttfamily bool Network\+Lobby\+Player.\+Is\+Ready = false}
+
+\mbox{\Hypertarget{class_network_lobby_player_a1cae7221b59514d24c247928447cf934}\label{class_network_lobby_player_a1cae7221b59514d24c247928447cf934}} 
+\index{NetworkLobbyPlayer@{NetworkLobbyPlayer}!selectedWeaponStr@{selectedWeaponStr}}
+\index{selectedWeaponStr@{selectedWeaponStr}!NetworkLobbyPlayer@{NetworkLobbyPlayer}}
+\doxysubsubsection{\texorpdfstring{selectedWeaponStr}{selectedWeaponStr}}
+{\footnotesize\ttfamily string Network\+Lobby\+Player.\+selected\+Weapon\+Str}
+
+\mbox{\Hypertarget{class_network_lobby_player_abae6e7176bc70a85fe51a4f9bb513b80}\label{class_network_lobby_player_abae6e7176bc70a85fe51a4f9bb513b80}} 
+\index{NetworkLobbyPlayer@{NetworkLobbyPlayer}!skillLevel@{skillLevel}}
+\index{skillLevel@{skillLevel}!NetworkLobbyPlayer@{NetworkLobbyPlayer}}
+\doxysubsubsection{\texorpdfstring{skillLevel}{skillLevel}}
+{\footnotesize\ttfamily float Network\+Lobby\+Player.\+skill\+Level}
+
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{class_network_lobby_player_ad7cfac35fc3a74cac0a3b7daed6b2b55}\label{class_network_lobby_player_ad7cfac35fc3a74cac0a3b7daed6b2b55}} 
+\index{NetworkLobbyPlayer@{NetworkLobbyPlayer}!IsLeader@{IsLeader}}
+\index{IsLeader@{IsLeader}!NetworkLobbyPlayer@{NetworkLobbyPlayer}}
+\doxysubsubsection{\texorpdfstring{IsLeader}{IsLeader}}
+{\footnotesize\ttfamily bool Network\+Lobby\+Player.\+Is\+Leader\hspace{0.3cm}{\ttfamily [set]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Git\+Hub/\+F\+P\+S-\/\+Heratic-\/\+Reborn/\+Assets/\+Scripts/\+Multiplayer/\mbox{\hyperlink{_network_lobby_player_8cs}{Network\+Lobby\+Player.\+cs}}\end{DoxyCompactItemize}

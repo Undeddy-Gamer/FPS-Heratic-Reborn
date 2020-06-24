@@ -1,6 +1,8 @@
 ﻿
 using UnityEngine;
-
+/// <summary>
+/// Used to set an object as damageable and destroyable
+/// </summary>
 public class Target : MonoBehaviour
 {
     public float health = 100f;

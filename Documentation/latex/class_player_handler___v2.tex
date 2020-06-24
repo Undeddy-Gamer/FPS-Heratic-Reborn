@@ -1,5 +1,10 @@
 \hypertarget{class_player_handler___v2}{}\doxysection{Player\+Handler\+\_\+\+V2 Class Reference}
 \label{class_player_handler___v2}\index{PlayerHandler\_V2@{PlayerHandler\_V2}}
+
+
+This class handles the various mechanics for the player eg health, mana (ammo), damge excluding movement (see \mbox{\hyperlink{class_movement_controller}{Movement\+Controller}})  
+
+
 Inheritance diagram for Player\+Handler\+\_\+\+V2\+:\begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -52,7 +57,7 @@ Image \mbox{\hyperlink{class_player_handler___v2_aad0c7a1819b9e6978eb8abaa9a88e7
 \item 
 Transform \mbox{\hyperlink{class_player_handler___v2_a51021ad2745a57284c23dfeac0debfaf}{cur\+Check\+Point}}
 \item 
-List$<$ Weapon $>$ \mbox{\hyperlink{class_player_handler___v2_a5ae31c0323e3acb4b72d83664dcbac0a}{weapons}}
+List$<$ \mbox{\hyperlink{class_weapon}{Weapon}} $>$ \mbox{\hyperlink{class_player_handler___v2_a5ae31c0323e3acb4b72d83664dcbac0a}{weapons}}
 \item 
 int \mbox{\hyperlink{class_player_handler___v2_a10e8b46c171ec59aa9540a3d0b61c6d2}{current\+Weapon}} = 0
 \item 
@@ -72,6 +77,11 @@ static bool \mbox{\hyperlink{class_player_handler___v2_aafaa32550b8eeb0a5b0fe919
 \item 
 int \mbox{\hyperlink{class_player_handler___v2_a32172f8a7f0db8e8305fbee153ef158d}{team\+ID}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
 \end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This class handles the various mechanics for the player eg health, mana (ammo), damge excluding movement (see \mbox{\hyperlink{class_movement_controller}{Movement\+Controller}}) 
+
 
 
 \doxysubsection{Member Function Documentation}
@@ -328,7 +338,7 @@ Switch to weapon if able to (some weapon items like the flag cannot be changed f
 \index{PlayerHandler\_V2@{PlayerHandler\_V2}!weapons@{weapons}}
 \index{weapons@{weapons}!PlayerHandler\_V2@{PlayerHandler\_V2}}
 \doxysubsubsection{\texorpdfstring{weapons}{weapons}}
-{\footnotesize\ttfamily List$<$Weapon$>$ Player\+Handler\+\_\+\+V2.\+weapons}
+{\footnotesize\ttfamily List$<$\mbox{\hyperlink{class_weapon}{Weapon}}$>$ Player\+Handler\+\_\+\+V2.\+weapons}
 
 
 

@@ -1,0 +1,100 @@
+\hypertarget{class_game_mode}{}\doxysection{Game\+Mode Class Reference}
+\label{class_game_mode}\index{GameMode@{GameMode}}
+
+
+The base class for all game modes  
+
+
+Inheritance diagram for Game\+Mode\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_game_mode}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_game_mode_ac39e250a822580875d4d210276d69648}{Setup\+Game}} ()
+\begin{DoxyCompactList}\small\item\em Set up the teams for the game \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_game_mode_a88b8cd07910fdf1315886d8f201aa3a3}{Add\+Score}} (int team\+ID, int count)
+\begin{DoxyCompactList}\small\item\em Add score to specified team by ID \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_game_mode_a056efa33f5aba160593fb5f7198bfc90}{team\+Amount}} = 2
+\item 
+List$<$ \mbox{\hyperlink{class_team}{Team}} $>$ \mbox{\hyperlink{class_game_mode_a9a9aec7fbaf833aeb19f2298ecfbfbdf}{teams}}
+\item 
+List$<$ Transform $>$ \mbox{\hyperlink{class_game_mode_a2c37f70820f02881810142e28491b690}{spawn\+Points}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The base class for all game modes 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_game_mode_a88b8cd07910fdf1315886d8f201aa3a3}\label{class_game_mode_a88b8cd07910fdf1315886d8f201aa3a3}} 
+\index{GameMode@{GameMode}!AddScore@{AddScore}}
+\index{AddScore@{AddScore}!GameMode@{GameMode}}
+\doxysubsubsection{\texorpdfstring{AddScore()}{AddScore()}}
+{\footnotesize\ttfamily void Game\+Mode.\+Add\+Score (\begin{DoxyParamCaption}\item[{int}]{team\+ID,  }\item[{int}]{count }\end{DoxyParamCaption})}
+
+
+
+Add score to specified team by ID 
+
+
+\begin{DoxyParams}{Parameters}
+{\em team\+ID} & the id of the team to add points to\\
+\hline
+{\em count} & the amount of points to add to the team score\\
+\hline
+\end{DoxyParams}
+
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\mbox{\hyperlink{class_game_mode_a88b8cd07910fdf1315886d8f201aa3a3}{AddScore}}(1,1);}
+\end{DoxyCode}
+ 
+
+~\newline
+ \mbox{\Hypertarget{class_game_mode_ac39e250a822580875d4d210276d69648}\label{class_game_mode_ac39e250a822580875d4d210276d69648}} 
+\index{GameMode@{GameMode}!SetupGame@{SetupGame}}
+\index{SetupGame@{SetupGame}!GameMode@{GameMode}}
+\doxysubsubsection{\texorpdfstring{SetupGame()}{SetupGame()}}
+{\footnotesize\ttfamily void Game\+Mode.\+Setup\+Game (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Set up the teams for the game 
+
+~\newline
+ 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_game_mode_a2c37f70820f02881810142e28491b690}\label{class_game_mode_a2c37f70820f02881810142e28491b690}} 
+\index{GameMode@{GameMode}!spawnPoints@{spawnPoints}}
+\index{spawnPoints@{spawnPoints}!GameMode@{GameMode}}
+\doxysubsubsection{\texorpdfstring{spawnPoints}{spawnPoints}}
+{\footnotesize\ttfamily List$<$Transform$>$ Game\+Mode.\+spawn\+Points}
+
+\mbox{\Hypertarget{class_game_mode_a056efa33f5aba160593fb5f7198bfc90}\label{class_game_mode_a056efa33f5aba160593fb5f7198bfc90}} 
+\index{GameMode@{GameMode}!teamAmount@{teamAmount}}
+\index{teamAmount@{teamAmount}!GameMode@{GameMode}}
+\doxysubsubsection{\texorpdfstring{teamAmount}{teamAmount}}
+{\footnotesize\ttfamily int Game\+Mode.\+team\+Amount = 2}
+
+\mbox{\Hypertarget{class_game_mode_a9a9aec7fbaf833aeb19f2298ecfbfbdf}\label{class_game_mode_a9a9aec7fbaf833aeb19f2298ecfbfbdf}} 
+\index{GameMode@{GameMode}!teams@{teams}}
+\index{teams@{teams}!GameMode@{GameMode}}
+\doxysubsubsection{\texorpdfstring{teams}{teams}}
+{\footnotesize\ttfamily List$<$\mbox{\hyperlink{class_team}{Team}}$>$ Game\+Mode.\+teams}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Git\+Hub/\+F\+P\+S-\/\+Heratic-\/\+Reborn/\+Assets/\+Scripts/\+Game\+Mode/\mbox{\hyperlink{_game_mode_8cs}{Game\+Mode.\+cs}}\end{DoxyCompactItemize}

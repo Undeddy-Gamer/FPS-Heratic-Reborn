@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['forwarddropoffset_13',['forwardDropOffset',['../class_player.html#a264f3a095963a5b165268f12c2127ef1',1,'Player.forwardDropOffset()'],['../class_player_handler___v2.html#abe742445dbcf3ecc69f7cd22eaa4d70e',1,'PlayerHandler_V2.forwardDropOffset()']]],
-  ['fps_14',['FPS',['../namespace_f_p_s.html',1,'']]],
-  ['player_15',['Player',['../namespace_f_p_s_1_1_player.html',1,'FPS']]]
+  ['enemy_33',['Enemy',['../class_enemy.html',1,'']]],
+  ['enemy_2ecs_34',['Enemy.cs',['../_enemy_8cs.html',1,'']]],
+  ['extraheightcheck_35',['extraHeightCheck',['../class_movement_controller.html#a2affc7e4ca4606ac0609caf2b6b1cec1',1,'MovementController.extraHeightCheck()'],['../class_movement_controller___m_p.html#a15a22999bba5599afb4ee6ebecc3f419',1,'MovementController_MP.extraHeightCheck()']]]
 ];

@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['getweaponteamid_101',['GetWeaponTeamID',['../class_player.html#a0611fe09c9c5e566b3e44e700088e1c2',1,'Player.GetWeaponTeamID()'],['../class_player_handler___v2.html#a79de18d9e6d25553a9eb1a1542a8ceee',1,'PlayerHandler_V2.GetWeaponTeamID()']]]
+  ['damageplayer_369',['DamagePlayer',['../class_player_handler.html#a8def0caba4aa661f99eb6ff4e25bba0e',1,'PlayerHandler.DamagePlayer()'],['../class_player_handler___v2.html#af043e5b6fde5fd87e11656eb0869038f',1,'PlayerHandler_V2.DamagePlayer()']]],
+  ['dropweapon_370',['DropWeapon',['../class_player.html#a0bf3b6faabf83cb2946b4f9b31fd033a',1,'Player.DropWeapon()'],['../class_player_handler___v2.html#a0111972faa52a82943e379683ac0df66',1,'PlayerHandler_V2.DropWeapon()'],['../class_weapon.html#af635df9c0a33d640a12536bd508e721d',1,'Weapon.DropWeapon()']]]
 ];

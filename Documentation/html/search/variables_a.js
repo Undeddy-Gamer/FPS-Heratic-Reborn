@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['updropoffset_141',['upDropOffset',['../class_player.html#acd19c4f30931ba2b019d4c5c502d0609',1,'Player.upDropOffset()'],['../class_player_handler___v2.html#a4b8c504b5009747a57affb1b39064894',1,'PlayerHandler_V2.upDropOffset()']]]
+  ['lastweapon_475',['lastWeapon',['../class_player_handler___v2.html#ab2328c258474295748be5d65ac29ed0f',1,'PlayerHandler_V2']]]
 ];

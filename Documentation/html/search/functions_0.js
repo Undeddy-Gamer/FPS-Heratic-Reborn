@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['changecurrentweapon_98',['changeCurrentWeapon',['../class_player_handler___v2.html#ab926a24c579f2de8a7af91f9140908e7',1,'PlayerHandler_V2']]]
+  ['addscore_364',['AddScore',['../class_game_mode.html#a88b8cd07910fdf1315886d8f201aa3a3',1,'GameMode']]],
+  ['addspawnpoint_365',['AddSpawnPoint',['../class_player_spawn_system.html#a0958c49aaf427b539a423bd04b87a758',1,'PlayerSpawnSystem']]]
 ];

@@ -1,0 +1,131 @@
+\hypertarget{class_staff___m_p}{}\doxysection{Staff\+\_\+\+MP Class Reference}
+\label{class_staff___m_p}\index{Staff\_MP@{Staff\_MP}}
+
+
+Multiplayer version of the \mbox{\hyperlink{class_staff}{Staff}} script (not currently working) i beleive it has something to do with it being a child object of the component that has the network identity?  
+
+
+Inheritance diagram for Staff\+\_\+\+MP\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_staff___m_p}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_staff___m_p_a7f4c17e87db9b6de2a4c9094c481333a}{Shoot}} ()
+\begin{DoxyCompactList}\small\item\em Fire the weapon, the shot type based on whether the weapon has a projectile prefab or not (instant ray cast fire or projectile instantiate + force) \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_staff___m_p_abc874de43c0a6ed78b77e7fa5e39d688}{Reload}} ()
+\begin{DoxyCompactList}\small\item\em Reload command for animation trigger (probably the only code that is required on the model the above should be moved to the weapon script) \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+float \mbox{\hyperlink{class_staff___m_p_aa2bd862bd4862148683958473ecfe87b}{damage}} = 10f
+\item 
+float \mbox{\hyperlink{class_staff___m_p_abbee656c39731cc7f05ccc118bb23fc4}{range}} = 100f
+\item 
+float \mbox{\hyperlink{class_staff___m_p_a0e342844a0bab4d2df80c8efc41fe3fa}{mana\+Shot\+Cost}} = 5f
+\item 
+float \mbox{\hyperlink{class_staff___m_p_a791ca5f9f7088db337bca7c9754377b3}{projectile\+Speed}} = 5
+\item 
+float \mbox{\hyperlink{class_staff___m_p_afee08023735eff04631f05cc6d41b2f4}{rate\+Of\+Fire}} = 10f
+\item 
+Camera \mbox{\hyperlink{class_staff___m_p_a93053c8246aa3fcdb2e6635e5e79a2fc}{cam}}
+\item 
+Game\+Object \mbox{\hyperlink{class_staff___m_p_a4eb3e233b8d4b83cebe565a696d76e68}{impact\+FX}}
+\item 
+Animator \mbox{\hyperlink{class_staff___m_p_aab675c1146ef74e7333f9e0b91a6a212}{weapon\+Animator}}
+\item 
+\mbox{\hyperlink{class_player_handler___v2}{Player\+Handler\+\_\+\+V2}} \mbox{\hyperlink{class_staff___m_p_a61ac72b9342fce3647a087f1e5b03fa5}{player}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Multiplayer version of the \mbox{\hyperlink{class_staff}{Staff}} script (not currently working) i beleive it has something to do with it being a child object of the component that has the network identity? 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_staff___m_p_abc874de43c0a6ed78b77e7fa5e39d688}\label{class_staff___m_p_abc874de43c0a6ed78b77e7fa5e39d688}} 
+\index{Staff\_MP@{Staff\_MP}!Reload@{Reload}}
+\index{Reload@{Reload}!Staff\_MP@{Staff\_MP}}
+\doxysubsubsection{\texorpdfstring{Reload()}{Reload()}}
+{\footnotesize\ttfamily void Staff\+\_\+\+M\+P.\+Reload (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Reload command for animation trigger (probably the only code that is required on the model the above should be moved to the weapon script) 
+
+\mbox{\Hypertarget{class_staff___m_p_a7f4c17e87db9b6de2a4c9094c481333a}\label{class_staff___m_p_a7f4c17e87db9b6de2a4c9094c481333a}} 
+\index{Staff\_MP@{Staff\_MP}!Shoot@{Shoot}}
+\index{Shoot@{Shoot}!Staff\_MP@{Staff\_MP}}
+\doxysubsubsection{\texorpdfstring{Shoot()}{Shoot()}}
+{\footnotesize\ttfamily void Staff\+\_\+\+M\+P.\+Shoot (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Fire the weapon, the shot type based on whether the weapon has a projectile prefab or not (instant ray cast fire or projectile instantiate + force) 
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_staff___m_p_a93053c8246aa3fcdb2e6635e5e79a2fc}\label{class_staff___m_p_a93053c8246aa3fcdb2e6635e5e79a2fc}} 
+\index{Staff\_MP@{Staff\_MP}!cam@{cam}}
+\index{cam@{cam}!Staff\_MP@{Staff\_MP}}
+\doxysubsubsection{\texorpdfstring{cam}{cam}}
+{\footnotesize\ttfamily Camera Staff\+\_\+\+M\+P.\+cam}
+
+\mbox{\Hypertarget{class_staff___m_p_aa2bd862bd4862148683958473ecfe87b}\label{class_staff___m_p_aa2bd862bd4862148683958473ecfe87b}} 
+\index{Staff\_MP@{Staff\_MP}!damage@{damage}}
+\index{damage@{damage}!Staff\_MP@{Staff\_MP}}
+\doxysubsubsection{\texorpdfstring{damage}{damage}}
+{\footnotesize\ttfamily float Staff\+\_\+\+M\+P.\+damage = 10f}
+
+\mbox{\Hypertarget{class_staff___m_p_a4eb3e233b8d4b83cebe565a696d76e68}\label{class_staff___m_p_a4eb3e233b8d4b83cebe565a696d76e68}} 
+\index{Staff\_MP@{Staff\_MP}!impactFX@{impactFX}}
+\index{impactFX@{impactFX}!Staff\_MP@{Staff\_MP}}
+\doxysubsubsection{\texorpdfstring{impactFX}{impactFX}}
+{\footnotesize\ttfamily Game\+Object Staff\+\_\+\+M\+P.\+impact\+FX}
+
+\mbox{\Hypertarget{class_staff___m_p_a0e342844a0bab4d2df80c8efc41fe3fa}\label{class_staff___m_p_a0e342844a0bab4d2df80c8efc41fe3fa}} 
+\index{Staff\_MP@{Staff\_MP}!manaShotCost@{manaShotCost}}
+\index{manaShotCost@{manaShotCost}!Staff\_MP@{Staff\_MP}}
+\doxysubsubsection{\texorpdfstring{manaShotCost}{manaShotCost}}
+{\footnotesize\ttfamily float Staff\+\_\+\+M\+P.\+mana\+Shot\+Cost = 5f}
+
+\mbox{\Hypertarget{class_staff___m_p_a61ac72b9342fce3647a087f1e5b03fa5}\label{class_staff___m_p_a61ac72b9342fce3647a087f1e5b03fa5}} 
+\index{Staff\_MP@{Staff\_MP}!player@{player}}
+\index{player@{player}!Staff\_MP@{Staff\_MP}}
+\doxysubsubsection{\texorpdfstring{player}{player}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_player_handler___v2}{Player\+Handler\+\_\+\+V2}} Staff\+\_\+\+M\+P.\+player}
+
+\mbox{\Hypertarget{class_staff___m_p_a791ca5f9f7088db337bca7c9754377b3}\label{class_staff___m_p_a791ca5f9f7088db337bca7c9754377b3}} 
+\index{Staff\_MP@{Staff\_MP}!projectileSpeed@{projectileSpeed}}
+\index{projectileSpeed@{projectileSpeed}!Staff\_MP@{Staff\_MP}}
+\doxysubsubsection{\texorpdfstring{projectileSpeed}{projectileSpeed}}
+{\footnotesize\ttfamily float Staff\+\_\+\+M\+P.\+projectile\+Speed = 5}
+
+\mbox{\Hypertarget{class_staff___m_p_abbee656c39731cc7f05ccc118bb23fc4}\label{class_staff___m_p_abbee656c39731cc7f05ccc118bb23fc4}} 
+\index{Staff\_MP@{Staff\_MP}!range@{range}}
+\index{range@{range}!Staff\_MP@{Staff\_MP}}
+\doxysubsubsection{\texorpdfstring{range}{range}}
+{\footnotesize\ttfamily float Staff\+\_\+\+M\+P.\+range = 100f}
+
+\mbox{\Hypertarget{class_staff___m_p_afee08023735eff04631f05cc6d41b2f4}\label{class_staff___m_p_afee08023735eff04631f05cc6d41b2f4}} 
+\index{Staff\_MP@{Staff\_MP}!rateOfFire@{rateOfFire}}
+\index{rateOfFire@{rateOfFire}!Staff\_MP@{Staff\_MP}}
+\doxysubsubsection{\texorpdfstring{rateOfFire}{rateOfFire}}
+{\footnotesize\ttfamily float Staff\+\_\+\+M\+P.\+rate\+Of\+Fire = 10f}
+
+\mbox{\Hypertarget{class_staff___m_p_aab675c1146ef74e7333f9e0b91a6a212}\label{class_staff___m_p_aab675c1146ef74e7333f9e0b91a6a212}} 
+\index{Staff\_MP@{Staff\_MP}!weaponAnimator@{weaponAnimator}}
+\index{weaponAnimator@{weaponAnimator}!Staff\_MP@{Staff\_MP}}
+\doxysubsubsection{\texorpdfstring{weaponAnimator}{weaponAnimator}}
+{\footnotesize\ttfamily Animator Staff\+\_\+\+M\+P.\+weapon\+Animator}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Git\+Hub/\+F\+P\+S-\/\+Heratic-\/\+Reborn/\+Assets/\+Scripts/\+Weapons/\mbox{\hyperlink{_staff___m_p_8cs}{Staff\+\_\+\+M\+P.\+cs}}\end{DoxyCompactItemize}
