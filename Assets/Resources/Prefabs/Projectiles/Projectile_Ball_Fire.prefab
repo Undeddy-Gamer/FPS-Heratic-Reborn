@@ -4996,6 +4996,26 @@ PrefabInstance:
       propertyPath: m_Name
       value: ProjectileLight
       objectReference: {fileID: 0}
+    - target: {fileID: 6525898045096692140, guid: 0066fcf791e77ce46b01c158ede95d72,
+        type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6525898045096692140, guid: 0066fcf791e77ce46b01c158ede95d72,
+        type: 3}
+      propertyPath: m_Color.g
+      value: 0.80561244
+      objectReference: {fileID: 0}
+    - target: {fileID: 6525898045096692140, guid: 0066fcf791e77ce46b01c158ede95d72,
+        type: 3}
+      propertyPath: m_Color.b
+      value: 0.41037738
+      objectReference: {fileID: 0}
+    - target: {fileID: 6525898045096692140, guid: 0066fcf791e77ce46b01c158ede95d72,
+        type: 3}
+      propertyPath: m_Intensity
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0066fcf791e77ce46b01c158ede95d72, type: 3}
 --- !u!4 &4784767765968270902 stripped

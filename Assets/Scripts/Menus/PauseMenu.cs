@@ -7,12 +7,7 @@ public class PauseMenu : MonoBehaviour
     public GameObject pnlSettings;
     public GameObject pnlPauseMenu;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        ShowMainMenu();
-    }
-
+    
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.Escape))
@@ -25,14 +20,17 @@ public class PauseMenu : MonoBehaviour
     {
         if (GameManager.Instance.inGameMenuOpen)
         {
+            Time.timeScale = 1;
             pnlPauseMenu.SetActive(false);
+            pnlSettings.SetActive(false);
             Cursor.lockState = CursorLockMode.Locked; // lock the mouse cursor
-            Cursor.visible = false;
+            Cursor.visible = false;            
             GameManager.Instance.inGameMenuOpen = false;
             return;
         }
         else
-        {           
+        {
+            Time.timeScale = 0;
             Cursor.lockState = CursorLockMode.None; // lock the mouse cursor
             Cursor.visible = true;
             pnlPauseMenu.SetActive(true);

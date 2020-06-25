@@ -14,9 +14,9 @@ public class PlayerHandler_V2 : MonoBehaviour
     [Header("Value Variables")]
     public float curHealth = 100;
     public float curMana = 30, curStamina = 100;
-    public float maxHealth = 100, maxMana =  30, maxStamina = 100, healRate = 0.1f;
+    public float maxHealth = 100, maxMana = 30, maxStamina = 100, healRate = 0.1f;
     public float storedMana = 500;
-    
+
     private float prevHealth, prevMana, prevStamina;
     private float healTimer;
 
@@ -33,7 +33,7 @@ public class PlayerHandler_V2 : MonoBehaviour
     public Image weaponIcon;
 
 
-    [Header("Damage Effect Variables")] 
+    [Header("Damage Effect Variables")]
     static public bool isDead;
     bool damaged;
     bool canHeal = false;
@@ -42,7 +42,7 @@ public class PlayerHandler_V2 : MonoBehaviour
     public Transform curCheckPoint;
 
     [Header("Weapon Stuff")]
-    public List<Weapon> weapons;    
+    public List<Weapon> weapons;
     public int currentWeapon = 0;
     public int lastWeapon = 0;
     public float forwardDropOffset = 4;
@@ -64,13 +64,13 @@ public class PlayerHandler_V2 : MonoBehaviour
         {
             Debug.Log("No Player Rigidbody");
         }
-                
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+
 
         if (Input.GetKeyDown(KeyCode.X))
         {
@@ -86,21 +86,21 @@ public class PlayerHandler_V2 : MonoBehaviour
 
 
 
-        #if UNITY_EDITOR
+#if UNITY_EDITOR
         //function to test damage
         //Test Damage
         if (Input.GetKeyDown(KeyCode.X))
-                {
-                    curHealth -= 5;
-                    damaged = true;
-                }
-        #endif
+        {
+            curHealth -= 5;
+            damaged = true;
+        }
+#endif
 
-       
+
         if (!canHeal && curHealth < maxHealth && curHealth > 0)
         {
             healTimer += Time.deltaTime;
-            if(healTimer >= 7)      
+            if (healTimer >= 7)
             {
                 canHeal = true;
             }
@@ -135,15 +135,15 @@ public class PlayerHandler_V2 : MonoBehaviour
             storedManaText.text = "Stored Mana: " + System.Math.Round(storedMana);
         }
 
-        //Change weapon
-        if (Input.GetAxis("Mouse ScrollWheel") > 0f) // forward
-        {
-            changeCurrentWeapon(1);
-        }
-        else if (Input.GetAxis("Mouse ScrollWheel") < 0f) // backwards
-        {
-            changeCurrentWeapon(-1);
-        }
+        ////Change weapon
+        //if (Input.GetAxis("Mouse ScrollWheel") > 0f) // forward
+        //{
+        //    changeCurrentWeapon(1);
+        //}
+        //else if (Input.GetAxis("Mouse ScrollWheel") < 0f) // backwards
+        //{
+        //    changeCurrentWeapon(-1);
+        //}
     }
 
     private void LateUpdate()
@@ -161,13 +161,13 @@ public class PlayerHandler_V2 : MonoBehaviour
     void Death()
     {
         // set the death flag to this funciton int's called again
-        isDead = true;                
+        isDead = true;
     }
 
 
-   /// <summary>
-   /// Revive Player function
-   /// </summary>
+    /// <summary>
+    /// Revive Player function
+    /// </summary>
     void Revive()
     {
         isDead = false;
@@ -184,7 +184,7 @@ public class PlayerHandler_V2 : MonoBehaviour
 
     }
 
-    
+
     /// <summary>
     /// Damage player function
     /// </summary>
@@ -233,7 +233,7 @@ public class PlayerHandler_V2 : MonoBehaviour
             return;
         }
         if (weapons[currentWeapon + direction] != null)
-        { 
+        {
             if (weapons[currentWeapon + direction].isWeaponLocked)
             {
                 direction *= 2;
@@ -243,7 +243,7 @@ public class PlayerHandler_V2 : MonoBehaviour
         int weaponToSwitch = currentWeapon;
         if (weaponToSwitch + direction < 0)
         {
-            weaponToSwitch = weapons.Count -1;
+            weaponToSwitch = weapons.Count - 1;
         }
         else if (weaponToSwitch + direction > weapons.Count - 1)
             weaponToSwitch = 0;
@@ -275,7 +275,7 @@ public class PlayerHandler_V2 : MonoBehaviour
         currentWeapon = weaponID;
 
         foreach (Weapon weapon in weapons)
-        {            
+        {
             weapon.gameObject.SetActive(false);
         }
 

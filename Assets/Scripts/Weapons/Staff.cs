@@ -33,15 +33,21 @@ public class Staff : MonoBehaviour
     [SerializeField]
     private GameObject weaponFirePrefab;
     [SerializeField]
+    private ParticleSystem staffRechargeParticles;
+    [SerializeField]
     private GameObject projectilePrefab;
     [SerializeField]
     private GameObject shootPosition;
+    
 
     private float canFire = 0f;
     
 
     private void Update()
     {
+
+
+
         if (Input.GetButton("Fire1") && Time.time >= canFire)
         {
             canFire = Time.time + 1f / rateOfFire;
@@ -57,6 +63,40 @@ public class Staff : MonoBehaviour
                 weaponAnimator.Play("StaffReload",-1,0f);
             }
         }
+
+        //Change weapon
+        if (Input.GetAxis("Mouse ScrollWheel") != 0f) // forward
+        {
+            //trigger is attached to activate changeCurrentWeapon()
+            weaponAnimator.Play("ChangeEquip", -1, 0f);
+        }
+        
+    }
+
+    /// <summary>
+    /// Change weapon function for animation event
+    /// </summary>
+    public void changeCurrentWeapon()
+    {
+        int weaponDirectionChange = 1;
+
+        if (player.weapons[player.currentWeapon].isWeaponLocked)
+        {
+            return;
+        }
+
+        int weaponToSwitch = player.currentWeapon;
+
+        if (weaponToSwitch + weaponDirectionChange < player.weapons.Count)
+            if (player.weapons[player.currentWeapon + weaponDirectionChange].isWeaponLocked)
+                weaponDirectionChange *= 2;        
+
+        if (weaponToSwitch + weaponDirectionChange >= player.weapons.Count)
+            weaponToSwitch = 0;        
+        else
+            weaponToSwitch += weaponDirectionChange;                
+
+        player.SwitchWeapon(weaponToSwitch, false);
     }
 
     /// <summary>
@@ -145,14 +185,26 @@ public class Staff : MonoBehaviour
     public void Reload()
     {   
         if (player.storedMana > player.maxMana)
-        { 
-            player.curMana = player.maxMana;
-            player.storedMana -= player.maxMana;
+        {
+            player.storedMana -= player.maxMana - player.curMana;
+            player.curMana = player.maxMana;            
         }
         else
-        {
+        {            
             player.curMana = player.storedMana;
             player.storedMana = 0;
+        }
+    }
+
+
+    /// <summary>
+    /// Animation event for recharging staff after a shot is fired
+    /// </summary>
+    public void Recharge()
+    {
+        if (staffRechargeParticles != null)
+        {
+            staffRechargeParticles.Play();
         }
     }
 }
