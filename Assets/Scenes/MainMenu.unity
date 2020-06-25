@@ -1251,7 +1251,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Solo Capture the flag
+  m_Text: Capture the flag
 --- !u!222 &299756364
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2642,7 +2642,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Solo Deathmatch
+  m_Text: Deathmatch
 --- !u!222 &592681678
 CanvasRenderer:
   m_ObjectHideFlags: 0

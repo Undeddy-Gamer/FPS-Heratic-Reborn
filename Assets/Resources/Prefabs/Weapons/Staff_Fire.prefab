@@ -327,8 +327,8 @@ MonoBehaviour:
   damage: 10
   range: 100
   manaShotCost: 5
-  projectileSpeed: 5
-  rateOfFire: 2
+  projectileSpeed: 3
+  rateOfFire: 1.5
   cam: {fileID: 0}
   impactFX: {fileID: 3481567257605373589, guid: 5e340c7f2b3382749b2253a21ad3dda2,
     type: 3}
@@ -337,6 +337,7 @@ MonoBehaviour:
   weaponFire: {fileID: 0}
   weaponFirePrefab: {fileID: 3360748025774278113, guid: 288bbce28ca0645468bb5c695d199082,
     type: 3}
+  staffRechargeParticles: {fileID: 0}
   projectilePrefab: {fileID: 348656033679236653, guid: ee3ff6adabc2ede488719d225002cffc,
     type: 3}
   shootPosition: {fileID: 6384782264929887371}
