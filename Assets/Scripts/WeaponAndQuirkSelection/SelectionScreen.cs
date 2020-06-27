@@ -108,6 +108,8 @@ public class SelectionScreen : MonoBehaviour
         }
 
         continueButton.interactable = PlayerSelectionsMade;
+
+        nameInputField.onValueChanged.AddListener(delegate { SavePlayerName(); });
     }
 
     /// <summary>
