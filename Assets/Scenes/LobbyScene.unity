@@ -1973,7 +1973,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1255386479
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3586,7 +3586,7 @@ MonoBehaviour:
   availableWeapons:
   - {fileID: 11400000, guid: 71f2f32bae494fb4cb0f8ac95bc4a6ee, type: 2}
   - {fileID: 11400000, guid: 6112c237a12d430439c1fed96c40ab64, type: 2}
-  - {fileID: 11400000, guid: 265e6e027cd71ae40b991a790d1b200f, type: 2}
+  - {fileID: 11400000, guid: fc5e5afd58d952747aa190050d7c9dfd, type: 2}
 --- !u!1 &2026812495
 GameObject:
   m_ObjectHideFlags: 0

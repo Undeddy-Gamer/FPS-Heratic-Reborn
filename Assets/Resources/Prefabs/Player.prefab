@@ -1646,7 +1646,7 @@ GameObject:
   - component: {fileID: 3690658599143302863}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1664,7 +1664,7 @@ Transform:
   m_Children:
   - {fileID: 4962485387656359099}
   - {fileID: 118499746005411387}
-  - {fileID: 4625758919751030019}
+  - {fileID: 3232353741798438176}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1830,19 +1830,19 @@ MonoBehaviour:
   maxStamina: 100
   healRate: 0.1
   storedMana: 500
-  healthBar: {fileID: 4625758919432731057}
-  manaBar: {fileID: 4625758921056788028}
+  healthBar: {fileID: 3232353741798437982}
+  manaBar: {fileID: 3232353741798427552}
   staminaBar: {fileID: 0}
-  healthText: {fileID: 4625758919276714789}
-  manaText: {fileID: 4625758920538573490}
-  storedManaText: {fileID: 689109922964416065}
-  weaponIcon: {fileID: 965951739633624777}
+  healthText: {fileID: 3232353741798437983}
+  manaText: {fileID: 3232353741798427554}
+  storedManaText: {fileID: 3232353741798438058}
+  weaponIcon: {fileID: 3232353741798438049}
   curCheckPoint: {fileID: 0}
   weapons:
   - {fileID: 2113113769305405213}
   - {fileID: 4962485387893755114}
-  - {fileID: 8954309840534410348}
-  - {fileID: 6736688846005983740}
+  - {fileID: 3004216155301297925}
+  - {fileID: 614883352103252630}
   currentWeapon: 0
   lastWeapon: 0
   forwardDropOffset: 2
@@ -1900,8 +1900,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4962485387893755118}
-  - {fileID: 5318813189609472478}
-  - {fileID: 7559758037817658446}
+  - {fileID: 614883352103253351}
+  - {fileID: 3004216155301296378}
   - {fileID: 720285108560424767}
   m_Father: {fileID: 4962485387656359099}
   m_RootOrder: 0
@@ -8497,7 +8497,7 @@ PrefabInstance:
       objectReference: {fileID: 2471452152765032134}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e0045fab8cf2af442a92bd3a52951fa3, type: 3}
---- !u!114 &6736688846005983740 stripped
+--- !u!114 &614883352103252630 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 6193865618764051649, guid: e0045fab8cf2af442a92bd3a52951fa3,
     type: 3}
@@ -8509,7 +8509,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6abe6c31871d9714bb8b1e1f143cf360, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!4 &5318813189609472478 stripped
+--- !u!4 &614883352103253351 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4708717149928008931, guid: e0045fab8cf2af442a92bd3a52951fa3,
     type: 3}
@@ -8599,7 +8599,7 @@ PrefabInstance:
       objectReference: {fileID: 2471452152765032134}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 50e437c86a20b8a4383b02132c83f381, type: 3}
---- !u!114 &8954309840534410348 stripped
+--- !u!114 &3004216155301297925 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 6193865618764051649, guid: 50e437c86a20b8a4383b02132c83f381,
     type: 3}
@@ -8611,7 +8611,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6abe6c31871d9714bb8b1e1f143cf360, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!4 &7559758037817658446 stripped
+--- !u!4 &3004216155301296378 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4708717149928008931, guid: 50e437c86a20b8a4383b02132c83f381,
     type: 3}
@@ -8624,6 +8624,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 4962485386234175033}
     m_Modifications:
+    - target: {fileID: 2380935258248343209, guid: 679241ba7822eea4cb20087f7e2a17cf,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7848190443748413643, guid: 679241ba7822eea4cb20087f7e2a17cf,
         type: 3}
       propertyPath: m_AnchorMax.x
@@ -8756,7 +8761,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 679241ba7822eea4cb20087f7e2a17cf, type: 3}
---- !u!114 &4625758921056788028 stripped
+--- !u!114 &3232353741798427552 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 7848190444707247516, guid: 679241ba7822eea4cb20087f7e2a17cf,
     type: 3}
@@ -8768,7 +8773,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 67db9e8f0e2ae9c40bc1e2b64352a6b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &4625758920538573490 stripped
+--- !u!114 &3232353741798427554 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 7848190445254811922, guid: 679241ba7822eea4cb20087f7e2a17cf,
     type: 3}
@@ -8780,7 +8785,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &689109922964416065 stripped
+--- !u!114 &3232353741798438058 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 2687405742636486113, guid: 679241ba7822eea4cb20087f7e2a17cf,
     type: 3}
@@ -8792,7 +8797,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &965951739633624777 stripped
+--- !u!114 &3232353741798438049 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 2430852428250516841, guid: 679241ba7822eea4cb20087f7e2a17cf,
     type: 3}
@@ -8804,13 +8809,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!224 &4625758919751030019 stripped
+--- !u!224 &3232353741798438176 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 7848190443930402467, guid: 679241ba7822eea4cb20087f7e2a17cf,
     type: 3}
   m_PrefabInstance: {fileID: 3232353741798435744}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &4625758919276714789 stripped
+--- !u!114 &3232353741798437983 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 7848190444270366853, guid: 679241ba7822eea4cb20087f7e2a17cf,
     type: 3}
@@ -8822,7 +8827,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &4625758919432731057 stripped
+--- !u!114 &3232353741798437982 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 7848190444150002193, guid: 679241ba7822eea4cb20087f7e2a17cf,
     type: 3}
